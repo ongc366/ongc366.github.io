@@ -1,7 +1,54 @@
 body {
     background-color: #EEFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 #navigation {
-    text-align: 'center';
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+#navigation p {
+    margin: 20px;
+    padding: 6px;
+}
+
+#interiorPage {
+    margin: 60px;
+    padding: 10px;
+    text-align: center;
+}
+
+#interiorLink {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+#interiorLink p {
+    margin: 5px;
+    padding: 5px;
+    letter-spacing: 0px;
+    font-size: 10px;
+}
+
+a {
+    background-color: #D0D9D9;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+h1 {
+    letter-spacing: 0px;
+    font-size: 20px;
 }
