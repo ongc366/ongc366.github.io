@@ -1,0 +1,133 @@
+body {
+    background-color: #EEFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#navigation {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+#navigation p {
+    margin: 20px;
+    padding: 6px;
+}
+
+#interiorPage {
+    margin: 60px;
+    padding: 10px;
+    text-align: center;
+}
+
+#interiorLink {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+#interiorLink p {
+    margin: 5px;
+    padding: 5px;
+    letter-spacing: 0px;
+    font-size: 10px;
+}
+
+#outer {
+    margin: 40 10 10 10px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#outer:hover {
+    color: blue;
+}
+
+#secondouter {
+    margin: 30 10 10 40px;
+    padding: 5px;
+    font-size: 25px;
+}
+
+#secondouter:hover {
+    font-size: 26px;
+}
+
+#secondouter2 {
+    text-align: right;
+    margin: 0 200 50 0 ;
+}
+
+#secondouter2:hover {
+    font-size: 15px;
+}
+
+#thirdouter {
+    margin: 20 10 10 10 10;
+    padding: 10px;
+    font-size: 45px;
+    text-align: center;
+}
+
+#thirdouter p:hover{
+    color: blue;
+}
+
+#text {
+    margin: 10 20 40 20px;
+    font-family: garamond, serif;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: bold;
+    font-style: italic;
+    letter-spacing: 30px;
+}
+
+#text:hover {
+    font-size: 42px;
+}
+
+#mid {
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+    letter-spacing: 7;
+}
+
+#mid h1 {
+    font-size: 60px;
+}
+
+#mid:hover {
+    color: blue;
+    font-style: italic;
+    letter-spacing: 8;
+}
+a {
+    background-color: #D0D9D9;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+h1 {
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+
+#footer {
+    margin: 30px;
+    padding: 5px;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
