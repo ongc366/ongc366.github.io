@@ -13,6 +13,10 @@ body {
     letter-spacing: 2px;
 }
 
+.something:hover {
+    color: #ff0;
+}
+
 #navigation p {
     margin: 20px;
     padding: 6px;
@@ -110,6 +114,29 @@ body {
     font-style: italic;
     letter-spacing: 8;
 }
+
+#experiment {
+    font-family: Helvetica, sans-serif;
+    font-size: 200px;
+    line-height: 50%;
+    text-align: center;
+    color: black;
+    font-style: italic
+}
+
+#experiment scpan:hover{
+    background-color: #8CF7FF;
+    color: black;
+}
+
+#special {
+    letter-spacing: -10;
+}
+
+#wide {
+    letter-spacing: 20;
+}
+
 a {
     background-color: #D0D9D9;
     text-decoration: none;
