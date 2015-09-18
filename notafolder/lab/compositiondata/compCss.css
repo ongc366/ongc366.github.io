@@ -118,10 +118,10 @@ body {
 #experiment {
     font-family: Helvetica, sans-serif;
     font-size: 200px;
-    line-height: 50%;
+    line-height: 60%;
     text-align: center;
-    color: black;
-    font-style: italic
+    color: #EDEDED;
+    font-style: italic;
 }
 
 #experiment scpan:hover{
@@ -135,6 +135,12 @@ body {
 
 #wide {
     letter-spacing: 20;
+}
+
+#shift:hover {
+    height: 130px;
+    margin: 20px;
+    padding: 10px;
 }
 
 a {
