@@ -10,6 +10,17 @@ img:hover {
     background-color: #00FF00;
 }
 
+a {
+    text-decoration: none;
+    letter-spacing: 2;
+    font-weight: 100;
+    font-size: 6pt;
+}
+
+a:hover {
+    background-color: #00FF00;
+}
+
 .header h6{
     border-left: solid 1px black;
     margin-left: 50px;
@@ -68,19 +79,8 @@ img:hover {
 }
 
 .footer {
-    margin: 20px;
-    padding: 5px;
-    display: inline;
-    position: relative;
-    left: 1000px;
-    bottom: 0;
-    font-size: 6pt;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer a:hover {
-    background-color: #00FF00;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    text-align: right;
 }
