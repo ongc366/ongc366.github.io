@@ -125,15 +125,14 @@ body {
 }
 
 #experiment scpan {
-    transition: all 2s ease;
+    transition: all 0.25s ease-in-out;
 }
 
 #experiment scpan:hover{
     background-color: #8CF7FF;
     color: black;
-    height: 130px;
-    margin: 20px;
-    padding: 20px;
+    margin: 30px;
+    padding: 15px;
 }
 
 #special {
@@ -151,11 +150,6 @@ a {
 
 a:hover {
     background-color: yellow;
-}
-
-h1 {
-    letter-spacing: 0px;
-    font-size: 20px;
 }
 
 #footer {
