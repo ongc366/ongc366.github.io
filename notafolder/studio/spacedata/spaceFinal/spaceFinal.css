@@ -5,9 +5,13 @@ body {
     font-family: 'Quantico', sans-serif;
     font-size: 9pt;
 }
+.wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    width: 800px;
+}
 
 a {
-    font-size: 8px;
     letter-spacing: 2;
     text-decoration: none;
     transition: all 0.5s ease;
@@ -31,18 +35,8 @@ a {
     font-weight: 100;
 }
 
-.wrapper {
-    margin: 20px;
-    padding: 5px;
-}
-
-.interior {
-    margin: 130 110 100 65px;
-    padding: 20px;
-}
-
 .container {
-    margin: 20px;
+    margin: 180px;
     padding: 5px;
     text-align: center;
 }
@@ -58,9 +52,7 @@ img:hover {
 }
 
 .footer {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
+    position: static;
     text-align: right;
 }
 

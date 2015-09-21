@@ -5,14 +5,15 @@ body {
     font-family: 'Quantico', sans-serif;
     font-size: 9pt;
 }
-
-a {
-    text-decoration: none;
+.wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    width: 800px;
 }
 
-.header a {
-    font-size: 8px;
+a {
     letter-spacing: 2;
+    text-decoration: none;
     transition: all 0.5s ease;
 }
 
@@ -34,18 +35,8 @@ a {
     font-weight: 100;
 }
 
-.wrapper {
-    margin: 20px;
-    padding: 5px;
-}
-
-.interior {
-    margin: 130 110 100 65px;
-    padding: 20px;
-}
-
 .container {
-    margin: 20px;
+    margin: 180px;
     padding: 5px;
     text-align: center;
 }
@@ -58,40 +49,19 @@ a {
     padding: 10px;
 }
 
+
 .button {
-    width: 30px;
-    height: 30px;
-    border: solid 2px red;
-    border-radius: 100%;
-    font-size: 7px;
-    color: red;
-    box-shadow: 0px 5px #27496d;
-    position: static;
-    display: inline-block;
-}
-
-.button p {
     margin: 6 0.5px;
-    padding: 4.5px;
+    text-align: center;
 }
 
-.button:active {
-    margin: 7px;
-    box-shadow: none;
-}
-
-.button a:visited {
+.button:hover {
     color: red;
 }
 
-.footer a {
-    font-size: 8px;
-    letter-spacing: 2;
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
+.footer {
+    position: static;
     text-align: right;
-    transition: all 0.5s ease;
 }
 
 .footer a:visited {
