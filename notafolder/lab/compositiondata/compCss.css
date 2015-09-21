@@ -124,9 +124,16 @@ body {
     font-style: italic;
 }
 
+#experiment scpan {
+    transition: all 2s ease;
+}
+
 #experiment scpan:hover{
     background-color: #8CF7FF;
     color: black;
+    height: 130px;
+    margin: 20px;
+    padding: 20px;
 }
 
 #special {
@@ -135,12 +142,6 @@ body {
 
 #wide {
     letter-spacing: 20;
-}
-
-#shift:hover {
-    height: 130px;
-    margin: 20px;
-    padding: 10px;
 }
 
 a {
