@@ -36,7 +36,7 @@ a {
 }
 
 .container {
-    margin: 180px;
+    margin: 179.5px;
     padding: 5px;
     text-align: center;
 }
@@ -49,14 +49,10 @@ a {
     padding: 10px;
 }
 
-
-.button {
-    margin: 6 0.5px;
-    text-align: center;
-}
-
-.button:hover {
-    color: red;
+button {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+    padding: 1px;
 }
 
 .footer {
