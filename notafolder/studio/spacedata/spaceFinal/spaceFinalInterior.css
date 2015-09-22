@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Quantico', sans-serif;
-    font-size: 9pt;
+    font-size: 9px;
 }
 .wrapper {
     margin: 0 auto;
@@ -14,7 +14,12 @@ body {
 a {
     letter-spacing: 2;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all 0.25s ease;
+}
+
+.header a {
+    padding-bottom: 2px;
+    border-bottom: solid 1px black;
 }
 
 .header a:visited {
@@ -26,17 +31,18 @@ a {
     color: red;
 }
 
-.header h6{
+/*.header h6{
     border-left: solid 1px black;
-    margin-left: 50px;
+    margin-left: 30px;
     padding-top: 35px;
-    padding-left: 10px;
+    padding-left: 30px;
     display: inline;
     font-weight: 100;
-}
+    letter-spacing: 0.5;
+}*/
 
 .container {
-    margin: 179.5px;
+    margin: 181.5px;
     padding: 5px;
     text-align: center;
 }
@@ -55,7 +61,7 @@ button {
     padding: 1px;
 }
 
-.footer {
+/*.footer {
     position: static;
     text-align: right;
 }
@@ -67,4 +73,4 @@ button {
 .footer a:hover {
     background-color: black;
     color: red;
-}
+}*/
