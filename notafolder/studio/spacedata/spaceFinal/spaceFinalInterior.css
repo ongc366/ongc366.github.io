@@ -18,11 +18,6 @@ a {
     color: black;
 }
 
-.header p{
-    margin-top: 5px;
-    font-size: 12px;
-}
-
 .header a {
     padding-top: 2px;
     padding-bottom: 2px;
@@ -54,6 +49,12 @@ a {
     font-weight: 100;
     letter-spacing: 0.5;
 }*/
+
+.header p{
+    margin-top: 5px;
+    font-size: 12px;
+    font-size: 8px;
+}
 
 .container {
     margin: 181.5px;
