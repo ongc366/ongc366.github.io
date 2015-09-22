@@ -5,6 +5,7 @@ body {
     font-family: 'Quantico', sans-serif;
     font-size: 9px;
 }
+
 .wrapper {
     margin: 0 auto;
     padding: 30px;
@@ -16,21 +17,28 @@ a {
     text-decoration: none;
     transition: all 0.25s ease;
     color: black;
+    display: inline;
 }
 
-.header a {
+.navi a:hover {
+    color: red;
+}
+
+.toMap {
     padding-top: 2px;
     padding-bottom: 2px;
     border: solid 1px black;
     border-left: none;
     border-right: none;
+    background-color: white;
+    transition: all 0.25s ease;
 }
 
-.header a:visited {
+.toMap:visited {
     color: black;
 }
 
-.header a:hover {
+.toMap:hover {
     background-color: black;
     color: red;
     padding-top: 0px;
@@ -40,25 +48,13 @@ a {
     border-right: none;
 }
 
-/*.header h6{
-    border-left: solid 1px black;
-    margin-left: 30px;
-    padding-top: 35px;
-    padding-left: 30px;
-    display: inline;
-    font-weight: 100;
-    letter-spacing: 0.5;
-}*/
-
-.header p{
-    margin-top: 5px;
-    font-size: 12px;
+.navi{
     font-size: 8px;
 }
 
 .container {
-    margin: 181.5px;
-    padding: 5px;
+    margin: 180px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -72,20 +68,5 @@ a {
 
 button {
     font-family: 'Quantico', sans-serif;
-    font-weight: 700;
-    padding: 1px;
+    padding: 2px;
 }
-
-/*.footer {
-    position: static;
-    text-align: right;
-}
-
-.footer a:visited {
-    color: black;
-}
-
-.footer a:hover {
-    background-color: black;
-    color: red;
-}*/

@@ -17,21 +17,24 @@ a {
     text-decoration: none;
     transition: all 0.25s ease;
     color: black;
+    display: inline;
 }
 
-.header a {
+.toMap {
     padding-top: 2px;
     padding-bottom: 2px;
     border: solid 1px black;
     border-left: none;
     border-right: none;
+    background-color: white;
+    transition: all 0.25s ease;
 }
 
-.header a:visited {
+.toMap:visited {
     color: black;
 }
 
-.header a:hover {
+.toMap:hover {
     background-color: black;
     color: red;
     padding-top: 0px;
@@ -41,32 +44,21 @@ a {
     border-right: none;
 }
 
-.header p{
-    margin-top: 5px;
-    font-size: 12px;
+.navi{
     font-size: 8px;
 }
 
-/*.header h6{
-    border-left: solid 1px black;
-    margin-left: 30px;
-    padding-top: 35px;
-    padding-left: 30px;
-    display: inline;
-    letter-spacing: 0.5;
-    font-weight: 100;
-}*/
-
 .container {
-    margin: 186.5px;
-    margin-bottom: 212px;
-    padding: 5px;
+    margin: 200px;
+    padding: 10px;
     text-align: center;
 }
 
-.container p a img {
+.container p img {
     border-top: solid 2px black;
     border-left: solid 2px black;
+    border-right: none;
+    border-bottom: none;
     padding: 10px;
 }
 
@@ -74,16 +66,7 @@ img:hover {
     background-color: #00FF00;
 }
 
-/*.footer {
-    position: static;
-    text-align: right;
+button {
+    font-family: 'Quantico', sans-serif;
+    padding: 2px;
 }
-
-.footer a:visited {
-    color: black;
-}
-
-.footer a:hover {
-    background-color: black;
-    color: red;
-}*/
