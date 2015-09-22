@@ -15,6 +15,12 @@ a {
     letter-spacing: 2;
     text-decoration: none;
     transition: all 0.25s ease;
+    color: black;
+}
+
+.header p{
+    margin-top: 5px;
+    font-size: 12px;
 }
 
 .header a {

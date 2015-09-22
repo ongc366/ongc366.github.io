@@ -5,6 +5,7 @@ body {
     font-family: 'Quantico', sans-serif;
     font-size: 9px;
 }
+
 .wrapper {
     margin: 0 auto;
     padding: 30px;
@@ -15,6 +16,7 @@ a {
     letter-spacing: 2;
     text-decoration: none;
     transition: all 0.25s ease;
+    color: black;
 }
 
 .header a {
@@ -40,7 +42,7 @@ a {
 }
 
 .header p{
-    margin-top: 2px;
+    margin-top: 5px;
     font-size: 12px;
 }
 
