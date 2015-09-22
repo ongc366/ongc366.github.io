@@ -20,6 +20,10 @@ a {
     display: inline;
 }
 
+.navi{
+    font-size: 8px;
+}
+
 .navi a:hover {
     color: red;
 }
@@ -48,12 +52,8 @@ a {
     border-right: none;
 }
 
-.navi{
-    font-size: 8px;
-}
-
 .container {
-    margin: 180px;
+    margin: 120 160 160 160px;
     padding: 10px;
     text-align: center;
 }
@@ -63,7 +63,6 @@ a {
     border-left: solid 2px black;
     border-right: none;
     border-bottom: none;
-    padding: 10px;
 }
 
 button {

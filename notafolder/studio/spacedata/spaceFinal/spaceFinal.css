@@ -44,25 +44,25 @@ a {
     border-right: none;
 }
 
-.navi{
-    font-size: 8px;
-}
-
 .container {
-    margin: 200px;
+    margin: 140 180 180 180px;
     padding: 10px;
     text-align: center;
 }
 
-.container p img {
-    border-top: solid 2px black;
-    border-left: solid 2px black;
-    border-right: none;
-    border-bottom: none;
-    padding: 10px;
+img {
+    padding: 28px;
 }
 
-img:hover {
+.container p {
+    display: inline-block;
+    height: 170px;
+    width: 170px;
+    border-top: solid 2px black;
+    border-left: solid 2px black;
+}
+
+p:hover {
     background-color: #00FF00;
 }
 

@@ -1,20 +1,23 @@
 <html>
     <head>
         <title>Space Final</title>
-		<link rel="icon" type="image/png" href="../../../mainlogo.png">
-		<link href="spaceFinal.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/png" href="../../../../../mainlogo.png">
+		<link href="../spaceFinalInterior.css" rel="stylesheet" type="text/css" />
         <link href='https://fonts.googleapis.com/css?family=Quantico:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	   <script language="javascript" type="text/javascript" src="script.js"></script>
+        <script language="javascript" type="text/javascript" src="../script.js"></script>
+        <!--<meta http-equiv="refresh" content="0" />-->
 	</head>
     <body>
         <div class = 'wrapper'>
             <div class = 'header'>
                 <button onclick = 'intro()' class = 'toMap'>COMMUTE @</button>
+                <scpan class = 'navi'><a href = '../spaceFinal.html'><p>&#9099;&nbsp;BACK TO COMMUTE</p></a></scpan>
             </div>
             <div class = 'interior'>
                 <div class = 'container'>
                     <p>
-                        <a href = 'page1/page1.html'><img src = 'busstopsign.jpg'><br />|&nbsp;&#11014;&nbsp;|</a>
+                        <iframe width = '170px' height='170px' onLoad = 'sliding()' name = 'slideshow'>
+                        </iframe>
                     </p>
                 </div>
             </div>
