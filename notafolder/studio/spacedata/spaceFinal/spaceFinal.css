@@ -18,8 +18,11 @@ a {
 }
 
 .header a {
+    padding-top: 2px;
     padding-bottom: 2px;
-    border-bottom: solid 1px black;
+    border: solid 1px black;
+    border-left: none;
+    border-right: none;
 }
 
 .header a:visited {
@@ -29,6 +32,16 @@ a {
 .header a:hover {
     background-color: black;
     color: red;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: solid 1px black;
+    border-left: none;
+    border-right: none;
+}
+
+.header p{
+    margin-top: 2px;
+    font-size: 12px;
 }
 
 /*.header h6{

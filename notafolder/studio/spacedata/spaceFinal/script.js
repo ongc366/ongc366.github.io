@@ -8,3 +8,4 @@ function popUp() {
     //window.open("assets/page1GIF/page1GIFG.html", "_blank", "toolbar=no, scrollbars=no, resizable=no, top=20, left=100, width=300, height=300");
 }
 
+
