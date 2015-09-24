@@ -1,0 +1,36 @@
+body {
+    margin: 10px;
+    padding: 5px;
+    background: url("interior/assets/BG.png") no-repeat fixed center; 
+}
+
+message {
+    width: 300px;
+    height: 100px;
+}
+
+h1 {
+    color: #000FFF;
+    font-size: 20px;
+    font-family: 'Quantico', sans-serif;
+}
+
+a {
+    transition: all 7s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+a:visited {
+    color: #000FFF;
+    text-decoration: none;
+}
+
+scpan {
+    text-decoration: underline;
+}
