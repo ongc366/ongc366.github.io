@@ -86,3 +86,19 @@ p {
 .content p:visited {
   background-color: #00ffff;
 }
+
+img {
+  display: none;
+  width: 175px;
+}
+
+.one:hover + .proposal1b{
+  display: block;
+  position: fixed;
+  top: 130px;
+  left: 625px;
+}
+
+.special:hover {
+  background-color: #ff00ff;
+}

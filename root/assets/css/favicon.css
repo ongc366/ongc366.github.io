@@ -96,3 +96,7 @@ p {
 .pop img {
   width: 30px;
 }
+
+.special:hover {
+  background-color: #00ffff;
+}

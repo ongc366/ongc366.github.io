@@ -61,7 +61,6 @@ a:visited {
 }
 
 /* Default Settings End */
-
 .content {
   width: 381px;
   font-size: 30px;
@@ -84,5 +83,49 @@ p {
 }
 
 .content p:visited {
+  background-color: #00ffff;
+}
+
+img {
+  display: none;
+  width: 115px;
+}
+
+.one:hover + .proposal1a{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 675px;
+}
+
+.two:hover + .proposal1b{
+  display: block;
+  position: fixed;
+  top: 130px;
+  left: 675px;
+}
+
+.three:hover + .proposal1c{
+  display: block;
+  position: fixed;
+  top: 130px;
+  left: 675px;
+}
+
+.four:hover + .proposal1d{
+  display: block;
+  position: fixed;
+  top: 130px;
+  left: 675px;
+}
+
+.five:hover + .proposal1e{
+  display: block;
+  position: fixed;
+  top: 130px;
+  left: 675px;
+}
+
+.special:hover {
   background-color: #00ffff;
 }
