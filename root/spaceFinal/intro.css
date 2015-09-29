@@ -1,7 +1,7 @@
 body {
     margin: 10px;
     padding: 5px;
-    background: url("interior/assets/BG.png") no-repeat fixed center; 
+    font-family: 'Quantico', sans-serif;
 }
 
 message {
@@ -12,7 +12,6 @@ message {
 h1 {
     color: #000FFF;
     font-size: 20px;
-    font-family: 'Quantico', sans-serif;
 }
 
 a {
@@ -33,4 +32,10 @@ a:visited {
 
 scpan {
     text-decoration: underline;
+    font-size: 24px;
 }
+
+p{
+    font-size: 14px;
+}
+
