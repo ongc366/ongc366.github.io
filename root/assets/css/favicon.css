@@ -50,14 +50,12 @@ a:visited {
   color: black;
 }
 
-.who {
+a:hover {
   background-color: #00ffff;
 }
 
-.what {
-  background-color: #ff00ff;
-  padding-left: 169px;
-  float: right;
+.who {
+  background-color: #00ffff;
 }
 
 /* Default Settings End */
@@ -95,8 +93,4 @@ p {
 
 .pop img {
   width: 30px;
-}
-
-.special:hover {
-  background-color: #00ffff;
 }
