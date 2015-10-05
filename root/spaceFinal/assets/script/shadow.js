@@ -37,5 +37,3 @@ function intro() {
         window.open("shadow1.html", "slideshow", "toolbar=no, scrollbars=no, resizable=no, top=20, left=100, width=300, height=300");
         }, 3000);
 }*/
-
-

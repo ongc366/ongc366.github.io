@@ -1,0 +1,139 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quantico', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+}
+
+.header {
+  margin: 15 0 15 15px;
+  display: inline-block;
+  border-top: solid 1px #000;
+}
+
+a {
+    letter-spacing: 2;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.toMap {
+    font-family: 'Quantico', sans-serif;
+    font-size: 45px;
+    padding: 0 0 15px 0;
+    background-color: #FFF;
+    transition: all 0.25s ease;
+    border:none;
+    color: #000;
+}
+
+.toMap:visited {
+    color: #0000FF;
+}
+
+.toMap:hover {
+    background-color: black;
+    color: red;
+    padding-bottom: 0;
+}
+
+.back a{
+  color: #000;
+}
+
+.back a:hover {
+  color: #FF0000;
+}
+
+.interior {
+  text-align: center;
+  width: 100%;
+  transform: translate(0, 50%);
+  position: absolute;
+}
+
+.slideshow {
+  text-align: center;
+  padding-left: 7px;
+}
+
+.trigger {
+  color: #000;
+  border-radius: 50%;
+}
+
+.trigger:hover {
+  color: #FF0000;
+}
+
+img {
+    padding: 28px;
+}
+
+.entrance {
+    display: inline-block;
+    height: 170px;
+    width: 170px;
+    border: solid 1px black;
+    border-bottom: none;
+    transition: 0.25s ease-in;
+    opacity: 0.2;
+}
+
+.arrowguide {
+  font-size: 14px;
+  letter-spacing: 3;
+}
+
+.entrance:hover{
+    opacity: 1;
+}
+
+iframe {
+  display: inline-block;
+  height: 170px;
+  width: 170px;
+  border: solid 1px black;
+  border-bottom: none;
+  overflow: hidden;
+}
+
+.message {
+  margin: 15px;
+  font-size: 12px;
+  color: #E3E3E3;
+  transition: 1s ease-in-out;
+}
+
+h1 {
+  margin: 15 0px;
+  padding: 0;
+  font-size: 18px;
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
+  color: #FF0000;
+  display: inline-block;
+  background-color: #000;
+  font-size: 14px;
+}
+
+.message:hover {
+  color: #000;
+}
