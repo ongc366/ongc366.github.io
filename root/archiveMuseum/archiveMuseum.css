@@ -31,7 +31,7 @@ a {
 }
 
 p {
-    margin: 30 0 15 0px;
+    margin: 15 0 30 0px;
     padding: 0;
 }
 
@@ -85,6 +85,15 @@ h5 {
     font-weight: lighter;
 }
 
+.title {
+    margin-right: 50px;
+    font-size: 120px;
+    font-weight: lighter;
+    padding: 0 10px;
+    background-color: #FFFFD6;
+    box-shadow: 5px 5px 1px #888888;
+}
+
 .filter {
     font-family: garamond, serif;
     padding: 5px;
@@ -134,4 +143,14 @@ h5 {
 
 .heart:hover {
     color: red;
+}
+
+.bio {
+    font-family: garamond, serif;
+    font-size: 24px;
+}
+
+img {
+    border: solid 2px black;
+    padding: 10px;
 }
