@@ -8,10 +8,6 @@ img {
     width: 300px;
 }
 
-div {
-    overflow: hidden;
-}
-
 .leaf1 {
     z-index: 1;
     top: 50;
@@ -59,8 +55,4 @@ div {
 
 .leaf4:hover {
     padding-right: 200px;
-}
-
-.back {
-    z-index: -1;
 }

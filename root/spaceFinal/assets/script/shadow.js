@@ -23,7 +23,10 @@ function popUp4() {
 }
 
 function popUp5() {
-    window.open("../spaceFinal/assets/pages/leaving.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=150, width=900, height=800");
+    window.open("../spaceFinal/assets/pages/leaving.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=275, width=700, height=800");
+    window.open("../spaceFinal/assets/pages/leaving.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=275, width=500, height=500");
+    window.open("../spaceFinal/assets/pages/leaving.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=275, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/leaving.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=275, width=100, height=100");
 }
 
 function intro() {
