@@ -1,19 +1,21 @@
 function popUp1() {
-    window.open("nature1.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=300, width=400, height=300");
-    window.open("nature4.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=700, width=400, height=400");
-    window.open("nature2.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=50, left=200, width=300, height=300");
-    window.open("nature3.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=500, width=300, height=300");
-    window.open("natureSound.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=550, left=700, width=400, height=20");
+    window.open("../spaceFinal/assets/pages/sound.html", "_blank", "toolbar=no, scrollbars=no, resizable=no, top=0, left=150, width=900, height=800");
+    window.open("../spaceFinal/assets/pages/swings.html", "_blank", "toolbar=no, scrollbars=no, resizable=no, top=200, left=450, width=300, height=300");
 }
 
 function popUp2() {
-    window.open("assets/page1GIF/page1GIFA.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=20, left=100, width=300, height=300");
-    window.open("assets/page1GIF/page1GIFB.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=300, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/frustratedtexting.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=150, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/frustratedtexting.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=350, left=750, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/frustratedtexting.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=450, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/frustratedtexting.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=350, left=450, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/frustratedtexting.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=750, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/frustratedtexting.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=350, left=150, width=300, height=300");
 }
 
 function popUp3() {
-    window.open("assets/page1GIF/page1GIFA.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=20, left=100, width=300, height=300");
-    window.open("assets/page1GIF/page1GIFB.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=300, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/vignetteSet1/vignette.html", "_blank", "toolbar=no, scrollbars=no, resizable=no, top=200, left=150, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/vignetteSet2/vignette.html", "_blank", "toolbar=no, scrollbars=no, resizable=no, top=200, left=450, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/vignetteSet3/vignette.html", "_blank", "toolbar=no, scrollbars=no, resizable=no, top=200, left=750, width=300, height=300");
 }
 
 function popUp4() {
