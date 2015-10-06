@@ -30,11 +30,6 @@ a {
     display: inline-block;
 }
 
-p {
-    margin: 15 0 30 0px;
-    padding: 0;
-}
-
 .mainlink{
     margin-right: 10px;
     font-size: 30px;
@@ -56,7 +51,7 @@ p {
 }
 
 .info {
-    margin: 45 0 15 0px;
+    margin: 60 0 30 0px;
 }
 
 .instructions {
@@ -72,21 +67,15 @@ p {
 }
 
 h5 {
+    margin: 15 0px;
     padding: 0;
     font-size: 16px;
     letter-spacing: 3;
     display: inline-block;
-    margin: 0 0 15 0px;
-}
-
-.still {
-    margin-left: none;
-    font-size: 120px;
-    font-weight: lighter;
 }
 
 .title {
-    margin-right: 50px;
+    margin-bottom: 15px;
     font-size: 120px;
     font-weight: lighter;
     padding: 0 10px;
@@ -114,7 +103,6 @@ h5 {
 }
 
 .footer {
-    padding-top: 15px;
     border-top: solid 2px black;
     font-family: garamond, serif;
     font-size: 30px;
