@@ -23,8 +23,7 @@ function popUp4() {
 }
 
 function popUp5() {
-    window.open("assets/page1GIF/page1GIFA.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=20, left=100, width=300, height=300");
-    window.open("assets/page1GIF/page1GIFB.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=300, width=300, height=300");
+    window.open("../spaceFinal/assets/pages/leaving.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=150, width=900, height=800");
 }
 
 function intro() {

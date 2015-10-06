@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/popups/pavement.jpg);
+}
+
+img {
+    width: 300px;
+}
+
+div {
+    overflow: hidden;
+}
+
+.leaf1 {
+    z-index: 1;
+    top: 50;
+    left: 50;
+    transition: 1s ease;
+}
+
+.leaf1:hover {
+    padding-top: 400px;
+}
+
+.leaf2 {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    transform: rotate(130deg);
+    transition: 1s ease;
+}
+
+.leaf2:hover {
+    padding-left: 250px;
+}
+
+.leaf3 {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    transform: rotate(130deg);
+    transition: 1s ease;
+}
+
+.leaf3:hover {
+    padding-left: 300px;
+}
+
+.leaf4 {
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    transform: rotate(210deg);
+    transition: 1s ease;
+}
+
+.leaf4:hover {
+    padding-right: 200px;
+}
+
+.back {
+    z-index: -1;
+}
