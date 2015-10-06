@@ -10,3 +10,53 @@ img {
 img:hover {
     cursor: pointer;
 }
+
+.tear {
+    width: 6px;
+}
+
+.can {
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 18px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/popups/can-1.gif);
+}
+
+.can:active {
+    width: 100%;
+    height: 100%;
+    top: 22px;
+    background: url(../images/popups/can-2.gif);
+}
+
+.can:active + .event {
+    opacity: 0;
+}
+
+.can:hover {
+    margin: 0;
+}
+
+.can:hover + .event {
+    margin-top: 100px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.event {
+    position: fixed;
+    top: 0;
+    left: 54%;
+    transition: 1s ease-in-out;
+}
+
+.litter {
+    background: url(../images/popups/cans.gif);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
