@@ -51,28 +51,37 @@ a {
     padding-bottom: 0;
 }
 
-.back a{
-  color: #000;
-}
-
-.back a:hover {
-  color: #FF0000;
-}
-
 .interior {
   text-align: center;
   width: 100%;
-  transform: translate(-3%, 70%);
   position: absolute;
 }
 
 .slideshow {
   text-align: center;
-  padding-left: 7px;
+  padding: 0;
+  border: none;
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.25s; /* Chrome, Safari, Opera */
+  animation-name: shift;
+  animation-duration: 0.25s;
+}
+
+@-webkit-keyframes shift {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes shift {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .trigger {
   color: #000;
+  background-color: white;
+  box-shadow:none;
   border-radius: 50%;
 }
 
@@ -80,36 +89,32 @@ a {
   color: #FF0000;
 }
 
+.trigger:active {
+  color: #FF0000;
+  background-color: black;
+  transition: 0.25s ease;
+}
+
 img {
-    padding: 28px;
+    padding: 50px;
+    width: 200px;
 }
 
 .entrance {
     display: inline-block;
-    height: 170px;
-    width: 170px;
-    border: solid 1px black;
-    border-bottom: none;
+    height: 300px;
+    width: 300px;
+    border-left: solid 1px black;
+    border-top: solid 1px black;
     transition: 0.25s ease-in;
-    opacity: 0.2;
-}
-
-.arrowguide {
-  font-size: 14px;
-  letter-spacing: 3;
-}
-
-.entrance:hover{
-    opacity: 1;
+    transform: translate(-15%, 30%);
 }
 
 iframe {
   display: inline-block;
-  height: 170px;
-  width: 170px;
-  border: solid 1px black;
-  border-bottom: none;
-  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  border: none;
 }
 
 .message {
@@ -136,15 +141,4 @@ h6 {
   display: inline-block;
   background-color: #000;
   font-size: 14px;
-}
-
-.back {
-  font-size: 10px;
-  color: red;
-  border: none;
-  transition: 0.25s ease-in-out;
-}
-
-.back:hover {
-  color: black;
 }
