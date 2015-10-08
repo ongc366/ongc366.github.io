@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.space {
+    margin: 0 auto;
+    width: 300px;
+    padding: 0;
+}
+
+.space img {
+    width: 300px;
+    transition: 3s ease-in-out;
+}
+
+.spacePiece2:active {
+    width: 600%;
+    transform: translateY(350px);
+}
+
+.spacePiece3:active {
+    width: 0%;
+}
+
+.spacePiece1:active {
+    width: 350%;
+    transform: translateX(300px);
+    overflow: hidden;
+}
+
+.sky:hover {
+    cursor: url(../images/popups/flyingbird.gif), auto;
+}
+
+.bird1 {
+    position: absolute;
+    z-index: 1;
+    top: 110px;
+    left: 420px;
+}
+
+.bird2 {
+    position: absolute;
+    z-index: 1;
+    top: 210px;
+    left: 280px;
+}
+
+.bird3 {
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 190px;
+}
+
+.bird4 {
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+    left: 350px;
+}
+
+.bird5 {
+    position: absolute;
+    z-index: 1;
+    top: 90px;
+    left: 350px;
+}
+
+.bird6 {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 270px;
+}
+
+.bird7 {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 90px;
+}
