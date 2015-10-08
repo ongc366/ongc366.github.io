@@ -63,19 +63,31 @@ function popUp8() {
     window.open("../spaceFinal/assets/pages/flyingsouth.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=360, width=500, height=300");
 }
 
-function popUp9() {
-    window.open("../spaceFinal/assets/pages/coffeeBench.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=180, left=360, width=500, height=300");
+function popUp9(){
+    window.open('../spaceFinal/assets/pages/coffee.html', '_blank', 'toolbar=no, scrollbars=no, resizable=yes, top=200, left=360, width=500, height=300')
 }
 
-/*function popUp10() {
-    window.open("../spaceFinal/assets/pages/space.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
+function popUp10() {
+    window.open("../spaceFinal/assets/images/popups/bottleBalance5.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=270, left=520, width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance1.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=220, left=490, width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance4.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=220, left=440, width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance2.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=270, left=440 width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance3.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=320, left=460, width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance5.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=380, left=520, width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance1.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=360, left=610, width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance4.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=320, left=660, width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance2.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=250, left=640 width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance3.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=220, left=520, width=200, height=200");
+    window.open("../spaceFinal/assets/images/popups/bottleBalance3.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=250, left=480, width=200, height=200");
+
+
 }
 
 function popUp11() {
-    window.open("../spaceFinal/assets/pages/space.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
+    window.open("../spaceFinal/assets/pages/preplan1.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
 }
 
-function popUp12() {
+/*function popUp12() {
     window.open("../spaceFinal/assets/pages/space.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
 }*/
 

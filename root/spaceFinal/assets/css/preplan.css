@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/popups/pavement.jpg);
+}
+
+.plan {
+    background-color: red;
+}
