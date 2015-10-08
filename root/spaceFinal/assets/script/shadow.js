@@ -55,7 +55,7 @@ function popUp6() {
     window.open("../spaceFinal/assets/images/popups/candle1.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
 }
 
-/*function popUp7() {
+function popUp7() {
     window.open("../spaceFinal/assets/pages/space.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
 }
 
@@ -63,7 +63,7 @@ function popUp8() {
     window.open("../spaceFinal/assets/pages/flyingsouth.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=360, width=500, height=300");
 }
 
-function popUp9() {
+/*function popUp9() {
     window.open("../spaceFinal/assets/pages/space.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
 }
 
