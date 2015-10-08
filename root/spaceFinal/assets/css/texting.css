@@ -23,6 +23,7 @@ img:hover {
     width: 100%;
     height: 100%;
     background: url(../images/popups/can-1.gif);
+    transition: 0.25s ease;
 }
 
 .can:active {
@@ -30,10 +31,6 @@ img:hover {
     height: 100%;
     top: 22px;
     background: url(../images/popups/can-2.gif);
-}
-
-.can:active + .event {
-    opacity: 0;
 }
 
 .can:hover {

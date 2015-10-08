@@ -32,26 +32,17 @@ function popUp5() {
 function popUp6() {
     window.open("../spaceFinal/assets/images/popups/candle23.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle22.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
-    window.open("../spaceFinal/assets/images/popups/candle21.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle20.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle19.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
-    window.open("../spaceFinal/assets/images/popups/candle18.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle17.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
-    window.open("../spaceFinal/assets/images/popups/candle16.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle15.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");      
-    window.open("../spaceFinal/assets/images/popups/candle14.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle13.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
-    window.open("../spaceFinal/assets/images/popups/candle12.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle11.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
-    window.open("../spaceFinal/assets/images/popups/candle10.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle9.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
-    window.open("../spaceFinal/assets/images/popups/candle8.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle7.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle6.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
-    window.open("../spaceFinal/assets/images/popups/candle5.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle4.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle3.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
-    window.open("../spaceFinal/assets/images/popups/candle2.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
     window.open("../spaceFinal/assets/images/popups/candle1.jpg", "_blank", "toolbar=no, scrollbars=no, resizable=yes,  top=200, left=450, width=300, height=300");
 }
 
