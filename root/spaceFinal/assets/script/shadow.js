@@ -78,31 +78,8 @@ function popUp10() {
     window.open("../spaceFinal/assets/images/popups/bottleBalance4.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=320, left=660, width=200, height=200");
     window.open("../spaceFinal/assets/images/popups/bottleBalance2.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=250, left=640 width=200, height=200");
     window.open("../spaceFinal/assets/images/popups/bottleBalance3.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=220, left=520, width=200, height=200");
-    window.open("../spaceFinal/assets/images/popups/bottleBalance3.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=250, left=480, width=200, height=200");
-
-
+    window.open("../spaceFinal/assets/images/popups/bottleBalance5.gif", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=250, left=480, width=200, height=200");
 }
-
-/*function popUp11() {
-    window.open("../spaceFinal/assets/pages/preplan1.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=235, left=250, width=800, height=200");
-}
-
-function popUp12(){
-    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=200, width=100, height=120");
-    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=300, width=100, height=120");
-    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=400, width=100, height=120");
-    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=500, width=100, height=120");
-    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=600, width=100, height=120");
-    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=700, width=100, height=120");
-    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=800, width=100, height=120");
-    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=900, width=100, height=120");
-    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=1000, width=100, height=120");
-
-}
-
-/*function popUp12() {
-    window.open("../spaceFinal/assets/pages/space.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
-}*/
 
 function intro() {
     window.open("https://www.google.com/maps/place/Av+C%2FE+16+St/@40.729431,-73.9746577,18z/data=!4m2!3m1!1s0x89c25973d107dfdb:0x432f009c2ef56a3cl", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=20, left=500, width=500, height=600");

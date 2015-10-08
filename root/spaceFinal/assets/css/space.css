@@ -84,7 +84,7 @@ body {
 }
 
 .coffee {
-    opacity: 0.1;
+    opacity: 0.2;
     transition: 1s ease-in-out;
 }
 
@@ -94,4 +94,8 @@ body {
 
 .coffee:hover {
     cursor: url(../images/popups/coffeecup.gif), auto;
+}
+
+.container {
+    background-color: red;
 }
