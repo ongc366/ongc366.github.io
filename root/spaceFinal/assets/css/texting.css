@@ -66,6 +66,9 @@ img:hover {
 
 marquee {
     text-align: center;
+    display: inline-block;
+    width: 15%;
+    overflow: hidden;
 }
 
 @keyframes changeBG {
