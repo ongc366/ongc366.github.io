@@ -63,11 +63,11 @@ function popUp8() {
     window.open("../spaceFinal/assets/pages/flyingsouth.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=360, width=500, height=300");
 }
 
-/*function popUp9() {
-    window.open("../spaceFinal/assets/pages/space.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
+function popUp9() {
+    window.open("../spaceFinal/assets/pages/coffeeBench.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=180, left=360, width=500, height=300");
 }
 
-function popUp10() {
+/*function popUp10() {
     window.open("../spaceFinal/assets/pages/space.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
 }
 
