@@ -57,3 +57,21 @@ img:hover {
     margin: 0;
     padding: 0;
 }
+
+.compliment {
+    width: 100%;
+    height: 100%;
+    animation: changeBG 5s infinite;
+}
+
+marquee {
+    text-align: center;
+}
+
+@keyframes changeBG {
+    0%   {background-color: red;}
+    25%  {background-color: blue;}
+    50%  {background-color: red;}
+    75%  {background-color: blue;}
+    100%  {background-color: red;}
+}

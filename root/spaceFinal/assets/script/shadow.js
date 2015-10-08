@@ -22,6 +22,10 @@ function popUp4() {
     window.open("../spaceFinal/assets/pages/cans.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
 }
 
+function congrats(){
+    window.open("congrats.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=200, left=450, width=300, height=300");
+}
+
 function popUp5() {
     window.open("../spaceFinal/assets/pages/leaving.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=275, width=700, height=800");
     window.open("../spaceFinal/assets/pages/leaving.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=0, left=275, width=500, height=500");
