@@ -55,7 +55,7 @@ function popUp8() {
 }
 
 function popUp9(){
-    window.open('../spaceFinal/assets/pages/coffee.html', '_blank', 'toolbar=no, scrollbars=no, resizable=yes, top=200, left=360, width=500, height=300')
+    window.open('../spaceFinal/assets/pages/coffee.html', '_blank', 'toolbar=no, scrollbars=no, resizable=yes, top=100, left=260, width=800, height=800')
 }
 
 function popUp10() {
