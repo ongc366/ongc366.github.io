@@ -83,8 +83,21 @@ function popUp10() {
 
 }
 
-function popUp11() {
-    window.open("../spaceFinal/assets/pages/preplan1.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=100, left=450, width=300, height=500");
+/*function popUp11() {
+    window.open("../spaceFinal/assets/pages/preplan1.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=235, left=250, width=800, height=200");
+}
+
+function popUp12(){
+    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=200, width=100, height=120");
+    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=300, width=100, height=120");
+    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=400, width=100, height=120");
+    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=500, width=100, height=120");
+    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=600, width=100, height=120");
+    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=700, width=100, height=120");
+    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=800, width=100, height=120");
+    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=900, width=100, height=120");
+    window.open("go.html", "_blank", "toolbar=no, scrollbars=no, resizable=yes, top=300, left=1000, width=100, height=120");
+
 }
 
 /*function popUp12() {

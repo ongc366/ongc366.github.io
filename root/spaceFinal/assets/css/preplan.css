@@ -1,9 +1,45 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../images/popups/pavement.jpg);
+    font-family: Quantico, sans-serif;
 }
 
 .plan {
-    background-color: red;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    color: #FF0000;
+    text-align: center;
+    background-color: black;
+}
+
+.plan h1 {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 100px;
+}
+
+.go {
+    background-color: none;
+    margin-top: 5px;
+    font-size: 16pt;
+    letter-spacing: 1;
+    text-align: center;
+    -webkit-animation: changecolor 2s infinite; /* Chrome, Safari, Opera */ 
+    animation: changecolor 2s infinite;
+    transition: 1s ease;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes changecolor {
+    0%   {color: #FF0000;}
+    50%  {color: #FFF;}
+    100%  {color: #FF0000;}
+}
+
+/* Standard syntax */
+@keyframes changecolor {
+    0%   {color: #FF0000;}
+    50%  {color: #FFF;}
+    100%  {color: #FF0000;}
 }
