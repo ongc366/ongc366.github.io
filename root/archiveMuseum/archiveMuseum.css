@@ -115,6 +115,18 @@ h5 {
     box-shadow: 5px 5px 1px #888888;
 }
 
+.image {
+    display: none;
+}
+
+.name:hover + .image {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    background-color: #FFF;
+    transform: translate(-70%, -120%);
+}
+
 .footer {
     border-top: solid 2px black;
     font-family: garamond, serif;
