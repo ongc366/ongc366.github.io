@@ -12,6 +12,7 @@ body {
     padding: 0;
     font-size: 0;
     /*position relative on wrapper and all else position absolute*/
+    position: relative;
 }
 
 .content {
@@ -23,9 +24,9 @@ body {
     top:0;
     padding-top: 15px;
     margin-bottom: 30px;
-    width: 100%;
     display: block;
     background-color: #FFF;
+    width: 960px;
 }
 
 a {
@@ -53,7 +54,7 @@ a {
 }
 
 .container {
-    padding: 15 0 15 0px;
+    padding: 30 0 30 0px;
     font-size: 20px;
 }
 
@@ -108,6 +109,7 @@ h5 {
     margin-right: 15px;
     transition: 0.25s ease-in-out;
     font-weight: lighter;
+    position: relative;
 }
 
 .name:hover {
@@ -119,19 +121,24 @@ h5 {
     display: none;
 }
 
-.name:hover + .image {
+.name:hover .image {
     display: inline-block;
     position: absolute;
     z-index: 1;
     background-color: #FFF;
-    transform: translate(-70%, -120%);
+    bottom: 160%;
+    left: 0;
+    /*transform: translate(-70%, -120%);*/
+    
 }
 
 .footer {
     border-top: solid 2px black;
     font-family: garamond, serif;
     font-size: 30px;
-    display: inline-block;
+    display: block;
+    background-color: #FFF;
+    position: absolute;
 }
 
 .bolditalic {
