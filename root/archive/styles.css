@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-size: 0;
   overflow-y: scroll;
+  background-color: #FFFFD6;
 }
 
 .wrapper {
@@ -66,6 +67,7 @@ em:hover {
   position: absolute;
   z-index:-1;
   border: solid 2px black;
+  background-color: white;
   box-shadow: 5px 5px 5px #888888;
 }
 
@@ -93,7 +95,6 @@ h6 {
   padding-top: 15px;
   margin: 15px;
   font-size: 20px;
-  background-color: #FFFFD6;
 }
 
 .collection {
@@ -102,6 +103,7 @@ h6 {
 
 .small {
   font-size: 40px;
+  cursor:pointer;
 }
 
 .name {
