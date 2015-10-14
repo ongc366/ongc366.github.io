@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  overflow-y: scroll;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  font-family: helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+em {
+  transition: 0.25s ease;
+  border-bottom: solid 2px black;
+  padding-bottom: 5px;
+}
+
+em:hover {
+  padding: 5 10px;
+  background-color: #FFFFD6;
+  box-shadow: 5px 5px 5px #888888;
+  font-weight: bold;
+}
+
+.main {
+  display: inline;
+  letter-spacing: 1;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-right: 15px;
+  border-bottom: solid 2px black;
+}
+
+.main:hover {
+  padding-bottom: 10px;
+  background-color: #FFFFD6;
+}
+
+.header {
+  margin: 15 0px;
+  position: fixed;
+  display: inline-block;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  border-right: solid 2px black;
+  background-color: white;
+  transition: 0.25s ease;
+}
+
+.header:hover {
+  background-color: #FFFFD6;
+}
+
+.footer {
+  margin: 15 0px;
+  padding: 0
+  position: absolute;
+  z-index:-1;
+  border: solid 2px black;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.manifesto {
+  margin: 60 15 15 15px;
+  font-size: 68px;
+  font-weight: lighter;
+  font-family: garamond, serif;
+  display: inline-block;
+}
+
+.two {
+  margin: 15px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.content {
+  margin: 60 15 0 15px;
+  font-size: 100px;
+}
+
+h6 {
+  border-top: solid 2px black;
+  padding-top: 15px;
+  margin: 15px;
+  font-size: 20px;
+  background-color: #FFFFD6;
+}
+
+.collection {
+  margin: 0 15 15 15px;
+}
+
+.small {
+  font-size: 40px;
+}
+
+.name {
+  font-weight: lighter;
+  display: block;
+  font-size: 50px;
+}
+
+.description {
+  margin: 30 15px;
+  font-family: garamond, serif;
+  font-size: 24px;
+}
+
+.name:hover {
+  display: inline-block;
+  padding: 0 5px;
+  background-color: #FFFFD6;
+  box-shadow: 5px 5px 5px #888888;
+  transition: 0.25s ease-in-out;
+}
+
+.title {
+  font-size: 100px;
+}
+
+.select {
+  font-style: italic;
+  background-color: #FFFFD6;
+}
