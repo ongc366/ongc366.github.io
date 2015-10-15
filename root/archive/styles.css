@@ -106,10 +106,27 @@ h6 {
   cursor:pointer;
 }
 
+img {
+  display: none;
+}
+
 .name {
   font-weight: lighter;
   display: block;
   font-size: 50px;
+  position: relative;
+}
+
+.name:hover img{
+  position: absolute;
+  display: block;
+  z-index: 1;
+  background-color: #FFF;
+  bottom: 120%;
+  left: 300px;
+  padding: 10px;
+  margin-top: 10px;
+  border: solid 2px black;
 }
 
 .description {
