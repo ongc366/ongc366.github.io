@@ -55,6 +55,7 @@ em:hover {
   border-right: solid 2px black;
   background-color: white;
   transition: 0.25s ease;
+  z-index: 1;
 }
 
 .header:hover {
