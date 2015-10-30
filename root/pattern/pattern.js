@@ -38,7 +38,7 @@ $('.buttonBartow').click(function() {
     $('.info').show();
     clicked = true;
   } else {
-    $('.buttonBartow').css('background-color', 'white');
+    $('.buttonBartow').css('background-color', '#FDFF93');
     $('.info').hide();
     clicked = false;
   }
@@ -46,6 +46,8 @@ $('.buttonBartow').click(function() {
 
 $('.exit').click(function() {
   if (clicked == true) {
+    $('.buttonBartow').css('background-color', '#FDFF93');
     $('.info').hide();
+    clicked = false;
   }
 })
