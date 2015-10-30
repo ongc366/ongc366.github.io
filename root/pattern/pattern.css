@@ -38,5 +38,5 @@ button {
 }
 
 button:hover {
-    color: blue;
+    margin-left: 5px;
 }
