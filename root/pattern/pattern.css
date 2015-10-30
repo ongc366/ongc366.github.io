@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+
+.content {
+    margin: 15 0px;
+}
+
+.info {
+    margin: 15 0px;
+    padding: 0;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1;
+    transition: 0.25s ease;
+}
+
+.exit {
+    font-size: 10px;
+}
+
+button {
+    display: inline-block;
+    font-size: 60px;
+    font-family: 'League Script', cursive;
+    background-color: white;
+    border: none;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    color: blue;
+}
