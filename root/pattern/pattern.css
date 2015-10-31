@@ -12,6 +12,7 @@ body {
 
 .content {
     margin: 15 0px;
+    position: absolute;
 }
 
 .info {
@@ -26,17 +27,41 @@ body {
 
 .exit {
     font-size: 10px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
-button {
+h1 {
+    margin: 15 0px;
+    padding: 0;
+    display: block;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: 'League Script', cursive;
+}
+
+h3 {
+    margin: 15 0px;
+    padding: 0;
     display: inline-block;
     font-size: 60px;
     font-family: 'League Script', cursive;
+    font-weight: lighter;
     background-color: white;
     border: none;
-    transition: 0.25s ease;
+    transition: 0.5s ease;
 }
 
-button:hover {
+h3:hover {
     margin-left: 5px;
+}
+
+scpan {
+    font-size: 10px;
+    font-family: helvetica, sans-serif;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    letter-spacing: 2;
 }
