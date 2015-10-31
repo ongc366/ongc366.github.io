@@ -58,10 +58,10 @@ h3:hover {
 }
 
 scpan {
-    font-size: 10px;
+    font-size: 8px;
     font-family: helvetica, sans-serif;
     position: absolute;
-    top: 5px;
-    left: 40px;
+    top: 10px;
+    left: 35px;
     letter-spacing: 2;
 }
