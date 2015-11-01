@@ -67,6 +67,40 @@ var edgarBuilding = function() {
   }
 };
 
+var leffertsBuilding = function() {
+  var lefferts = ['                                  __|||__________________________|||__',
+  '                                ///|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||',
+  '                              ///|||||||//     \\\||||||||||//     \\\||||||||||//     \\\||||||||||||||||',
+  '      __|||________///|||||||||||||||||||      ||||||||||||      ||||||||||||       ||||||||||||||||',
+  '/////|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||',
+  '= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =',
+  '|     [           ]      ||  [     ]  ||      ||  [     ]  ||    ||          ||    ||  [     ]  | |',
+  '|                        ||           ||      ||           ||    ||          ||    ||           | |',
+  '==============|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||']
+  
+  for (var i = 0; i < 10; i++) {
+    if (i < 1) {
+      console.log(lefferts[0]);
+    } else if (i < 2) {
+      console.log(lefferts[1]);
+    } else if (i < 3) {
+      console.log(lefferts[2]);
+    } else if (i < 4) {
+      console.log(lefferts[3]);
+    } else if (i < 5) {
+      console.log(lefferts[4]);
+    } else if (i < 6) {
+      console.log(lefferts[5]);
+    } else if (i < 8) {
+      console.log(lefferts[6]);
+    } else if (i < 9) {
+      console.log(lefferts[7]);
+    } else if (i < 10) {
+      console.log(lefferts[8]);
+    }
+  }
+}
+
 var clicked = false;
 
 $('.infoBartow').hide();
@@ -97,6 +131,22 @@ $('.buttonEdgar').click(function() {
   } else {
     $('.buttonEdgar').css('background-color', '#FDFF93');
     $('.infoEdgar').hide();
+    clicked = false;
+  }
+});
+
+$('.infoLefferts').hide();
+
+$('.buttonLefferts').click(function() {
+  if (clicked == false) {
+    $('.buttonLefferts').click(leffertsBuilding());
+    $('.buttonLefferts').css('background-color', 'yellow');
+    $('.infoLefferts').show();
+    
+    clicked = true;
+  } else {
+    $('.buttonLefferts').css('background-color', '#FDFF93');
+    $('.infoLefferts').hide();
     clicked = false;
   }
 });
