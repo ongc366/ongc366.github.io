@@ -20,6 +20,11 @@ a:visited {
   color: white;
 }
 
+a:hover {
+  background-color: yellow;
+  color: black;
+}
+
 .button {
   margin: 0;
   padding: 0;
@@ -60,8 +65,13 @@ a:visited {
   z-index: -1;
 }
 
+.left {
+  margin-left: 3%;
+}
+
 .right {
   left: 50%;
+  margin-left: 6%;
 }
 
 .number {
@@ -95,4 +105,8 @@ a:visited {
 
 .label:visited {
   color: black;
+}
+
+scpan {
+  font-size: 10px;
 }

@@ -16,7 +16,7 @@ $('.who').click(function() {
 
 $('.what').click(function() {
   if (clickedWhat == false) {
-    $('.who').css('width', '0%');
+    $('.who').css('width', '3%');
     $('.who .label').addClass('back');
     $('.what').css('z-index', '1');
     $('.left').addClass('back');
@@ -27,6 +27,7 @@ $('.what').click(function() {
     $('.who .label').removeClass('back');
     $('.what').css('z-index', '1');
     $('.right').addClass('back');
+    $('.left').removeClass('back');
     clickedWhat = false;
   }
 })
