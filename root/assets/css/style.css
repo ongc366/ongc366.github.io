@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-size: 0;
   overflow: hidden;
+  background-color: #0000FF;
 }
 
 .wrapper {
@@ -12,11 +13,11 @@ body {
 }
 
 a {
-  color: blue;
+  color: white;
 }
 
 a:visited {
-  color: blue;
+  color: white;
 }
 
 .button {
@@ -41,6 +42,7 @@ a:visited {
   top: 0;
   left: 0;
   font-size: 20px;
+  color: white;
 }
 
 .contact ul {
@@ -69,14 +71,14 @@ a:visited {
 
 .who {
   /*background-color: #00FFFF;*/
-  color: #00FFFF;
+  color: #0000FF;
   background-color: #fff;
 }
 
 .what {
   left: 50%;
   /*background-color: #FF00FF;*/
-  color: #FF00FF;
+  color: #0000FF;
   background-color: #fff;
 }
 
