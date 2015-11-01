@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+a {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  position absolute;
+  display: inline-block;
+  transition: 1s ease-in-out;
+}
+
+.intro {
+  width: 50%;
+  height: 100%;
+}
+
+.contact {
+  margin: 15px;
+  padding: 0;
+  width: 45%;
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+.contact ul {
+  margin: 45 15px;
+  list-style-type: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.contact li {
+  margin: 15 0px;
+}
+
+.back {
+  z-index: -1;
+}
+
+.right {
+  left: 50%;
+}
+
+.number {
+  font-size: 12px;
+  pointer-events: auto;
+}
+
+.who {
+  background-color: #00FFFF;
+}
+
+.what {
+  left: 50%;
+  background-color: #FF00FF;
+}
+
+.label {
+  transform: translate(0, 45%);
+  text-align: center;
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 20;
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+}
+
+.label:visited {
+  color: black;
+}
