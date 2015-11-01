@@ -1,6 +1,5 @@
 var clickedWho = false;
 var clickedWhat = false;
-var pass = false;
 
 $('.contact').addClass('back');
 
@@ -9,10 +8,25 @@ $('.who').click(function() {
     $('.who').css('width', '50%').css('height', '5%');
     $('.what').css('width', '50%');
     $('.left').removeClass('back');
+    $('.who').mouseenter(function() {
+      $('.who').css('height', '70%');
+      $('.who').mouseleave(function() {
+        $('.who').css('height', '5%');
+      })
+    })
     clickedWho = true;
   } else if (clickedWho == true){
     $('.who').css('height', '100%');
     $('.left').addClass('back');
+    $('.who').mouseenter(function() {
+      $('.who').css('height', '100%');
+      $('.who').mouseleave(function() {
+        $('.who').css('height', '100%');
+      })
+    })
+    $('.who').mouseleave(function() {
+        $('.who').css('height', '100%');
+      })
     clickedWho = false;
   }
 })

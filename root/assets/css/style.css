@@ -22,9 +22,8 @@ a:visited {
 .button {
   margin: 0;
   padding: 0;
-  position absolute;
   display: inline-block;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .intro {
@@ -69,12 +68,16 @@ a:visited {
 }
 
 .who {
-  background-color: #00FFFF;
+  /*background-color: #00FFFF;*/
+  color: #00FFFF;
+  background-color: #fff;
 }
 
 .what {
   left: 50%;
-  background-color: #FF00FF;
+  /*background-color: #FF00FF;*/
+  color: #FF00FF;
+  background-color: #fff;
 }
 
 .label {
@@ -86,7 +89,6 @@ a:visited {
   font-family: helvetica, sans-serif;
   font-weight: lighter;
   text-decoration: none;
-  color: black;
 }
 
 .label:visited {
