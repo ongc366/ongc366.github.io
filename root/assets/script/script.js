@@ -28,7 +28,7 @@ $('.what').click(function() {
     $('.what').css('z-index', '1');
     $('.what .label').css('z-index', '2');
     $('.right').addClass('back');
-    $('.left').addClass('back');
+    $('.left').removeClass('back');
     clickedWhat = false;
   }
 })
