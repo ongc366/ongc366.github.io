@@ -78,7 +78,7 @@ var leffertsBuilding = function() {
   '|                        ||           ||      ||           ||    ||          ||    ||           | |',
   '==============|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||']
   
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 11; i++) {
     if (i < 1) {
       console.log(lefferts[0]);
     } else if (i < 2) {
@@ -97,6 +97,44 @@ var leffertsBuilding = function() {
       console.log(lefferts[7]);
     } else if (i < 10) {
       console.log(lefferts[8]);
+    } else {
+      console.log(' ');
+    }
+  }
+}
+
+var valentineBuilding = function() {
+  var valentine = ['                     __||||||_________________||||||__',
+  '/////////||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\\\\\\\\\\',
+  ' |       [    ]       [    ]       [    ]       [    ]       [    ]    |',
+  ' |                                 //  \\                               |',
+  ' |       [    ]       [    ]     //      \\     [    ]       [    ]     |',
+  ' |       [    ]       [    ]    || [   ] ||    [    ]       [    ]     |',
+  '  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =',
+  '________________________________________________________________________',
+  '||_||_||_||_||_||_||_||_||_||_||_||______||_||_||_||_||_||_||_||_||_||_||']
+  
+  for (var i = 0; i < 13; i++) {
+    if (i < 1) {
+      console.log(valentine[0]);
+    } else if (i < 3) {
+      console.log(valentine[1]);
+    } else if (i < 5) {
+      console.log(valentine[2]);
+    } else if (i < 6) {
+      console.log(valentine[3]);
+    } else if (i < 7) {
+      console.log(valentine[4]);
+    } else if (i < 9) {
+      console.log(valentine[5]);
+    } else if (i < 10) {
+      console.log(valentine[6]);
+    } else if (i < 11) {
+      console.log(valentine[7]);
+    } else if (i < 12) {
+      console.log(valentine[8]);
+    } else {
+      console.log(' ');
     }
   }
 }
@@ -147,6 +185,22 @@ $('.buttonLefferts').click(function() {
   } else {
     $('.buttonLefferts').css('background-color', '#FDFF93');
     $('.infoLefferts').hide();
+    clicked = false;
+  }
+});
+
+$('.infoValentine').hide();
+
+$('.buttonValentine').click(function() {
+  if (clicked == false) {
+    $('.buttonValentine').click(valentineBuilding());
+    $('.buttonValentine').css('background-color', 'yellow');
+    $('.infoValentine').show();
+    
+    clicked = true;
+  } else {
+    $('.buttonValentine').css('background-color', '#FDFF93');
+    $('.infoValentine').hide();
     clicked = false;
   }
 });
