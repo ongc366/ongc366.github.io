@@ -29,7 +29,7 @@ a:hover {
   margin: 0;
   padding: 0;
   display: inline-block;
-  transition: 0.5s ease-in-out;
+  transition: 0.75s ease-in-out;
 }
 
 .intro {
@@ -38,15 +38,15 @@ a:hover {
 }
 
 .contact {
-  margin: 15px;
+  margin: 30px;
   padding: 0;
-  width: 45%;
+  width: 40%;
   font-family: helvetica, sans-serif;
   font-weight: lighter;
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 20px;
+  font-size: 28px;
   color: white;
 }
 
@@ -71,7 +71,12 @@ a:hover {
 
 .right {
   left: 50%;
-  margin-left: 6%;
+  margin-left: 4%;
+}
+
+.right em {
+  font-size: 30px;
+  letter-spacing: 2;
 }
 
 .number {
@@ -105,8 +110,4 @@ a:hover {
 
 .label:visited {
   color: black;
-}
-
-scpan {
-  font-size: 10px;
 }
