@@ -37,14 +37,35 @@ h2 {
 }
 
 h6 {
-    font-size: 9px;
+    font-size: 10px;
+    font-weight: lighter;
     font-family: arial, sans-serif;
     letter-spacing: 2;
     position: absolute;
     margin: 0;
     padding: 0;
-    left: 30px;
     display: none;
+    color: blue;
+}
+
+.status {
+    top: 250px;
+    left: 35%;
+}
+
+.purpose {
+    top: 443px;
+    left: 39%;
+}
+
+.scale {
+    top: 760px;
+    left: 33%;
+}
+
+.personality {
+    top: 948px;
+    left: 45%;
 }
 
 .build:hover {
@@ -65,8 +86,8 @@ h6 {
 /* alphabet styles */
 
 .build {
-    width: 93px;
-    height: 93px;
+    width: 94px;
+    height: 94px;
     margin: 15 0px;
     margin-right: 15px;
     display: inline-block;
@@ -75,6 +96,10 @@ h6 {
 .build:hover {
     background-color: yellow;
     transition: 0.5s ease;
+}
+
+.build:hover + h6 {
+    display: inline-block;
 }
 
 /* alphabet styles ---- END*/
@@ -86,13 +111,9 @@ h6 {
     border: 3px solid black;
 }
 
-.empty:hover + h6{
-    display: inline-block;
-}
-
 .horizontal {
     border-top: 3px solid black;
-    width: 93px;
+    width: 100%;
     position: absolute;
 }
 
@@ -110,43 +131,28 @@ h6 {
 
 /* EMPTY ---- END */
 
+/* OCCUPIED */
+
 .occupied {
     border: 3px solid black;
     position: relative;
 }
 
-.occupied:hover + h6{
-    display: inline-block;
-    left: 135px;
-}
+/* OCCUPIED ---- END */
+
+/* UNDER CONSTRUCTION */
 
 .underconstruction {
     border: 3px dashed black;
 }
 
-.underconstruction:hover + h6 {
-    display: inline-block;
-    left: 220px;
-}
+/* UNDER CONSTRUCTION ---- END */
 
-.community {
-    position: relative;
-    background-color: yellow;
-}
-
-.religious {
-    position: relative;
-    background-color: yellow;
-}
+/* RESIDENTIAL */
 
 .residential {
     border: 3px solid black;
     position: relative;
-}
-
-.residential:hover + h6 {
-    display: inline-block;
-    left: 15px;
 }
 
 .roof {
@@ -170,6 +176,8 @@ h6 {
     border-top: none;
 }
 
+/* RESIDENTIAL ---- END */
+
 .commercial {
     background-color: yellow;
 }
@@ -186,7 +194,17 @@ h6 {
     background-color: yellow;
 }
 
+.religious {
+    position: relative;
+    background-color: yellow;
+}
+
 .government {
+    background-color: yellow;
+}
+
+.community {
+    position: relative;
     background-color: yellow;
 }
 
