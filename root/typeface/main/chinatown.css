@@ -6,7 +6,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    width: 800px;
+    width: 600px;
     position: relative;
 }
 
@@ -28,12 +28,22 @@ h1 {
     border-bottom: solid 1px black;
 }
 
+h2 {
+    font-weight: lighter;
+    font-family: garamond, serif;
+    font-size: 16px;
+}
+
 h6 {
     font-size: 10px;
     font-family: arial, sans-serif;
     letter-spacing: 1;
     padding: 0;
-    margin: 15 0px;
+}
+
+.firstsentence {
+    font-style: italic;
+    font-size: 24px;
 }
 
 .bold {
@@ -48,36 +58,16 @@ h6 {
 }
 
 .build {
-    width: 50px;
-    height: 50px;
+    width: 97px;
+    height: 97px;
     margin: 15 0px;
     margin-right: 15px;
     display: inline-block;
 }
 
 .empty {
-    border: 3px solid black;
     position: relative;
-}
-
-.horizontalline {
-    position: absolute;
-    width: 50px;
-}
-
-.first {
-    transform: translateY(23px);
-    border-bottom: 3px solid black;
-}
-
-.second {
-    transform: translateY(8px);
-    border-bottom: 3px solid black;
-}
-
-.third {
-    transform: translateY(38px);
-    border-bottom: 3px solid black;
+    background-color: yellow;
 }
 
 .occupied {
@@ -90,30 +80,12 @@ h6 {
 
 .community {
     position: relative;
-}
-
-.circleone {
-    margin: 5px;
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    border-radius: 50%;
-    border: 3px solid black;
-}
-
-.circletwo {
-    margin: 5px;
-    position: absolute;
-    left: 14px;
-    top: 14px;
-    width: 21px;
-    height: 21px;
-    border-radius: 50%;
-    border: 3px solid black;    
+    background-color: yellow;
 }
 
 .religious {
     position: relative;
+    background-color: yellow;
 }
 
 .church {
@@ -133,4 +105,128 @@ h6 {
     top: 17px;
     border: 3px solid black;
     border-radius: 50%;
+}
+
+.residential {
+    background-color: yellow;
+}
+
+.commercial {
+    background-color: yellow;
+}
+
+.residentialcommercial {
+    background-color: yellow;
+}
+
+.residential {
+    background-color: yellow;
+}
+
+.legal {
+    background-color: yellow;
+}
+
+.industrial {
+    background-color: yellow;
+}
+
+.government {
+    background-color: yellow;
+}
+
+.supply {
+    background-color: yellow;
+}
+
+.service {
+    background-color: yellow;
+}
+
+.retail {
+    background-color: yellow;
+}
+
+.manufacturing {
+    background-color: yellow;
+}
+
+.medical {
+    background-color: yellow;
+}
+
+.recreational {
+    background-color: yellow;
+}
+
+.educating {
+    background-color: yellow;
+}
+
+.advising {
+    background-color: yellow;
+}
+
+.dining {
+    background-color: yellow;
+}
+
+.entertaining {
+    background-color: yellow;
+}
+
+.grocery {
+    background-color: yellow;
+}
+
+.grooming {
+    background-color: yellow;
+}
+
+.cleaning {
+    background-color: yellow;
+}
+
+.promoting {
+    background-color: yellow;
+}
+
+.construction {
+    background-color: yellow;
+}
+
+.repair {
+    background-color: yellow;
+}
+
+.novelty {
+    background-color: yellow;
+}
+
+.clothing {
+    background-color: yellow;
+}
+
+.looking {
+    background-color: yellow;
+}
+
+.hosting {
+    background-color: yellow;
+}
+
+.resting {
+    background-color: yellow;
+}
+
+.living {
+    background-color: yellow;
+}
+
+.health {
+    background-color: yellow;
+}
+
+.transporting {
+    background-color: yellow;
 }
