@@ -49,17 +49,17 @@ h6 {
 }
 
 .status {
-    top: 250px;
+    top: 252px;
     left: 35%;
 }
 
 .purpose {
-    top: 443px;
+    top: 445px;
     left: 39%;
 }
 
 .scale {
-    top: 760px;
+    top: 767px;
     left: 33%;
 }
 
@@ -276,27 +276,30 @@ h6 {
 
 .chimney {
     position: absolute;
-    width: 15px;
-    left: 64px;
+    width: 16px;
+    left: 63px;
     border-left: none;
 }
 
 .industrialbase {
+    position: absolute;
     height: 32px;
     top: 47px;
     border-top: none;
 }
 
 .shingle {
+    position: absolute;
     height: 33px;
-    width: 30px;
-    left: 31px;
+    width: 32px;
+    left: 29px;
     border-left: none;
     border-top: none;
 }
 
 .wall {
-    height: 18px;
+    position: absolute;
+    height: 16px;
     top: 30px;
     left: -35px;
     border-top: none;
@@ -305,6 +308,7 @@ h6 {
 }
 
 .leftshingle {
+    position: absolute;
    width: 26px;
    height: 24px;
    left: -2px;
@@ -387,22 +391,135 @@ h6 {
 
 /* COMMUNITY ---- END */
 
+/* SUPPLY */
+
 .supply {
-    background-color: yellow;
-    
+    position: relative;
+    border: solid 3px black;
 }
+
+.crossone {
+    position: absolute;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    top: 22px;
+    left: 36px;
+    height: 95px;
+    transform: rotate(45deg);
+}
+
+.crosstwo {
+    position: absolute;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    top: -23px;
+    left: 36px;
+    height: 95px;
+    transform: rotate(-45deg);
+}
+
+/* SUPPLY ---- END */
+
+/* SERVICE */
 
 .service {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+.halfcircle {
+    position: absolute;
+     height: 29px;
+     width: 62px;
+     top: 47px;
+     left: 13px;
+     border-radius: 35px 35px 0 0;
+     border: solid 3px black;
+}
+
+/* SERVICE ---- END */
+
+/* RETAIL */
 
 .retail {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
 
-.manufacturing {
-    background-color: yellow;
+.leftbag {
+    top: 31px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
 }
+
+.rightbag {
+    top: 31px;
+    position: absolute;
+    width: 16px;
+    height: 45px;
+    left: 60px;
+}
+
+.handle {
+    position: absolute;
+     height: 16px;
+     width: 26px;
+     top: 12px;
+     left: 30px;
+     border-radius: 35px 35px 0 0;
+     border: solid 3px black;
+     border-bottom: none;
+}
+
+/* RETAIL ---- END */
+
+/* MANUFACTURING */
+
+.manufacturing {
+    position: relative;
+    border: solid 3px black;
+}
+
+.rollOne {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    left: 61px;
+}
+
+.rollTwo {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    left: 12px;
+   border-radius: 15px 0 0 0;
+   border-right: none;
+   border-bottom: none;
+}
+
+.roll {
+    position: absolute;
+    width: 47px;
+    top: 26px;
+    height: 52px;
+    border-top: none;
+}
+
+.rolltop {
+    position: absolute;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 44px;
+    left: 25px;
+}
+
+/* MANUFACTURING ---- END */
 
 .medical {
     background-color: yellow;
