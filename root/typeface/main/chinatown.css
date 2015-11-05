@@ -64,7 +64,7 @@ h6 {
 }
 
 .personality {
-    top: 948px;
+    top: 960px;
     left: 45%;
 }
 
@@ -521,29 +521,192 @@ h6 {
 
 /* MANUFACTURING ---- END */
 
+/* MEDICAL */
+
 .medical {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+.medicOne {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 33px;
+    border-bottom: none;
+}
+
+.leftcross {
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 22px;
+    top: 35px;
+    left: 9px;
+}
+
+.rightcross {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 22px;
+    top: 35px;
+    left: 57px;
+}
+
+.bottomcross {
+    position: absolute;
+    top: 58px;
+    left: 33px;
+    transform: rotate(180deg);
+}
+
+/* MEDICAL ---- END */
+
+/* RECREATIONAL */
 
 .recreational {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+.ladderTop {
+    left: 12px;
+}
+
+.ladderOne {
+    border: solid 3px black;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    top: 27px;
+    height: 55px;
+}
+
+.ladderTwo {
+    left: 41px;
+}
+
+.barOne {
+    border: solid 3px black;
+    width: 29px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    top: 35px;
+}
+
+.barTwo {
+   top: 60px;
+}
+
+.slide {
+    border: solid 3px black; 
+    width: 38px;
+    height: 38px;
+    border-radius: 50px 0 0 0;
+    transform: rotate(-90deg);
+    border-bottom: none;
+    left: 41px;
+    top: 40px;
+    border-right: none;
+}
+
+/* RECREATIONAL ---- END */
+
+/* EDUCATING */
 
 .educating {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+.leftcorner {
+    transform: rotate(57deg);
+    height: 42px;
+    left: 47px;
+    top: 32px;
+}
+
+.bottomOne {
+    top: 77px;
+}
+
+.rightcorner {
+    transform: rotate(-57deg);
+    top: -22px;
+    left: 14px;
+    height: 43px;
+}
+
+.bottomTwo {
+    top: 23px;
+}
+
+.dividepage {
+    left: 45px;
+    top: 15px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* EDUCATING ---- END */
+
+/* ADVISING */
 
 .advising {
+    position: relative;
+    border: solid 3px black;
+}
+
+.rayOne {
+    height: 35px;
+    border-radius: 50px 50px 0 0;
+    border-bottom: none;
+}
+
+.rayTwo {
+    width: 30px;
+    top: 30px;
+    left: 29px;
+    height: 15px;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none
+}
+
+.rayThree {
+    width: 12px;
+    top: 50px;
+    left: 38px;
+    height: 7px;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none
+}
+
+.ray {
+    width: 10px;
+    height: 10px;
+    left: 39px;
+    top: 66px;
+}
+
+/* ADVISING ---- END */
+
+/* DINING */
+
+.dining {
+    position: relative;
     background-color: yellow;
 }
 
-.dining {
-    background-color: yellow;
-}
+/* DINING ---- END */
+
+/* ENTERTAINING */
 
 .entertaining {
     background-color: yellow;
 }
+
+/* ENTERTAINING ---- END */
 
 .grocery {
     background-color: yellow;
