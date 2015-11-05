@@ -696,6 +696,7 @@ h6 {
 .dining {
     position: relative;
     background-color: yellow;
+    border: solid 3px black;
 }
 
 /* DINING ---- END */
@@ -703,63 +704,349 @@ h6 {
 /* ENTERTAINING */
 
 .entertaining {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
+}
+
+.cup {
+    width: 47px;
+    height: 47px;
+    top: -10px;
+    left: 22px;
+    transform: rotate(-135deg);
+}
+
+.cuptop {
+    width: 70px;
+    border-left: none;
+    border-right: none;
+}
+
+.glassstem {
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    left: 45px;
+    height: 33px;
+    top: 47px;
 }
 
 /* ENTERTAINING ---- END */
 
+/* GROCERY */
+
 .grocery {
+    position: relative;
     background-color: yellow;
+    border: solid 3px black;
 }
+
+/* GROCERY ---- END */
+
+/* GROOMING */
 
 .grooming {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+.brushstem {
+    border-right: none;
+    border-radius: 20px 0  0 20px;
+}
+
+.bristleone {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    top: 45px;
+    left: 39px;
+    width: 40px;
+}
+
+.bristletwo {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    left: 39px;
+    top: 28px;
+    width: 40px;
+}
+
+.bristlethree {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    left: 39px;
+    top: 62px;
+    width: 40px;
+}
+
+/* GROOMING ---- END */
+
+/* CLEANING */
 
 .cleaning {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
 
-.promoting {
-    background-color: yellow;
+.brushpole {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    left: 45px;
+    height: 30px;
 }
+
+.brushbase {
+    top: 40px;
+    height: 20px;
+}
+
+.brushone {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    top: 62px;
+    height: 20px;
+}
+
+.brushtwo {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    top: 62px;
+    left: 79px;
+    height: 20px;
+}
+
+.brushthree {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    top: 64px;
+    left: 45px;
+    height: 18px;
+}
+
+.brushfour {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    top: 64px;
+    left: 28px;
+    height: 18px;
+}
+
+.brushfive {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    top: 64px;
+    left: 62px;
+    height: 18px;
+}
+
+/* CLEANING ---- END */
+
+/* PROMOTING */
+
+.promoting {
+    border: solid 3px black;
+    position: relative;
+}
+
+.ticket {
+    border-bottom: none;
+    width: 65px;
+    height: 68px;
+}
+
+.tearone {
+    top: 68px;
+    left: 18px;
+    width: 23px;
+    height: 23px;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+}
+
+.teartwo {
+    top: 68px;
+    left: 51px;
+    width: 23px;
+    height: 23px;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+}
+
+/* PROMOTING ---- END */
+
+/* CONSTRUCTION */
 
 .construction {
     background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+/* CONSTRUCTION ---- END */
 
 .repair {
     background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
 
+/* NOVELTY */
+
 .novelty {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+.ribbonleft {
+    left: 12px;
+    top: 18px;
+}
+
+.ribbonright {
+    left: 46px;
+    top: 18px;
+}
+
+.endribbonleft {
+    width: 30px;
+    height: 40px;
+    top: 33px;
+    left: 46px;
+    border-radius: 0 0 0 30px;
+    border-top: none;
+    border-right: none;
+}
+
+.endribbonright {
+    width: 30px;
+    height: 40px;
+    top: 33px;
+    left: 15px;
+    border-top: none;
+    border-left: none;
+    border-radius: 0 0 30px 0;
+}
+
+/* NOVELTY ---- END */
 
 .clothing {
     background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
 
+/* LOOKING */
+
 .looking {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+.frame {
+    width: 30px;
+    height: 30px;
+    top: 29px;
+    left: 29px;
+}
+
+/* LOOKING ---- END */
 
 .hosting {
     background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
 
 .resting {
     background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
 
+/* LIVING */
+
 .living {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+.cord {
+    border-radius: 0 0 50px 50px;
+    top: 36px;
+    height: 40px;
+}
+
+.socketone {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    height: 25px;
+    left: 25px;
+}
+
+.sockettwo {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    height: 25px;
+    left: 66px;
+}
+
+/* LIVING ---- END */
 
 .health {
     background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
 
+/* TRANSPORTING */
+
 .transporting {
-    background-color: yellow;
+    position: relative;
+    border: solid 3px black;
 }
+
+.carone {
+    height: 45px;
+    width: 48px;
+    border-right: none;
+}
+
+.cartwo {
+    height: 25px;
+    width: 16px;
+    top: 32px;
+    left: 63px;
+    border-left: none;
+}
+
+.carthree {
+    height: 23px;
+    width: 26px;
+    left: 60px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.wheelone {
+    left: 12px;
+}
+
+.wheeltwo {
+    left: 66px;
+}
+
+/* TRANSPORTING ---- END */
