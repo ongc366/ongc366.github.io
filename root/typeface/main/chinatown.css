@@ -962,17 +962,44 @@ h6 {
 
 /* LOOKING ---- END */
 
+/* HOSTING */
+
 .hosting {
-    background-color: yellow;
     position: relative;
     border: solid 3px black;
 }
 
+.personone {
+    position: absolute;
+    left: 15px;
+    top: 19px;
+}
+
+.persontwo {
+    position: absolute;
+    left: -17px;
+    top: -15px;
+}
+
+/* HOSTING ---- END */
+
+/* RESTING */
+
 .resting {
-    background-color: yellow;
     position: relative;
     border: solid 3px black;
 }
+
+.head {
+    top: 27px;
+}
+
+.shoulder {
+    top: 42px;
+    border-bottom: solid 3px black;
+}
+
+/* RESTING ---- END */
 
 /* LIVING */
 
@@ -1005,11 +1032,15 @@ h6 {
 
 /* LIVING ---- END */
 
+/* HEALTH */
+
 .health {
     background-color: yellow;
     position: relative;
     border: solid 3px black;
 }
+
+/* HEALTH ---- END */
 
 /* TRANSPORTING */
 
