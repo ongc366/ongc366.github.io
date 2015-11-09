@@ -18,9 +18,39 @@ body {
 }
 
 .group {
-    margin: 0 0 15 0px;
-    border: solid 1px black;
+    margin: 0 0 45 0px;
+    border-top: dotted 1px black;
+    border-bottom: dotted 1px black;
     transition: 0.25s ease-in-out;
+}
+
+h1 {
+    margin: 15px 0;
+    padding: 0;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'antic slab', sans-serif;
+}
+
+h2 {
+    margin: 15px 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: lighter;
+    font-family: 'antic slab', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2;
+}
+
+h6 {
+    margin: 15px 0 0 15px;
+    padding: 0;
+    display: inline-block;
+    font-weight: lighter;
+    font-family: arial, serif;
+    letter-spacing: 1;
+    font-size: 10px;
 }
 
 /* alphabet styles */
@@ -39,6 +69,12 @@ body {
     position: relative;
     width: 94px;
     height: 94px;
+    cursor: none;
+}
+
+.build:hover {
+    margin-bottom: 13px;
+    background-color: yellow;
 }
 
 .inner {
@@ -127,7 +163,7 @@ body {
     top: 42px;
 }
 
-.coin {
+.circle {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -300,4 +336,496 @@ body {
     border-bottom: none;
     width: 45px;
     left: 25px;
+}
+
+/* building scale end */
+
+/* building personality */
+
+.medicalCross {
+    width: 20px;
+    height: 20px;
+    left: 34px;
+    position: absolute;
+    border-bottom: none;
+}
+
+.crossBottom {
+    transform: rotate(180deg);
+    top: 59px;
+}
+
+.crossRight {
+    transform: rotate(90deg);
+    width: 21px;
+    height: 22px;
+    top: 35px;
+    left: 56px;
+}
+
+.crossLeft {
+    transform: rotate(-90deg);
+    left: 11px;
+}
+
+.railTop {
+    left: 12px;
+    width: 23px;
+    height: 67px;
+}
+
+.step {
+    width: 27px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    top: 35px;
+}
+
+.stepBottom {
+   top: 60px;
+}
+
+.slide {
+    border-bottom: none;
+    border-right: none;
+    width: 39px;
+    height: 39px;
+    border-radius: 50px 0 0 0;
+    transform: rotate(-90deg);
+    left: 38px;
+    top: 39px;
+}
+
+.page {
+    height: 52px;
+    width: 32px;
+    top: 18px;
+}
+
+.leftPage {
+    border-right: none;
+    transform: skewY(20deg);
+}
+
+.rightPage {
+    border-left: none;
+    transform: skewY(-20deg);
+    left: 47px;
+}
+
+.dividePage {
+    height: 55px;
+    top: 25px;
+    left: 45px;
+}
+
+.wave {
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+}
+
+.firstWave {
+    height: 35px;
+    border-radius: 50px 50px 0 0;
+}
+
+.secondWave {
+    width: 30px;
+    top: 30px;
+    left: 29px;
+    height: 15px;
+}
+
+.thirdWave {
+    width: 12px;
+    top: 50px;
+    left: 38px;
+    height: 7px;
+}
+
+.voice {
+    width: 10px;
+    height: 10px;
+    left: 39px;
+    top: 66px;
+}
+
+.utensil {
+    height: 29px;
+    transform: rotate(180deg);
+}
+
+.utensilHandle {
+    top: 12px;
+    left: 25px;
+    height: 70px;
+}
+
+.spoon {
+    border-radius: 50px 50px 50px;
+    border: solid 3px black;
+    top: 10px;
+    left: 53px;
+    height: 27px;
+}
+
+.spoonHandle {
+    top: 40px;
+    left: 66px;
+    height: 42px;
+}
+
+.cup {
+    width: 46px;
+    height: 46px;
+    top: -10px;
+    left: 23px;
+    transform: rotate(-135deg);
+}
+
+.cupTop {
+    border-left: none;
+    border-right: none;
+    left: 13px;
+    width: 69px;
+}
+
+.glassstem {
+    left: 46px;
+    height: 33px;
+    top: 47px;
+}
+
+.groceryCartBody {
+    border-left: none;
+    top: 23px;
+    left: 30px;
+    width: 42px;
+    height: 32px;
+    transform: skewX(-20deg);
+}
+
+.groceryCartHandle {
+    border-left: none;
+    border-bottom: none;
+    height: 46px;
+    width: 10px;
+}
+
+.brush {
+    border-right: none;
+    border-radius: 20px 0  0 20px;
+    width: 38px;
+    left: 25px;
+}
+
+.bristle {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 22px;
+    left: 44px;
+}
+
+.bristleTop {
+    top: 45px;
+}
+
+.bristleCenter {
+    top: 28px;
+}
+
+.bristleBottom {
+    top: 62px;
+}
+
+.brushpole {
+    left: 45px;
+    height: 30px;
+}
+
+.brushbase {
+    border-radius: 10px 10px 0 0;
+    top: 40px;
+    height: 20px;
+}
+
+.sweeperBristle {
+    top: 63px;
+    height: 20px;
+}
+
+.brushtwo {
+    left: 79px;
+}
+
+.brushthree {
+    left: 45px;
+}
+
+.brushfour {
+    left: 28px;
+}
+
+.brushfive {
+    left: 62px;
+}
+
+.ticket {
+    border-bottom: none;
+    width: 65px;
+    height: 68px;
+}
+
+.tear {
+   top: 68px; 
+   width: 23px;
+   height: 23px;
+   border-bottom: none;
+   border-right: none;
+   transform: rotate(45deg);
+}
+
+.tearone {
+    left: 18px;
+}
+
+.teartwo {
+    left: 51px;
+}
+
+.constructionBuilding {
+    border-bottom: none;
+}
+
+.doorway {
+    border-bottom: none;
+    top: 59px;
+    left: 38px;
+    width: 10px;
+    height: 20px;
+}
+
+.doorwayLeft {
+    top: 79px;
+    width: 28px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.doorwayRight {
+    left: 54px;
+}
+
+.screwTop {
+    left: 28px;
+    width: 30px;
+    height: 5px;
+}
+
+.screwStem {
+    border-top: none;
+    border-bottom: none;
+    left: 38px;
+    top: 21px;
+    width: 10px;
+    height: 53px;
+}
+
+.screwPoint {
+    border-top: none;
+    border-left: none;
+    top: 68px;
+    left: 40px;
+    width: 9px;
+    height: 9px;
+    transform: rotate(45deg);
+}
+
+.brick {
+    width: 12px;
+    height: 12px;
+    top: 12px;
+    left: 64px;
+}
+
+.ribbon {
+    left: 12px;
+    top: 18px;
+}
+
+.ribbonright {
+    left: 46px;
+}
+
+.endribbon {
+    width: 30px;
+    height: 40px;
+    top: 33px;
+    border-top: none;
+}
+
+.endribbonleft {
+    left: 46px;
+    border-radius: 0 0 0 30px;
+    border-right: none;
+}
+
+.endribbonright {
+    left: 15px;
+    border-left: none;
+    border-radius: 0 0 30px 0;
+}
+
+.shirtBottom {
+    border-top: none;
+    top: 49px;
+    left: 26px;
+    height: 30px;
+    width: 35px;
+}
+
+.shirtLeft {
+    border-right: none;
+    border-radius: 50px 0 0;
+    height: 34px;
+    width: 13px;
+}
+
+.shirtRight {
+    border-left: none;
+    border-radius: 0 50px 0 0;
+    height: 34px;
+    width: 13px;
+    left: 65px;
+}
+
+.shirtTopLeft {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    left: 25px;
+    width: 10px;
+}
+
+.shirtTopRight {
+    left: 58px;
+}
+
+.frame {
+    width: 30px;
+    height: 30px;
+    top: 29px;
+    left: 29px;
+}
+
+.head {
+    top: 28px;
+    left: 38px;
+    width: 13px;
+    height: 13px;
+}
+
+.shoulder {
+    top: 48px;
+    height: 13px;
+    border-radius: 20px 20px 0 0;
+}
+
+.personOneHead {
+    top: 11px;
+    left: 21px;
+}
+
+.personOneShoulder {
+    top: 31px;
+    left: 12px;
+}
+
+.personTwoHead {
+    top: 42px;
+    left: 54px;
+}
+
+.personTwoShoulder {
+    top: 62px;
+    left: 46px;
+}
+
+.cord {
+    border-radius: 0 0 50px 50px;
+    top: 36px;
+    left: 20px;
+    width: 49px;
+    height: 40px;
+}
+
+.socketone {
+    height: 25px;
+    left: 30px;
+}
+
+.sockettwo {
+    height: 25px;
+    left: 62px;
+}
+
+.transporting {
+    position: relative;
+    border: solid 3px black;
+}
+
+.carone {
+    height: 45px;
+    width: 48px;
+    border-right: none;
+}
+
+.cartwo {
+    height: 25px;
+    width: 16px;
+    top: 32px;
+    left: 63px;
+    border-left: none;
+}
+
+.carthree {
+    height: 23px;
+    width: 26px;
+    left: 60px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.wheel {
+    top: 66px;
+    height: 10px;
+    width: 10px;
+}
+
+.leftwheel {
+    left: 12px;
+}
+
+.rightwheel {
+    left: 66px;
+}
+
+.groceryLeft {
+    left: 15px;
+}
+
+.groceryRight {
+    left: 55px;
+}
+
+.shirtTop {
+    border-bottom: none;
+    top: 12px;
+    left: 34px;
+    width: 18px;
+    transform: rotate(180deg);
 }
