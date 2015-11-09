@@ -19,8 +19,8 @@ body {
 
 .group {
     margin: 0 0 45 0px;
+    padding: 15px 0px;
     border-top: dotted 1px black;
-    border-bottom: dotted 1px black;
     transition: 0.25s ease-in-out;
 }
 
@@ -44,13 +44,20 @@ h2 {
 }
 
 h6 {
-    margin: 15px 0 0 15px;
+    margin-right: 15px;
     padding: 0;
     display: inline-block;
     font-weight: lighter;
     font-family: arial, serif;
     letter-spacing: 1;
     font-size: 10px;
+}
+
+.label {
+    font-size: 8px;
+    position: absolute;
+    display: none;
+    top: 85px;
 }
 
 /* alphabet styles */
@@ -73,8 +80,11 @@ h6 {
 }
 
 .build:hover {
-    margin-bottom: 13px;
     background-color: yellow;
+}
+
+.build:hover h6 {
+    display: inline-block;
 }
 
 .inner {
