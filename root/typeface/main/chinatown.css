@@ -6,6 +6,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
+    padding: 0;
     width: 600px;
     position: relative;
 }
@@ -16,156 +17,65 @@ body {
     display: inline-block;
 }
 
-/* non-alphabet styles*/
-
-h1 {
-    margin: 0;
-    margin-bottom: 15px;
-    padding: 0;
-    padding-bottom: 5px;
-    font-size: 24px;
-    letter-spacing: 2;
-    font-family: garamond, serif;
-    font-weight: lighter;
-    border-bottom: solid 1px black;
+.group {
+    margin: 0 0 15 0px;
+    border: solid 1px black;
+    transition: 0.25s ease-in-out;
 }
-
-h2 {
-    font-weight: lighter;
-    font-family: garamond, serif;
-    font-size: 16px;
-}
-
-h6 {
-    font-size: 10px;
-    font-weight: lighter;
-    font-family: arial, sans-serif;
-    letter-spacing: 2;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    display: none;
-    color: blue;
-}
-
-.status {
-    top: 252px;
-    left: 35%;
-}
-
-.purpose {
-    top: 445px;
-    left: 39%;
-}
-
-.scale {
-    top: 767px;
-    left: 33%;
-}
-
-.personality {
-    top: 960px;
-    left: 45%;
-}
-
-.build:hover {
-    cursor: none;
-}
-
-.firstsentence {
-    font-style: italic;
-    font-size: 24px;
-}
-
-.next {
-    margin-top: 15px;
-}
-
-/* non-alphabet styles ---- END*/
 
 /* alphabet styles */
 
-.build {
-    width: 94px;
-    height: 94px;
-    margin: 15 0px;
-    margin-right: 30px;
-    display: inline-block;
-}
-
-.build:hover {
-    background-color: yellow;
-    transition: 0.5s ease;
-}
-
-.build:hover + h6 {
-    display: inline-block;
-}
-
-/* alphabet styles ---- END*/
-
-/* EMPTY */
-
-.empty {
-    position: relative;
+.solidBlack {
     border: 3px solid black;
 }
 
-.horizontal {
+.dashedBlack {
+    border: 3px dashed black;
+}
+
+.build {
+    margin: 15px;
+    display: inline-block;
+    position: relative;
+    width: 94px;
+    height: 94px;
+}
+
+.inner {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 64px;
+    height: 64px;
+}
+
+/* alphabet styles end */
+
+/* building status */
+
+.horizontalLine {
     border-top: 3px solid black;
     width: 100%;
     position: absolute;
 }
 
-.center {
-    top: 50%;
+.centerLine {
+    top: 47px;
 }
 
-.top {
-    top: 25%;
+.topLine {
+    top: 22px;
 }
 
-.bottom {
-    top: 75%;
+.bottomLine {
+    top: 72px;
 }
 
-/* EMPTY ---- END */
+/* building status end */
 
-/* OCCUPIED */
-
-.occupied {
-    border: 3px solid black;
-    position: relative;
-}
-
-/* OCCUPIED ---- END */
-
-/* UNDER CONSTRUCTION */
-
-.underconstruction {
-    border: 3px dashed black;
-}
-
-/* UNDER CONSTRUCTION ---- END */
-
-/* RESIDENTIAL */
-
-.residential {
-    border: 3px solid black;
-    position: relative;
-}
-
-.box {
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    top: 12px;
-    left: 12px;
-    border: solid 3px black;
-}
+/* building purpose */
 
 .roof {
-    border: solid 3px black;
     border-right: none;
     border-bottom: none;
     width: 40px;
@@ -175,89 +85,50 @@ h6 {
     top: 22px;
 }
 
-.housebase {
-    border: solid 3px black;
-    z-index: 1;
+.base {
     height: 25px;
     top: 51px;
 }
-/* RESIDENTIAL ---- END */
-
-/* COMMERCIAL */
-
-.commercial {
-    position: relative;
-    border: 3px solid black;
-}
 
 .leftbuilding {
-    position: absolute;
-    border: 3px solid black;
     width: 30px;
     height: 64px;
-    z-index: 1;
 }
 
 .rightbuilding {
-    position: absolute;
-    border: 3px solid black;
-    width: 31px;
+    border-left: none;
+    width: 32px;
     height: 34px;
     top: 42px;
-    left: 45px;
-    z-index: 1;
+    left: 47px;
 }
 
-/* COMMERCIAL ---- END */
-
-/* RESIDENTIAL COMMERCIAL */
-
-.residentialcommercial {
-    position: relative;
-    border: 3px solid black;
-}
-
-.comboOne {
+.leftComboHeight {
     height: 38px;
     top: 38px;
 }
 
-.comboTwo {
+.rightComboHeight {
     height: 14px;
     top: 62px;
 }
 
-.comboThree {
+.leftComboRoof {
     width: 22px;
     height: 22px;
     left: 17px;
     top: 17px;
 }
 
-.comboFour {
+.rightComboRoof {
     width: 18px;
     height: 18px;
-    left: 53px;
+    left: 54px;
     top: 42px;
-}
-
-/* RESIDENTIAL COMMERCIAL ---- END */
-
-/* LEGAL */
-
-.legal {
-    position: relative;
-    border: 3px solid black;
-}
-
-.wallet {
-    height: 30px;
-    top: 46px;
 }
 
 .coin {
     position: absolute;
-    border: 3px solid black;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -265,100 +136,55 @@ h6 {
     top: 13px;
 }
 
-/* LEGAL ---- END */
-
-/* INDUSTRIAL */
-
-.industrial {
-    position: relative;
-    border: 3px solid black;
-}
-
 .chimney {
-    position: absolute;
     width: 16px;
+    height: 66px;
     left: 63px;
     border-left: none;
+    border-bottom: none;
 }
 
-.industrialbase {
-    position: absolute;
-    height: 32px;
-    top: 47px;
+.factory {
+    height: 15px;
+    left: 14px;
+    top: 63px;
     border-top: none;
+    border-right: none;
 }
 
-.shingle {
-    position: absolute;
-    height: 33px;
+.factoryRoof {
+    height: 36px;
     width: 32px;
     left: 29px;
     border-left: none;
     border-top: none;
 }
 
-.wall {
-    position: absolute;
-    height: 16px;
-    top: 30px;
-    left: -35px;
-    border-top: none;
-    border-left: none;
-    border-bottom: none;
-}
-
-.leftshingle {
-    position: absolute;
-   width: 26px;
-   height: 24px;
-   left: -2px;
-   top: 18.5px;
-    border-top: none;
+.shingle {
+   height: 35px;
+   left: -33px;
+   top: 15px;
+   border-top: none;
     border-left: none;
     border-bottom: none;
     transform: rotate(45deg);
 }
 
-/* INDUSTRIAL ---- END */
-
-/* RELIGIOUS */
-
-.religious {
-    position: relative;
-    border: 3px solid black;
-}
-
-.centercircle {
-    position: absolute;
-    border: 3px solid black;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+.centered {
     left: 29px;
     top: 29px;
 }
 
-/* RELIGIOUS ---- END */
-
-/* GOVERNMENT */
-
-.government {
-    position: relative;
-    border: 3px solid black;
-}
-
 .pedestal {
+    border-bottom: none;
     width: 30px;
     height: 10px;
     left: 29px;
-    top: 33px;
+    top: 39px;
 }
 
 .pole {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    height: 23px;
+    height: 28px;
     left: 45px;
 }
 
@@ -368,716 +194,110 @@ h6 {
     left: 45px;
 }
 
-/* GOVERNMENT ---- END */
-
-/* COMMUNITY */
-
-.community {
-    position: relative;
-    border: 3px solid black;
-}
-
 .communitycircleone {
-    position: absolute;
     top: 20px;
     left: 20px;
 }
 
 .communitycircletwo {
-    position: absolute;
     top: 38px;
     left: 38px;
 }
 
-/* COMMUNITY ---- END */
+/* building purpose end */
 
-/* SUPPLY */
+/* building scale */
 
-.supply {
-    position: relative;
-    border: solid 3px black;
-}
-
-.crossone {
-    position: absolute;
+.verticalLine {
     border-top: none;
     border-right: none;
-    border-bottom: none;
-    top: 22px;
+    border-bottom: none; 
+}
+
+.cross {
+    height: 94px;
     left: 36px;
-    height: 95px;
+}
+
+.rightToLeft {
+    top: 22px;
     transform: rotate(45deg);
 }
 
-.crosstwo {
-    position: absolute;
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
+.leftToRight {
     top: -23px;
-    left: 36px;
-    height: 95px;
     transform: rotate(-45deg);
-}
-
-/* SUPPLY ---- END */
-
-/* SERVICE */
-
-.service {
-    position: relative;
-    border: solid 3px black;
 }
 
 .halfcircle {
     position: absolute;
-     height: 29px;
-     width: 62px;
-     top: 47px;
-     left: 13px;
-     border-radius: 35px 35px 0 0;
-     border: solid 3px black;
+    height: 27px;
+    top: 50px;
+    border-radius: 35px 35px 0 0;
 }
 
-/* SERVICE ---- END */
-
-/* RETAIL */
-
-.retail {
-    position: relative;
-    border: solid 3px black;
-}
-
-.leftbag {
+.bag {
+    height: 45px;
     top: 31px;
     position: absolute;
+}
+
+.leftSideBag {
     width: 45px;
-    height: 45px;
+    border-right: none;
 }
 
-.rightbag {
-    top: 31px;
-    position: absolute;
-    width: 16px;
-    height: 45px;
-    left: 60px;
+.rightSideBag {
+    width: 17px;
+    left: 59px;
 }
 
 .handle {
-    position: absolute;
-     height: 16px;
-     width: 26px;
-     top: 12px;
-     left: 30px;
-     border-radius: 35px 35px 0 0;
-     border: solid 3px black;
-     border-bottom: none;
-}
-
-/* RETAIL ---- END */
-
-/* MANUFACTURING */
-
-.manufacturing {
-    position: relative;
-    border: solid 3px black;
-}
-
-.rollOne {
-    position: absolute;
-    width: 15px;
-    height: 15px;
+    height: 17px;
+    width: 26px;
     top: 12px;
-    left: 61px;
+    left: 30px;
+    border-bottom: none;
 }
 
-.rollTwo {
-    position: absolute;
+.tube {
     width: 15px;
-    height: 15px;
+    height: 15px;  
     top: 12px;
+}
+
+.tubeRight {
+    left: 62px;
+}
+
+.tubeLeft {
     left: 12px;
    border-radius: 15px 0 0 0;
    border-right: none;
    border-bottom: none;
 }
 
-.roll {
-    position: absolute;
-    width: 47px;
-    top: 26px;
+.strip {
+    border-top: none;
+    border-left: none;
+}
+
+.leftSideStrip {
+    width: 0px;
+    top: 25px;
     height: 52px;
-    border-top: none;
 }
 
-.rolltop {
-    position: absolute;
+.rightSideStrip {
+    width: 50px;
+    top: 22px;
+    height: 56px;
+}
+
+.topSideStrip {
     border-left: none;
     border-right: none;
     border-bottom: none;
-    width: 44px;
+    width: 45px;
     left: 25px;
 }
-
-/* MANUFACTURING ---- END */
-
-/* MEDICAL */
-
-.medical {
-    position: relative;
-    border: solid 3px black;
-}
-
-.medicOne {
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    left: 33px;
-    border-bottom: none;
-}
-
-.leftcross {
-    position: absolute;
-    transform: rotate(-90deg);
-    width: 22px;
-    top: 35px;
-    left: 9px;
-}
-
-.rightcross {
-    position: absolute;
-    transform: rotate(90deg);
-    width: 22px;
-    top: 35px;
-    left: 57px;
-}
-
-.bottomcross {
-    position: absolute;
-    top: 58px;
-    left: 33px;
-    transform: rotate(180deg);
-}
-
-/* MEDICAL ---- END */
-
-/* RECREATIONAL */
-
-.recreational {
-    position: relative;
-    border: solid 3px black;
-}
-
-.ladderTop {
-    left: 12px;
-}
-
-.ladderOne {
-    border: solid 3px black;
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    top: 27px;
-    height: 55px;
-}
-
-.ladderTwo {
-    left: 41px;
-}
-
-.barOne {
-    border: solid 3px black;
-    width: 29px;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    top: 35px;
-}
-
-.barTwo {
-   top: 60px;
-}
-
-.slide {
-    border: solid 3px black; 
-    width: 38px;
-    height: 38px;
-    border-radius: 50px 0 0 0;
-    transform: rotate(-90deg);
-    border-bottom: none;
-    left: 41px;
-    top: 40px;
-    border-right: none;
-}
-
-/* RECREATIONAL ---- END */
-
-/* EDUCATING */
-
-.educating {
-    position: relative;
-    border: solid 3px black;
-}
-
-.leftcorner {
-    transform: rotate(57deg);
-    height: 42px;
-    left: 47px;
-    top: 32px;
-}
-
-.bottomOne {
-    top: 77px;
-}
-
-.rightcorner {
-    transform: rotate(-57deg);
-    top: -22px;
-    left: 14px;
-    height: 43px;
-}
-
-.bottomTwo {
-    top: 23px;
-}
-
-.dividepage {
-    left: 45px;
-    top: 15px;
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-}
-
-/* EDUCATING ---- END */
-
-/* ADVISING */
-
-.advising {
-    position: relative;
-    border: solid 3px black;
-}
-
-.rayOne {
-    height: 35px;
-    border-radius: 50px 50px 0 0;
-    border-bottom: none;
-}
-
-.rayTwo {
-    width: 30px;
-    top: 30px;
-    left: 29px;
-    height: 15px;
-    border-radius: 20px 20px 0 0;
-    border-bottom: none
-}
-
-.rayThree {
-    width: 12px;
-    top: 50px;
-    left: 38px;
-    height: 7px;
-    border-radius: 20px 20px 0 0;
-    border-bottom: none
-}
-
-.ray {
-    width: 10px;
-    height: 10px;
-    left: 39px;
-    top: 66px;
-}
-
-/* ADVISING ---- END */
-
-/* DINING */
-
-.dining {
-    position: relative;
-    background-color: yellow;
-    border: solid 3px black;
-}
-
-/* DINING ---- END */
-
-/* ENTERTAINING */
-
-.entertaining {
-    position: relative;
-    border: solid 3px black;
-}
-
-.cup {
-    width: 47px;
-    height: 47px;
-    top: -10px;
-    left: 22px;
-    transform: rotate(-135deg);
-}
-
-.cuptop {
-    width: 70px;
-    border-left: none;
-    border-right: none;
-}
-
-.glassstem {
-    border-right: none;
-    border-bottom: none;
-    border-top: none;
-    left: 45px;
-    height: 33px;
-    top: 47px;
-}
-
-/* ENTERTAINING ---- END */
-
-/* GROCERY */
-
-.grocery {
-    position: relative;
-    background-color: yellow;
-    border: solid 3px black;
-}
-
-/* GROCERY ---- END */
-
-/* GROOMING */
-
-.grooming {
-    position: relative;
-    border: solid 3px black;
-}
-
-.brushstem {
-    border-right: none;
-    border-radius: 20px 0  0 20px;
-}
-
-.bristleone {
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    top: 45px;
-    left: 39px;
-    width: 40px;
-}
-
-.bristletwo {
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    left: 39px;
-    top: 28px;
-    width: 40px;
-}
-
-.bristlethree {
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    left: 39px;
-    top: 62px;
-    width: 40px;
-}
-
-/* GROOMING ---- END */
-
-/* CLEANING */
-
-.cleaning {
-    position: relative;
-    border: solid 3px black;
-}
-
-.brushpole {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    left: 45px;
-    height: 30px;
-}
-
-.brushbase {
-    top: 40px;
-    height: 20px;
-}
-
-.brushone {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    top: 62px;
-    height: 20px;
-}
-
-.brushtwo {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    top: 62px;
-    left: 79px;
-    height: 20px;
-}
-
-.brushthree {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    top: 64px;
-    left: 45px;
-    height: 18px;
-}
-
-.brushfour {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    top: 64px;
-    left: 28px;
-    height: 18px;
-}
-
-.brushfive {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    top: 64px;
-    left: 62px;
-    height: 18px;
-}
-
-/* CLEANING ---- END */
-
-/* PROMOTING */
-
-.promoting {
-    border: solid 3px black;
-    position: relative;
-}
-
-.ticket {
-    border-bottom: none;
-    width: 65px;
-    height: 68px;
-}
-
-.tearone {
-    top: 68px;
-    left: 18px;
-    width: 23px;
-    height: 23px;
-    border-right: none;
-    border-bottom: none;
-    transform: rotate(45deg);
-}
-
-.teartwo {
-    top: 68px;
-    left: 51px;
-    width: 23px;
-    height: 23px;
-    border-right: none;
-    border-bottom: none;
-    transform: rotate(45deg);
-}
-
-/* PROMOTING ---- END */
-
-/* CONSTRUCTION */
-
-.construction {
-    background-color: yellow;
-    position: relative;
-    border: solid 3px black;
-}
-
-/* CONSTRUCTION ---- END */
-
-.repair {
-    background-color: yellow;
-    position: relative;
-    border: solid 3px black;
-}
-
-/* NOVELTY */
-
-.novelty {
-    position: relative;
-    border: solid 3px black;
-}
-
-.ribbonleft {
-    left: 12px;
-    top: 18px;
-}
-
-.ribbonright {
-    left: 46px;
-    top: 18px;
-}
-
-.endribbonleft {
-    width: 30px;
-    height: 40px;
-    top: 33px;
-    left: 46px;
-    border-radius: 0 0 0 30px;
-    border-top: none;
-    border-right: none;
-}
-
-.endribbonright {
-    width: 30px;
-    height: 40px;
-    top: 33px;
-    left: 15px;
-    border-top: none;
-    border-left: none;
-    border-radius: 0 0 30px 0;
-}
-
-/* NOVELTY ---- END */
-
-.clothing {
-    background-color: yellow;
-    position: relative;
-    border: solid 3px black;
-}
-
-/* LOOKING */
-
-.looking {
-    position: relative;
-    border: solid 3px black;
-}
-
-.frame {
-    width: 30px;
-    height: 30px;
-    top: 29px;
-    left: 29px;
-}
-
-/* LOOKING ---- END */
-
-/* HOSTING */
-
-.hosting {
-    position: relative;
-    border: solid 3px black;
-}
-
-.personone {
-    position: absolute;
-    left: 15px;
-    top: 19px;
-}
-
-.persontwo {
-    position: absolute;
-    left: -17px;
-    top: -15px;
-}
-
-/* HOSTING ---- END */
-
-/* RESTING */
-
-.resting {
-    position: relative;
-    border: solid 3px black;
-}
-
-.head {
-    top: 27px;
-}
-
-.shoulder {
-    top: 42px;
-    border-bottom: solid 3px black;
-}
-
-/* RESTING ---- END */
-
-/* LIVING */
-
-.living {
-    position: relative;
-    border: solid 3px black;
-}
-
-.cord {
-    border-radius: 0 0 50px 50px;
-    top: 36px;
-    height: 40px;
-}
-
-.socketone {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    height: 25px;
-    left: 25px;
-}
-
-.sockettwo {
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    height: 25px;
-    left: 66px;
-}
-
-/* LIVING ---- END */
-
-/* HEALTH */
-
-.health {
-    background-color: yellow;
-    position: relative;
-    border: solid 3px black;
-}
-
-/* HEALTH ---- END */
-
-/* TRANSPORTING */
-
-.transporting {
-    position: relative;
-    border: solid 3px black;
-}
-
-.carone {
-    height: 45px;
-    width: 48px;
-    border-right: none;
-}
-
-.cartwo {
-    height: 25px;
-    width: 16px;
-    top: 32px;
-    left: 63px;
-    border-left: none;
-}
-
-.carthree {
-    height: 23px;
-    width: 26px;
-    left: 60px;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-}
-
-.wheelone {
-    left: 12px;
-}
-
-.wheeltwo {
-    left: 66px;
-}
-
-/* TRANSPORTING ---- END */

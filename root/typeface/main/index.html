@@ -1,291 +1,256 @@
 <html>
     <head>
-        <title>Chinatown Alphabet</title>
+        <title>CSS Typeface</title>
         <link href="chinatown.css" rel="stylesheet" type="text/css" />
-    </head>
+</head>
     <body>
         <div class = 'wrapper'>
             <div class = 'content'>
-                <h2><scpan class = 'firstsentence'>From the sunday dim-sum rush to the habitual mah-jong game in
-                the park, New York's Chinatown is a place all its own.</scpan><br /><br /> To a portion
-                of the city's immigrant population, the area even seems like a home
-                away from home. However, with negotiations against new zoning
-                regulations gone awry, the exact definition of Chinatown seems
-                to be shifting. Ancient awnings of laundromats and construction
-                suppliers are being replaced with scaffolding and real estate advertisements
-                as interest piques on the area's potential in the market.
-                What then of the neighborhood pharmacy and of the neighborhood
-                99 cents store? <mark>In the effort to illustrate this shift, this alphabet will try to manifest as an illustration of the area and what might be an untold resiliency in maintaining Chinatown as a home rather than the latter.</mark></h2>
+                
+                <!-- Building Status -->
+                <div class = 'group buildingStatus'>
+                    
+                    <div class = 'build empty solidBlack'>
+                        <div class = 'horizontalLine centerLine'></div>
+                        <div class = 'horizontalLine topLine'></div>
+                        <div class = 'horizontalLine bottomLine'></div>
+                    </div>
+
+                    <div class = 'build occupied solidBlack'></div>
+
+                    <div class = 'build underconstruction dashedBlack'></div>
+                    
+                </div>
                 
                 
-                <h1>Building Status</h1>
                 
-                    <div class = 'build empty'>
-                        <div class = 'horizontal center'></div>
-                        <div class = 'horizontal top'></div>
-                        <div class = 'horizontal bottom'></div>
-                    </div>
-                        <h6 class = 'status'>_Empty</h6>
-                        
-                    <div class = 'build occupied'></div>
-                        <h6 class = 'status'>_Occupied</h6>
+                <!-- Building Purpose -->
+                <div class = 'group buildingPurpose'>
                     
-                    <div class = 'build underconstruction'></div>
-                        <h6 class = 'status'>_Under Construction</h6>
-                        
-                        
-                <h1 class = 'next'>Building Purpose</h1>
+                    
+                    <div class = 'build residential solidBlack'>
+                        <div class = 'inner roof solidBlack'></div>
+                        <div class = 'inner base solidBlack'></div>
+                    </div>
+
+                    <div class = 'build commercial solidBlack'>
+                        <div class = 'inner leftbuilding solidBlack'></div>
+                        <div class = 'inner rightbuilding solidBlack'></div>
+                    </div>
+
+                    <div class = 'build residentialcommercial solidBlack'>
+                        <div class = 'inner roof leftComboRoof solidBlack'></div>
+                        <div class = 'inner roof rightComboRoof solidBlack'></div>
+                        <div class = 'inner leftbuilding leftComboHeight solidBlack'></div>
+                        <div class = 'inner rightbuilding rightComboHeight solidBlack'></div>
+                    </div>
+
+                    <div class = 'build legal solidBlack'>
+                        <div class = 'inner base solidBlack'></div>
+                        <div class = 'inner coin solidBlack'></div>
+                    </div>
+
+                    <div class = 'build industrial solidBlack'>
+                        <div class = 'inner chimney solidBlack'></div>
+                        <div class = 'inner factoryRoof solidBlack'></div>
+                        <div class = 'inner base factory solidBlack'></div>
+                        <div class = ' inner shingle solidBlack'></div>
+                    </div>
+
+                    <div class = 'build religious solidBlack'>
+                        <div class = 'inner solidBlack'></div>
+                        <div class = 'coin centered solidBlack'></div>
+                    </div>
+
+                    <div class = 'build government solidBlack'>
+                        <div class = 'inner flag solidBlack'></div>
+                        <div class = 'inner verticalLine pole solidBlack'></div>
+                        <div class = 'inner pedestal solidBlack'></div>
+                        <div class = 'inner base solidBlack'></div>
+                    </div>
+
+                    <div class = 'build community solidBlack'>
+                        <div class = 'coin communitycircleone solidBlack'></div>
+                        <div class = 'coin communitycircletwo solidBlack'></div>
+                    </div>
+                    
+                    
+                </div>
                 
-                    <div class = 'build residential'>
-                        <div class = 'box roof'></div>
-                        <div class = 'box housebase'></div>
-                    </div>
-                        <h6 class = 'status purpose'>_Residential</h6>
-                        
-                    <div class = 'build commercial'>
-                        <div class = 'box leftbuilding'></div>
-                        <div class = 'box rightbuilding'></div>
-                    </div>
-                        <h6 class = 'status purpose'>_Commercial</h6>
-                        
-                    <div class = 'build residentialcommercial'>
-                        <div class = 'box roof comboThree'></div>
-                        <div class = 'box roof comboFour'></div>
-                        <div class = 'box leftbuilding comboOne'></div>
-                        <div class = 'box rightbuilding comboTwo'></div>
-                    </div>
-                        <h6 class = 'status purpose'>_Residential Commercial</h6>
-                        
-                    <div class = 'build legal'>
-                        <div class = 'box wallet'></div>
-                        <div class = 'coin'></div>
-                    </div>
-                        <h6 class = 'status purpose'>_Legal</h6>
-                        
-                    <div class = 'build industrial'>
-                        <div class = 'box chimney'></div>
-                        <div class = 'box shingle'></div>
-                        <div class = 'box industrialbase'></div>
-                        <div class = 'box wall'></div>
-                        <div class = ' box leftshingle'></div>
-                    </div>
-                        <h6 class = 'status purpose'>_Industrial</h6>
-                        
-                    <div class = 'build religious'>
-                        <div class = 'box'></div>
-                        <div class = 'centercircle'></div>
-                    </div>
-                        <h6 class = 'status purpose'>_Religious</h6>
-                        
-                    <div class = 'build government'>
-                        <div class = 'box flag'></div>
-                        <div class = 'box pole'></div>
-                        <div class = 'box pedestal'></div>
-                        <div class = 'box wallet'></div>
-                    </div>
-                        <h6 class = 'status purpose'>_Government</h6>
-                        
-                    <div class = 'build community'>
-                        <div class = 'centercircle communitycircleone'></div>
-                        <div class = 'centercircle communitycircletwo'></div>
-                    </div>
-                        <h6 class = 'status purpose'>_Community</h6>
-                        
-                        
-                <h1 class = 'next'>Building Scale</h1>
                 
-                    <div class = 'build supply'>
-                        <div class = 'box'></div>
-                        <div class = 'box crossone'></div>
-                        <div class = 'box crosstwo'></div>
+                <!-- BUILDING SCALE -->
+                <div class = 'group buildingScale'>
+                    <div class = 'build supply solidBlack'>
+                        <div class = 'inner solidBlack'></div>
+                        <div class = 'inner verticalLine cross rightToLeft solidBlack'></div>
+                        <div class = 'inner verticalLine cross leftToRight solidBlack'></div>
                     </div>
-                        <h6 class = 'status scale'>_Supply</h6>
-                    
-                    <div class = 'build service'>
-                        <div class = 'coin'></div>
-                        <div class = 'halfcircle'></div>
+
+                    <div class = 'build service solidBlack'>
+                        <div class = 'coin solidBlack'></div>
+                        <div class = 'inner halfcircle solidBlack'></div>
                     </div>
-                        <h6 class = 'status scale'>_Service</h6>
-                    
-                    <div class = 'build retail'>
-                        <div class = 'box leftbag'></div>
-                        <div class = 'box rightbag'></div>
-                        <div class = 'handle'></div>
+
+                    <div class = 'build retail solidBlack'>
+                        <div class = 'inner bag leftSideBag solidBlack'></div>
+                        <div class = 'inner bag rightSideBag solidBlack'></div>
+                        <div class = 'halfcircle handle solidBlack'></div>
                     </div>
-                        <h6 class = 'status scale'>_Retail</h6>
-                    
-                    <div class = 'build manufacturing'>
-                        <div class = 'centercircle rollOne'></div>
-                        <div class = 'centercircle rollTwo'></div>
-                        <div class = 'box roll'></div>
-                        <div class = 'box rolltop'></div>
+
+                    <div class = 'build manufacturing solidBlack'>
+                        <div class = 'coin centered tube tubeRight solidBlack'></div>
+                        <div class = 'coin centered tube tubeLeft solidBlack'></div>
+                        <div class = 'inner strip leftSideStrip solidBlack'></div>
+                        <div class = 'inner strip rightSideStrip solidBlack'></div>
+                        <div class = 'inner topSideStrip solidBlack'></div>
                     </div>
-                        <h6 class = 'status scale'>_Manufacturing</h6>
-                    
-                    
-                <h1 class = 'next'>Building Personality</h1>
+                </div>
                 
+                
+                
+                <div class = 'group'>
                     <div class = 'build medical'>
-                        <div class = 'box medicOne'></div>
-                        <div class = 'box medicOne rightcross'></div>
-                        <div class = 'box medicOne leftcross'></div>
-                        <div class = 'box medicOne bottomcross'></div>
+                        <div class = 'inner topCross'></div>
+                        <div class = 'inner topCross rightCross'></div>
+                        <div class = 'inner topCross leftCross'></div>
+                        <div class = 'inner topCross bottomCross'></div>
                     </div>
-                        <h6 class = 'status personality'>_Medical and Pharmaceutical</h6>
-                    
+
                     <div class = 'build recreational'>
-                        <div class = 'box handle ladderTop'></div>
-                        <div class = 'box ladderOne'></div>
-                        <div class = 'box ladderOne ladderTwo'></div>
-                        <div class = 'box barOne'></div>
-                        <div class = 'box barOne barTwo'></div>
-                        <div class = 'box slide'></div>
+                        <div class = 'inner handle ladderRailTop'></div>
+                        <div class = 'inner ladderStep'></div>
+                        <div class = 'inner ladderStep ladderStepTwo'></div>
+                        <div class = 'inner slide'></div>
                     </div>
-                        <h6 class = 'status personality'>_Recreational</h6>
-                    
+
                     <div class = 'build educating'>
-                        <div class = 'box dividepage'></div>
-                        <div class = 'box'></div>
+                        <div class = 'inner dividePage'></div>
+                        <div class = 'inner page leftPage'></div>
+                        <div class = 'inner page rightPage'></div>
                     </div>
-                        <h6 class = 'status personality'>_Educational</h6>
-                    
+
                     <div class = 'build advising'>
-                        <div class = 'box rayOne'></div>
-                        <div class = 'box rayTwo'></div>
-                        <div class = 'box rayThree'></div>
-                        <div class = 'centercircle ray'></div>
+                        <div class = 'inner waveOne'></div>
+                        <div class = 'inner waveTwo'></div>
+                        <div class = 'inner waveThree'></div>
+                        <div class = 'centercircle voice'></div>
                     </div>
-                        <h6 class = 'status personality'>_Advising</h6>
-                    
+
                     <div class = 'build dining'>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
                     </div>
-                    <h6 class = 'status personality'>_Dining</h6>
-                    
+
                     <div class = 'build entertaining'>
-                        <div class = 'box roof cup'></div>
-                        <div class = 'box cuptop'></div>
-                        <div class = 'box glassstem'></div>
+                        <div class = 'inner roof cup'></div>
+                        <div class = 'inner cupTop'></div>
+                        <div class = 'inner glassstem'></div>
                     </div>
-                    <h6 class = 'status personality'>_Entertaining</h6>
-                    
+
                     <div class = 'build grocery'>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
                     </div>
-                    <h6 class = 'status personality'>_Market</h6>
-                    
+
                     <div class = 'build grooming'>
-                        <div class = 'box brushstem'></div>
-                        <div class = 'box bristleone'></div>
-                        <div class = 'box bristletwo'></div>
-                        <div class = 'box bristlethree'></div>
+                        <div class = 'inner brushstem'></div>
+                        <div class = 'inner bristle bristleone'></div>
+                        <div class = 'inner bristle bristletwo'></div>
+                        <div class = 'inner bristle bristlethree'></div>
+
                     </div>
-                    <h6 class = 'status personality'>_Grooming</h6>
-                    
+
                     <div class = 'build cleaning'>
-                        <div class = 'box brushpole'></div>
-                        <div class = 'box brushbase'></div>
-                        <div class = 'box brushone'></div>
-                        <div class = 'box brushtwo'></div>
-                        <div class = 'box brushthree'></div>
-                        <div class = 'box brushfour'></div>
-                        <div class = 'box brushfive'></div>
+                        <div class = 'inner brushpole'></div>
+                        <div class = 'inner brushbase'></div>
+                        <div class = 'inner brushone'></div>
+                        <div class = 'inner brushtwo'></div>
+                        <div class = 'inner brushthree'></div>
+                        <div class = 'inner brushfour'></div>
+                        <div class = 'inner brushfive'></div>
                     </div>
-                        <h6 class = 'status personality'>_Cleaning</h6>
-                    
+
                     <div class = 'build promoting'>
-                        <div class = 'box ticket'></div>
-                        <div class = 'box tearone'></div>
-                        <div class = 'box teartwo'></div>
+                        <div class = 'inner ticket'></div>
+                        <div class = 'inner tearone'></div>
+                        <div class = 'inner teartwo'></div>
                     </div>
-                        <h6 class = 'status personality'>_Promoting</h6>
-                        
+
                     <div class = 'build construction'>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
-                        <div class = 'box'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner'></div>
                     </div>
-                        <h6 class = 'status personality'>_Construction and Building</h6>
-                    
+
                     <div class = 'build repair'>
-                        <div class = 'box'></div>
+                        <div class = 'inner'></div>
                     </div>
-                        <h6 class = 'status personality'>_Repair</h6>
-                    
+
                     <div class = 'build novelty'>
-                        <div class = 'box centercircle ribbonleft'></div>
-                        <div class = 'box centercircle ribbonright'></div>
-                        <div class = 'box centercircle endribbonleft'></div>
-                        <div class = 'box centercircle endribbonright'></div>
+                        <div class = 'inner centercircle ribbonleft'></div>
+                        <div class = 'inner centercircle ribbonright'></div>
+                        <div class = 'inner centercircle endribbonleft'></div>
+                        <div class = 'inner centercircle endribbonright'></div>
                     </div>
-                        <h6 class = 'status personality'>_Novelty and Souvenir</h6>
-                    
+
                     <div class = 'build clothing'>
-                        <div class = 'box'></div>
+                        <div class = 'inner'></div>
                     </div>
-                        <h6 class = 'status personality'>_Clothing and Fabrics</h6>
-                    
+
                     <div class = 'build looking'>
-                        <div class = 'box'></div>
-                        <div class = 'box frame'></div>
+                        <div class = 'inner'></div>
+                        <div class = 'inner frame'></div>
                     </div>
-                        <h6 class = 'status personality'>_Looking and Collecting</h6>
-                    
+
                     <div class = 'build hosting'>
                         <div class = 'personone'>
                             <div class = 'centercircle ray head'></div>
-                            <div class = 'box raytwo shoulder'></div>
+                            <div class = 'inner raytwo shoulder'></div>
                         </div>
                         <div class = 'persontwo'>
                             <div class = 'centercircle ray head'></div>
-                            <div class = 'box raytwo shoulder'></div>
+                            <div class = 'inner raytwo shoulder'></div>
                         </div>
                     </div>
-                        <h6 class = 'status personality'>_Hosting and Gathering</h6>
-                    
+
                     <div class = 'build resting'>
                         <div class = 'centercircle ray head'></div>
-                        <div class = 'box raytwo shoulder'></div>
-                        <div class = 'box'></div>
+                        <div class = 'inner raytwo shoulder'></div>
+                        <div class = 'inner'></div>
                     </div>
-                        <h6 class = 'status personality'>_Resting and Accomodating</h6>
-                    
+
                     <div class = 'build living'>
-                        <div class = 'box socketone'></div>
-                        <div class = 'box sockettwo'></div>
-                        <div class = 'box cord'></div>
+                        <div class = 'inner socketone'></div>
+                        <div class = 'inner sockettwo'></div>
+                        <div class = 'inner cord'></div>
                     </div>
-                        <h6 class = 'status personality'>_Living and Furniture</h6>
-                    
+
                     <div class = 'build health'>
-                        <div class = 'box'></div>
+                        <div class = 'inner'></div>
                     </div>
-                        <h6 class = 'status personality'>_Health and Fitness</h6>
-                    
+
                     <div class = 'build transporting'>
-                        <div class = 'box carone'></div>
-                        <div class = 'box cartwo'></div>
-                        <div class = 'box carthree'></div>
+                        <div class = 'inner carone'></div>
+                        <div class = 'inner cartwo'></div>
+                        <div class = 'inner carthree'></div>
                         <div class = 'centercircle ray wheelone'></div>
                         <div class = 'centercircle ray wheeltwo'></div>
                     </div>
-                        <h6 class = 'status personality'>_Transporting</h6>
+                </div>
             </div>
         </div>
         <script src="../assets/script/jquery.js"></script>
