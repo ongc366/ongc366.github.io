@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-size: 0;
   overflow: hidden;
-  background-color: #0000FF;
+  background-color: #fff;
 }
 
 .wrapper {
@@ -13,16 +13,16 @@ body {
 }
 
 a {
-  color: white;
+  color: #000;
 }
 
 a:visited {
-  color: white;
+  color: #000;
 }
 
 a:hover {
   background-color: yellow;
-  color: black;
+  color: #000;
 }
 
 .button {
@@ -47,18 +47,18 @@ a:hover {
   top: 0;
   left: 0;
   font-size: 28px;
-  color: white;
+  color: #000;
 }
 
 .contact ul {
-  margin: 45 15px;
+  margin: 15px;
   list-style-type: none;
   padding: 0;
   font-size: 15px;
 }
 
 .contact li {
-  margin: 15 0px;
+  margin: 30 0px;
 }
 
 .back {
@@ -81,20 +81,21 @@ a:hover {
 
 .number {
   font-size: 12px;
+  font-weight: lighter;
   pointer-events: auto;
 }
 
 .who {
   /*background-color: #00FFFF;*/
-  color: #0000FF;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
 }
 
 .what {
   left: 50%;
   /*background-color: #FF00FF;*/
-  color: #0000FF;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
 }
 
 .label {

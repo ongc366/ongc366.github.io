@@ -3,7 +3,7 @@ var clickedWhat = false;
 
 $('.who').click(function() {
   if(clickedWho == false) {
-    $('.who').css('width', '50%').css('height', '5%');
+    $('.who').css('width', '50%').css('height', '0%');
     $('.what').css('width', '50%');
     $('.left').removeClass('back');
     clickedWho = true;
