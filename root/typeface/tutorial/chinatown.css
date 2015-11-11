@@ -64,7 +64,7 @@ img {
     padding: 0;
     font-weight: lighter;
     font-family: arial, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 1;
 }
 
@@ -73,6 +73,10 @@ img {
     position: absolute;
     display: none;
     top: 85px;
+}
+
+.develop {
+    top: 273px;
 }
 
 /* alphabet styles */
