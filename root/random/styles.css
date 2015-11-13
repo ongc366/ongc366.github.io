@@ -33,6 +33,8 @@ body {
     letter-spacing: 2;
     position: absolute;
     top: 20px;
+    display: inline-block;
+    width: 150px;
 }
 
 .leftSpeaker {
