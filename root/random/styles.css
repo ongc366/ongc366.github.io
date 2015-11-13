@@ -25,6 +25,10 @@ body {
     letter-spacing: 2;
 }
 
+strong {
+    text-decoration: underline;
+}
+
 .start {
     margin: 0;
     padding: 0;
