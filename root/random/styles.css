@@ -76,6 +76,7 @@ img {
     top: 490px;
     left: 206px;
     transition: 0.25s ease-in-out;
+    cursor: pointer;
 }
 
 .clock:hover {
