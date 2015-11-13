@@ -32,6 +32,7 @@ body {
     font-family: monospace;
     letter-spacing: 2;
     position: absolute;
+    top: 20px;
 }
 
 .leftSpeaker {
@@ -70,19 +71,11 @@ img {
 
 .clock {
     width: 50px;
-    top: 450px;
+    top: 490px;
     left: 206px;
     transition: 0.25s ease-in-out;
 }
 
 .clock:hover {
     padding-top: 2px;
-}
-
-.square {
-    background-color: red;
-    margin: 15px;
-    height: 100px;
-    width: 100px;
-    display: inline-block;
 }
