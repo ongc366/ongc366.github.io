@@ -5,6 +5,7 @@ var assignment;
 var assignmentSelection = ['.archive', '.composition', '.favicon', '.random', '.pattern', '.space', '.typeface']
 var typeface;
 var typefaceSelection = ['garamond, serif', 'helvetica, sans-serif', 'courier, monospace', 'cursive', 'Times, serif'];
+var hold;
 
 var randomColor = function() {
   color = colorSelection[Math.floor(Math.random() * 3)];
@@ -30,7 +31,7 @@ for (var i = 0; i < 100; i++) {
   $(randomAssignment()).css('background-color', randomColor()).css('font-family', randomTypeface());
 }
 
-$('.button').click(function() {
+$('.button').mousedown(function() {
   for (var i = 0; i < 100; i++) {
     $(randomAssignment()).css('background-color', randomColor()).css('font-family', randomTypeface());
     $('body').css('background-color', randomBackground());

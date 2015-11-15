@@ -25,7 +25,7 @@ body {
     letter-spacing: 2;
 }
 
-strong {
+.underline {
     text-decoration: underline;
 }
 
@@ -41,6 +41,25 @@ strong {
     width: 150px;
 }
 
+p {
+    margin-top: 15px;
+    font-size: 10px;
+    font-family: monospace;
+    letter-spacing: 2;
+    display: inline-block;
+}
+
+.here {
+    position: absolute;
+    top: 430px;
+    left: 33%;
+}
+
+.explain {
+    position: absolute;
+    top: 30px;
+}
+
 .leftSpeaker {
     top: 60px;
     left: 110px;
@@ -54,35 +73,73 @@ strong {
 
 img {
     position: absolute;
-    width: 100px;
 }
 
 .leftperson {
-    width: 100px;
     top: 220px;
     left: 125px;
 }
 
 .rightperson {
-    width: 100px;
     top: 219px;
     left: 235px;
 }
 
 .table {
-    width: 100px;
     top: 220px;
     left: 180px;
+    z-index: -1;
 }
 
 .clock {
-    width: 50px;
-    top: 490px;
-    left: 206px;
-    transition: 0.25s ease-in-out;
     cursor: pointer;
+    position: relative;
+    transform: translate(41%);
+    bottom: -400px;
+    background-color: white;
 }
 
-.clock:hover {
-    padding-top: 2px;
+.frame {
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    background-color: #FFC944;
+}
+
+.vertical {
+    transform: rotate(90deg);
+}
+
+.top {
+    top: 12px;
+    left: 17px;
+}
+
+.bottom {
+    top: 30px;
+    left: 17px;
+}
+
+.left {
+    top: 21px;
+    left: 8px;
+}
+
+.right {
+    top: 21px;
+    left: 26px;
+}
+
+.clockhand {
+    position: absolute;
+    background-color: black;
+    width: 4px;
+    height: 4px;
+    top: 18px;
+    left: 26px;
+}
+
+.second {
+    top: 22px;
+    left: 22px;
 }

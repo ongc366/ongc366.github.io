@@ -62,6 +62,8 @@ $('.button').click(function() {
     $('.leftSpeaker').html(calculateSayingsLeft());
     $('.rightSpeaker').html(calculateSayingsRight());
     $('.start').hide();
+    $('.explain').hide();
+    $('.here').hide();
     pressed = true;
   } else {
     $('.leftperson').html(calculateLeft());
