@@ -1,34 +1,33 @@
-var clickedWho = false;
-var clickedWhat = false;
+var color;
+var colorSelection = ['#FF0000', '#00FF00', '#0000FF', '#00FFFF', '#FF00FF', '#FFFF00'];
+var change;
+var assignment;
+var assignmentSelection = ['.archive', '.composition', '.favicon', '.random', '.pattern', '.space', '.typeface']
+var typeface;
+var typefaceSelection = ['serif', 'sans-serif', 'monospace', 'cursive'];
+var resized = false;
 
-$('.who').click(function() {
-  if(clickedWho == false) {
-    $('.who').css('width', '50%').css('height', '5%');
-    $('.what').css('width', '50%');
-    $('.left').removeClass('back');
-    clickedWho = true;
-  } else if (clickedWho == true){
-    $('.who').css('height', '100%');
-    $('.left').addClass('back');
-    clickedWho = false;
-  }
-})
+var randomColor = function() {
+  color = colorSelection[Math.floor(Math.random() * 6)];
+  return color;
+}
 
-$('.what').click(function() {
-  if (clickedWhat == false) {
-    $('.who').css('width', '0%');
-    $('.who .label').addClass('back');
-    $('.what').css('z-index', '1');
-    $('.left').addClass('back');
-    $('.right').removeClass('back');
-    clickedWhat = true;
-  } else if (clickedWhat == true) {
-    $('.who').css('width', '50%');
-    $('.who .label').removeClass('back');
-    $('.what').css('z-index', '1');
-    $('.what .label').css('z-index', '2');
-    $('.right').addClass('back');
-    $('.left').removeClass('back');
-    clickedWhat = false;
+var randomAssignment = function() {
+  assignment = assignmentSelection[Math.floor(Math.random() * 7)];
+  return assignment;
+}
+
+var randomTypeface = function() {
+  typeface = typefaceSelection[Math.floor(Math.random() * 4)];
+  return typeface;
+}
+
+for (var i = 0; i < 100; i++) {
+  change = $(randomAssignment()).css('background-color', randomColor()).css('font-family', randomTypeface());
+}
+
+$('.button').mousedown(function() {
+  for (var i = 0; i < 100; i++) {
+  change = $(randomAssignment()).css('background-color', randomColor()).css('font-family', randomTypeface());
   }
 })

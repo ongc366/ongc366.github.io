@@ -4,6 +4,7 @@ var leftImage;
 var rightImage;
 var pressed = false;
 var speech;
+var hold = false;
 var sayingsLeft = [
   'So, what do you do for a living?',
   'Do you like dogs?',
@@ -14,7 +15,7 @@ var sayingsLeft = [
   'Tell me something about yourself. Anything.',
   'You oddly remind me of someone I have met before.',
   'Is the weather the worst or what?',
-  "How's it going?",
+  "How's it going?"
 ];
 
 var sayingsRight = [
@@ -60,7 +61,7 @@ $('.button').click(function() {
     $('.rightperson').html(calculateRight());
     $('.leftSpeaker').html(calculateSayingsLeft());
     $('.rightSpeaker').html(calculateSayingsRight());
-    $('.start').hide()
+    $('.start').hide();
     pressed = true;
   } else {
     $('.leftperson').html(calculateLeft());
