@@ -1,13 +1,17 @@
 var color;
-var colorSelection = ['#FFF', '#FF0000', '#0000FF'];
+var colorSelection = ['#FF0000', '#0000FF', '#FFF'];
 var change;
 var assignment;
 var assignmentSelection = ['.archive', '.composition', '.favicon', '.random', '.pattern', '.space', '.typeface']
 var typeface;
-var typefaceSelection = ['serif', 'sans-serif', 'monospace', 'cursive'];
-var resized = false;
+var typefaceSelection = ['garamond, serif', 'helvetica, sans-serif', 'courier, monospace', 'cursive', 'Times, serif'];
 
 var randomColor = function() {
+  color = colorSelection[Math.floor(Math.random() * 3)];
+  return color;
+}
+
+var randomBackground = function() {
   color = colorSelection[Math.floor(Math.random() * 3)];
   return color;
 }
@@ -18,16 +22,17 @@ var randomAssignment = function() {
 }
 
 var randomTypeface = function() {
-  typeface = typefaceSelection[Math.floor(Math.random() * 4)];
+  typeface = typefaceSelection[Math.floor(Math.random() * 5)];
   return typeface;
 }
 
 for (var i = 0; i < 100; i++) {
-  change = $(randomAssignment()).css('background-color', randomColor()).css('font-family', randomTypeface());
+  $(randomAssignment()).css('background-color', randomColor()).css('font-family', randomTypeface());
 }
 
-$('.button').mousedown(function() {
+$('.button').click(function() {
   for (var i = 0; i < 100; i++) {
-  change = $(randomAssignment()).css('background-color', randomColor()).css('font-family', randomTypeface());
+    $(randomAssignment()).css('background-color', randomColor()).css('font-family', randomTypeface());
+    $('body').css('background-color', randomBackground());
   }
 })

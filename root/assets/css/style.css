@@ -26,35 +26,42 @@ a {
 .name {
   position: absolute;
   top: -13px;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
 }
 
 h1 {
-  margin: 5px 0;
+  margin: 15px 0;
   padding: 0;
   display: inline-block;
-  font-weight: bold;
-  font-size: 55px;
-  letter-spacing: 3;
-}
-
-h6 {
-  margin: 15px;
-  padding: 0;
-  position: fixed;
   font-weight: lighter;
-  font-size: 10px;
-  letter-spacing: 10;
+  font-size: 50px;
+  letter-spacing: 3;
 }
 
 .button {
   position: fixed;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: black;
+  font-size: 30px;
   top: 15px;
   left: 760px;
-  transition: 0.25s ease-in-out;
+}
+
+.button:hover {
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+  animation: example 1s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 .links {
