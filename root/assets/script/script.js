@@ -1,5 +1,5 @@
 var color;
-var colorSelection = ['#FF0000', '#00FF00', '#0000FF', '#00FFFF', '#FF00FF', '#FFFF00'];
+var colorSelection = ['#FFF', '#FF0000', '#0000FF'];
 var change;
 var assignment;
 var assignmentSelection = ['.archive', '.composition', '.favicon', '.random', '.pattern', '.space', '.typeface']
@@ -8,7 +8,7 @@ var typefaceSelection = ['serif', 'sans-serif', 'monospace', 'cursive'];
 var resized = false;
 
 var randomColor = function() {
-  color = colorSelection[Math.floor(Math.random() * 6)];
+  color = colorSelection[Math.floor(Math.random() * 3)];
   return color;
 }
 
