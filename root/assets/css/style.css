@@ -40,28 +40,37 @@ h1 {
 }
 
 .button {
-  position: fixed;
+  position: absolute;
+  font-weight: lighter;
   font-size: 30px;
-  top: 15px;
-  left: 760px;
+  left: 50%;
+  color: black;
 }
 
 .button:hover {
   -webkit-animation-name: example; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
   animation: example 1s infinite;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
-    0%   {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    0%   {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
 }
 
 /* Standard syntax */
 @keyframes example {
-    0%   {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    0%   {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
 }
 
 .links {
