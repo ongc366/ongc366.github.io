@@ -4,6 +4,8 @@ var leftImage;
 var rightImage;
 var pressed = false;
 var speech;
+var speechOne;
+var speechTwo;
 var hold = false;
 var sayingsLeft = [
   'So, what do you do for a living?',
@@ -44,15 +46,29 @@ var calculateRight = function() {
 }
 
 var calculateSayingsLeft = function() {
-  speech = Math.floor(Math.random()*10);
-  speech = sayingsLeft[speech];
+  speechOne = Math.floor(Math.random()*10);
+  speech = sayingsLeft[speechOne];
   return speech;
 }
 
 var calculateSayingsRight = function() {
-  speech = Math.floor(Math.random()*10);
-  speech = sayingsRight[speech];
+  speechTwo = Math.floor(Math.random()*10);
+  speech = sayingsRight[speechTwo];
   return speech;
+}
+
+var checkSayings = function() {
+  if (speechOne == speechTwo) {
+    console.log('match!');
+    $('.heart').css('display', 'inline-block');
+    $('.leftspeaker').css('color', 'red');
+    $('.rightspeaker').css('color', 'red');
+  } else {
+    console.log('no match!');
+    $('.heart').css('display', 'none');
+    $('.leftspeaker').css('color', 'black');
+    $('.rightspeaker').css('color', 'black');
+  }
 }
 
 $('.button').click(function() {
@@ -61,6 +77,7 @@ $('.button').click(function() {
     $('.rightperson').html(calculateRight());
     $('.leftSpeaker').html(calculateSayingsLeft());
     $('.rightSpeaker').html(calculateSayingsRight());
+    checkSayings();
     $('.start').hide();
     $('.explain').hide();
     $('.here').hide();
@@ -70,6 +87,7 @@ $('.button').click(function() {
     $('.rightperson').html(calculateRight());
     $('.leftSpeaker').html(calculateSayingsLeft());
     $('.rightSpeaker').html(calculateSayingsRight());
+    checkSayings();
     pressed = false;
   }
 })

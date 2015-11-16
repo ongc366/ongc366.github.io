@@ -63,7 +63,6 @@ p {
 .leftSpeaker {
     top: 60px;
     left: 110px;
-    color: red;
 }
 
 .rightSpeaker {
@@ -142,4 +141,32 @@ img {
 .second {
     top: 22px;
     left: 22px;
+}
+
+.heart {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    color: red;
+    top: 207px;
+    left: 222px;
+    display: none;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    animation: example 1.25s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {top: 207px;}
+    50% {top: 210px;}
+    100% {top: 207px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {top: 219px;}
+    50% {top: 222px;}
+    100% {top: 219px;}
 }
