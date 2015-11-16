@@ -1,5 +1,5 @@
 var color;
-var colorSelection = ['#FF0000', '#0000FF', '#FFF'];
+var colorSelection = ['#FF0000', '#0000FF', '#FFF', '#00FF00'];
 var change;
 var assignment;
 var assignmentSelection = ['.archive', '.composition', '.favicon', '.random', '.pattern', '.space', '.typeface']
@@ -8,12 +8,12 @@ var typefaceSelection = ['garamond, serif', 'helvetica, sans-serif', 'courier, m
 var hold;
 
 var randomColor = function() {
-  color = colorSelection[Math.floor(Math.random() * 3)];
+  color = colorSelection[Math.floor(Math.random() * 4)];
   return color;
 }
 
 var randomBackground = function() {
-  color = colorSelection[Math.floor(Math.random() * 3)];
+  color = colorSelection[Math.floor(Math.random() * 4)];
   return color;
 }
 
