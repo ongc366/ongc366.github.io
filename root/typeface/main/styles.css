@@ -57,14 +57,6 @@ h6 {
     height: 595px;
 }
 
-.emptyBuild {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: none;
-    background-color: white;
-}
-
 .directions {
     text-align: center;
     font-family: 'Halant', serif;
@@ -77,6 +69,7 @@ h6 {
 }
 
 .lefthand {
+    overflow-x: hidden;
     width: 769px;
 }
 
@@ -195,7 +188,7 @@ h6 {
     position: fixed;
     letter-spacing: 2;
     top: 320px;
-    left: 489px;
+    left: 440px;
     color: blue;
     transform: rotate(-90deg);
 }
@@ -208,6 +201,15 @@ h6 {
     border: 3px dashed black;
 }
 
+.emptyBuild {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: solid 3px white;
+    background-color: white;
+}
+
 .build {
     margin: 15 0px;
     padding: 0;
@@ -216,6 +218,7 @@ h6 {
     position: relative;
     width: 94px;
     height: 94px;
+    transition: 0.1s ease-in-out;
 }
 
 .inner {
@@ -239,18 +242,30 @@ h6 {
     margin: 0 15px;
 }
 
-.A {
-    display: block;
-}
-
-.B {
-    display: block;
-    position: absolute;
-    top: 200px;
-}
-
 .full {
     width: 925px;
+}
+
+.school {
+    height: 900px;
+    width: 324px;
+}
+
+.school .community {
+    position: absolute;
+    top: 400px;
+    left: 235px;
+}
+
+.school .service {
+    position: absolute;
+    left: 120px;
+    top: 400px;
+}
+
+.school .educating {
+    position: absolute;
+    top: 400px;
 }
 
 .horizontalLine {
