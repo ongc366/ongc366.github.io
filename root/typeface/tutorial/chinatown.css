@@ -71,7 +71,7 @@ img {
 .label {
     font-size: 8px;
     position: absolute;
-    display: none;
+    /*display: none;*/
     top: 85px;
 }
 
