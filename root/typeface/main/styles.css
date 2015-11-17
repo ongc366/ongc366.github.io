@@ -19,6 +19,52 @@ body {
     font-size: 0;
 }
 
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blue;
+}
+
+.guide {
+    font-size: 10px;
+    position: fixed;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.guide a {
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    z-index: 1;
+    text-decoration: none;
+    color: blue;
+}
+
+.guide a:hover {
+    text-decoration: underline;
+}
+
+.guide a:visited {
+    color: blue;
+}
+
+.reference {
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border: solid 1px blue;
+    opacity: 0.9;
+    font-size: 14px;
+    font-family: 'Halant', serif;
+}
+
 hr {
     display: block;
     margin: 15px 0px;
@@ -165,21 +211,6 @@ h6 {
     color: blue;
 }
 
-.map {
-    width: 374px;
-    position: fixed;
-    left: 535px;
-    top: 15px;
-    padding: 10px;
-    display: none;
-    border: solid 1px black;
-    background-color: white;
-}
-
-.mapLink:hover + .map{
-    display: inline-block;
-}
-
 .streetContainer {
     color: blue;
 }
@@ -238,8 +269,7 @@ h6 {
 }
 
 .highlight {
-    background-color: red;
-    margin: 0 15px;
+    background-color: yellow;
 }
 
 .full {
