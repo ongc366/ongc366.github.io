@@ -1,8 +1,9 @@
 var clicked = false;
+//Purpose
+var residential = "<div class = 'solidBlack inner roof '></div><div class = 'solidBlack inner base '></div>";
+var commercial = "<<div class = 'inner leftbuilding solidBlack'></div><div class = 'inner rightbuilding solidBlack'></div>";
 
 $('.reference').hide();
-$('.canalStreet').hide();
-$('.grandStreet').hide();
 $('.streetname').hide();
 
 $('.guideButton').click(function() {
@@ -15,22 +16,16 @@ $('.guideButton').click(function() {
     }
 })
 
-$('.special').click(function() {
+$('.orchard').click(function() {
     if (clicked == false) {
-        $('.school').addClass('highlight');
+        $('.A4').html(residential);
+        $('.D2').html(commercial);
+        $('.D1').addClass('emptyBuild');
         clicked = true;
     } else {
-        $('.school').removeClass('highlight');
-        clicked = false;
-    }
-})
-
-$('.grand').click(function() {
-    if (clicked == false) {
-        $('.template').hide();
-        clicked = true;
-    } else {
-        $('.template').show();
+        $('.A4').empty();
+        $('.D2').empty();
+        $('.D1').removeClass('emptyBuild');
         clicked = false;
     }
 })
