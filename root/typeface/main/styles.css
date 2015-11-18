@@ -10,6 +10,7 @@ body {
     padding: 0;
     width: 1000px;
     position: relative;
+    transform: translate(-20px);
 }
 
 .content {
@@ -63,6 +64,10 @@ h6 {
     letter-spacing: 1;
 }
 
+.alphabetGuide {
+    margin-top: 15px;
+}
+
 .site {
     margin: 0;
     margin-top: 15px;
@@ -75,7 +80,7 @@ h6 {
 .lefthand {
     overflow-x: hidden;
     width: 704px;
-    background-color: #E0E0E0;
+    background-color: #E8E8E8;
 }
 
 .righthand {
@@ -128,6 +133,46 @@ h6 {
 .streetF {
     top: 0;
     right: 245px;
+}
+
+.street2 .street {
+    top: 950px;
+}
+
+.street3 .street {
+    top: 1900px;
+}
+
+.street4 .street {
+    top: 2850px;
+}
+
+.street5 .street {
+    top: 3800px;
+}
+
+.street6 .street {
+    top: 4750px;
+}
+
+.street7 .street {
+    top: 5700px;
+}
+
+.street8 .street {
+    top: 6650px;
+}
+
+.street9 .street {
+    top: 7600px;
+}
+
+.street10 .street {
+    top: 8550px;
+}
+
+.street11 .street {
+    top: 9500px;
 }
 
 .group {
@@ -223,6 +268,10 @@ h6 {
     height: 94px;
     transition: 0.1s ease-in-out;
     background-color: white;
+}
+
+.build:hover {
+    background-color: #FFFDD6;
 }
 
 .inner {

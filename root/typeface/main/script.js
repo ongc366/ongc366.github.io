@@ -9,19 +9,6 @@ var religious = "<div class = 'inner solidBlack'></div><div class = 'circle cent
 var government = "<div class = 'inner flag solidBlack'></div><div class = 'inner verticalLine pole solidBlack'></div><div class = 'inner pedestal solidBlack'></div><div class = 'inner base solidBlack'></div>";
 var community = "<div class = 'circle communitycircleone solidBlack'></div><div class = 'circle communitycircletwo solidBlack'></div>"
 
-$('.reference').hide();
-$('.streetname').hide();
-
-$('.guideButton').click(function() {
-    if (clicked == false) {
-        $('.reference').show();
-        clicked = true;
-    } else {
-        $('.reference').hide();
-        clicked = false;
-    }
-})
-
 $('.orchard').click(function() {
     if (clicked == false) {
         $('.A4').html(residential);
