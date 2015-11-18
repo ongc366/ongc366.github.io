@@ -65,6 +65,7 @@ h6 {
 
 .site {
     margin: 0;
+    margin-top: 15px;
     padding: 0 15 15 15px;
     position: absolute;
     overflow: scroll;
@@ -73,7 +74,8 @@ h6 {
 
 .lefthand {
     overflow-x: hidden;
-    width: 719px;
+    width: 704px;
+    background-color: #E0E0E0;
 }
 
 .righthand {
@@ -83,14 +85,16 @@ h6 {
 }
 
 .guide {
+    width: 248px;
     top: 350px;
-    height: 219px;
-    border-top: solid 1px black;
-    background-color: #F0F0F0;
+    height: 218px;
+    border: solid 1px black;
+    /*background-color: #F0F0F0;*/
 }
 
 .article {
-    height: 320px;
+    height: 319px;
+    border-bottom: solid 1px black;
 }
 
 .street {
@@ -113,17 +117,17 @@ h6 {
 
 .streetD {
     top: 0;
-    right: 45px;
+    right: 15px;
 }
 
 .streetE {
     top: 0;
-    right: 160px;
+    right: 130px;
 }
 
 .streetF {
     top: 0;
-    right: 275px;
+    right: 245px;
 }
 
 .group {
@@ -217,6 +221,7 @@ h6 {
     width: 94px;
     height: 94px;
     transition: 0.1s ease-in-out;
+    background-color: white;
 }
 
 .inner {
@@ -241,28 +246,6 @@ h6 {
 
 .full {
     width: 925px;
-}
-
-.school {
-    height: 900px;
-    width: 324px;
-}
-
-.school .community {
-    position: absolute;
-    top: 400px;
-    left: 235px;
-}
-
-.school .service {
-    position: absolute;
-    left: 120px;
-    top: 400px;
-}
-
-.school .educating {
-    position: absolute;
-    top: 400px;
 }
 
 .horizontalLine {
