@@ -204,12 +204,13 @@ h6 {
 }
 
 .emptyBuild {
-    position: absolute;
-    display: block;
-    width: 100px;
-    height: 100px;
-    border: solid 3px white;
-    background-color: white;
+    z-index: -1;
+    /*position: absolute;*/
+    /*display: block;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border: solid 3px white;*/
+    /*background-color: white;*/
 }
 
 .build {
