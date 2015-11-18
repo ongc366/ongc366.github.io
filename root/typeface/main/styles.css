@@ -74,7 +74,7 @@ h6 {
     padding: 0 15 15 15px;
     position: absolute;
     overflow: scroll;
-    height: 570px;
+    height: 580px;
 }
 
 .lefthand {
@@ -92,7 +92,7 @@ h6 {
 .guide {
     width: 248px;
     top: 350px;
-    height: 218px;
+    height: 228px;
     border: solid 1px black;
     /*background-color: #F0F0F0;*/
 }
