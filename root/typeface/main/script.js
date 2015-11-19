@@ -48,7 +48,7 @@ var transportation = "<div class = 'inner carone solidBlack'></div><div class = 
 
 //Orchard Street
 
-$('.eldridge').click(function() {
+$('.orchard').click(function() {
     if (clicked == false) {
         $('.street1 .A4').html(residential);
         $('.street1 .D2').html(commercial);
