@@ -108,6 +108,10 @@ mark {
     background-color: #FFFDD6;
 }
 
+scpan {
+    text-decoration: underline;
+}
+
 .orchardStreetName {
     position: fixed;
     transform: rotate(90deg);
