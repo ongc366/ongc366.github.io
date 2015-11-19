@@ -44,23 +44,30 @@ var accomodation = "<div class = 'circle head solidBlack'></div><div class = 'in
 var livingRoom = "<div class = 'inner verticalLine socketone solidBlack'></div><div class = 'inner verticalLine sockettwo solidBlack'></div><div class = 'inner cord solidBlack'></div>";
 var transportation = "<div class = 'inner carone solidBlack'></div><div class = 'inner cartwo solidBlack'></div><div class = 'inner carthree solidBlack'></div><div class = 'circle head wheel leftwheel solidBlack'></div><div class = 'circle head wheel rightwheel solidBlack'></div>";
 
-
 //function calls...
 
 //Orchard Street
 
-$('.orchard').click(function() {
+$('.eldridge').click(function() {
     if (clicked == false) {
         $('.street1 .A4').html(residential);
         $('.street1 .D2').html(commercial);
         $('.street1 .A1').html(religious);
         $('.street1 .D1').addClass('emptyBuild');
+        $('.street1 .A3').addClass('expandOnce');
+        $('.street1 .A4').addClass('expandTwice');
+        $('.street1 .B4').html(religious).addClass('forward');
+        $('.street1 .C4').html(religious).addClass('forward');
         clicked = true;
     } else {
         $('.street1 .A1').empty();
         $('.street1 .A4').empty();
         $('.street1 .D2').empty();
         $('.street1 .D1').removeClass('emptyBuild');
+        $('.street .A3').removeClass('expandOnce');
+        $('.street .A4').removeClass('expandTwice');
+        $('.street .B4').empty().removeClass('forward');
+        $('.street1 .C4').empty().removeClass('forward');
         clicked = false;
     }
 })
