@@ -10,7 +10,6 @@ body {
     padding: 0;
     width: 1000px;
     position: relative;
-    transform: translate(-20px);
 }
 
 .content {
@@ -19,6 +18,8 @@ body {
     display: inline-block;
     font-size: 0;
 }
+
+/* Writing Styles */
 
 a {
     color: blue;
@@ -44,12 +45,12 @@ h1 {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
-    font-size: 40px;
+    font-size: 47px;
     font-family: 'Oswald', sans-serif;
 }
 
 h6 {
-    margin: 0;
+    margin: 15px 0;
     padding: 0;
     font-size: 14px;
     font-weight: 400;
@@ -68,13 +69,38 @@ h6 {
     margin-top: 15px;
 }
 
+.essay {
+    margin: 15 0px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block;
+    font-family: 'Halant', serif;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.bibliography {
+    margin: 15 0 15 0px;
+    padding: 0;
+}
+
+.resource {
+    margin: 0 15 15px 0px;
+    padding: 0;
+    font-size: 10px;
+}
+
+/* SITE COMPOSITION */
+
 .site {
     margin: 0;
-    margin-top: 15px;
     padding: 0 15 15 15px;
     position: absolute;
     overflow: scroll;
-    height: 580px;
+    height: 615px;
 }
 
 .lefthand {
@@ -89,18 +115,19 @@ h6 {
     border-left: solid 1px black;
 }
 
-.guide {
-    width: 248px;
-    top: 350px;
-    height: 228px;
-    border: solid 1px black;
-    /*background-color: #F0F0F0;*/
-}
-
 .article {
-    height: 319px;
+    height: 354px;
     border-bottom: solid 1px black;
 }
+
+.guide {
+    width: 248px;
+    top: 385px;
+    height: 228px;
+    border: solid 1px black;
+}
+
+/* STREET STYLES */
 
 .street {
     position: absolute;
@@ -175,70 +202,11 @@ h6 {
     top: 9500px;
 }
 
-.group {
-    margin: 0 0 30 0px;
-    padding: 15px 0px;
-    border-top: dotted 1px black;
-    transition: 0.25s ease-in-out;
+.emptyBuild {
+    z-index: -1;
 }
 
-.essay {
-    margin: 15 0px;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 300;
-    display: inline-block;
-    font-family: 'Halant', serif;
-}
-
-.quote {
-    font-style: italic;
-}
-
-.bibliography {
-    margin: 15 0 15 0px;
-    padding: 0;
-}
-
-.resource {
-    margin: 0 15 15px 0px;
-    padding: 0;
-    font-size: 10px;
-}
-
-.resourceLink {
-    color: black;
-    text-decoration: none;
-}
-
-.resourceLink:hover {
-    text-decoration: underline;
-}
-
-.resourceLinkExternal {
-    text-decoration: none;
-}
-
-.resourceLinkExternal:hover {
-    text-decoration: underline;
-}
-
-.resourceLinkExternal:visited {
-    color: blue;
-}
-
-.streetContainer {
-    color: blue;
-}
-
-.streetname {
-    position: fixed;
-    letter-spacing: 2;
-    top: 320px;
-    left: 440px;
-    color: blue;
-    transform: rotate(-90deg);
-}
+/* ALPHABET STYLES */
 
 .solidBlack {
     border: 3px solid black;
@@ -248,20 +216,9 @@ h6 {
     border: 3px dashed black;
 }
 
-.emptyBuild {
-    z-index: -1;
-    /*position: absolute;*/
-    /*display: block;*/
-    /*width: 100px;*/
-    /*height: 100px;*/
-    /*border: solid 3px white;*/
-    /*background-color: white;*/
-}
-
 .build {
     margin: 15 0px;
     padding: 0;
-    /*display: inline-block;*/
     display: block;
     position: relative;
     width: 94px;
@@ -282,20 +239,8 @@ h6 {
     height: 64px;
 }
 
-.compile {
-    display: inline-block;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
 .highlight {
     background-color: yellow;
-}
-
-.full {
-    width: 925px;
 }
 
 .horizontalLine {
