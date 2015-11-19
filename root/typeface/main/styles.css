@@ -108,6 +108,63 @@ mark {
     background-color: #FFFDD6;
 }
 
+.orchardStreetName {
+    position: fixed;
+    transform: rotate(90deg);
+    top: 325px;
+    left: 475px;
+}
+
+.hesterStreetName {
+    position: absolute;
+    top: 1623px;
+    left: 330px;
+}
+
+.grandStreetName {
+    position: absolute;
+    left: 330px;
+    top: 3950px;
+}
+
+.eldridgeStreetName {
+    position: fixed;
+    transform: rotate(90deg);
+    top: 325px;
+    left: 475px;
+}
+
+.canalStreetName {
+    position: absolute;
+    top: 1965px;
+    left: 330px;
+}
+
+.divisionStreetName {
+    position: absolute;
+    top: 4290px;
+    left: 330px;
+}
+
+.mottStreetName {
+    position: fixed;
+    transform: rotate(90deg);
+    top: 325px;
+    left: 485px;
+}
+
+.bayardStreetName {
+    position: absolute;
+    top: 2540px;
+    left: 330px;
+}
+
+.moscoStreetName {
+    position: absolute;
+    left: 330px;
+    top: 4520px;
+}
+
 /* SITE COMPOSITION */
 
 .site {
@@ -140,6 +197,13 @@ mark {
     top: 385px;
     height: 228px;
     border: solid 1px black;
+}
+
+.streetName {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Halant', serif;
 }
 
 /* STREET STYLES */
@@ -178,44 +242,44 @@ mark {
 }
 
 .street2 .street {
-    top: 950px;
+    top: 2330px;
 }
 
 .street3 .street {
-    top: 1900px;
+    top: 4660px;
 }
 
-.street4 .street {
-    top: 2850px;
-}
+/*.street4 .street {*/
+/*    top: 8705px;*/
+/*}*/
 
-.street5 .street {
-    top: 3800px;
-}
+/*.street5 .street {*/
+/*    top: 11605px;*/
+/*}*/
 
-.street6 .street {
-    top: 4750px;
-}
+/*.street6 .street {*/
+/*    top: 14505px;*/
+/*}*/
 
-.street7 .street {
-    top: 5700px;
-}
+/*.street7 .street {*/
+/*    top: 17405px;*/
+/*}*/
 
-.street8 .street {
-    top: 6650px;
-}
+/*.street8 .street {*/
+/*    top: 20305px;*/
+/*}*/
 
-.street9 .street {
-    top: 7600px;
-}
+/*.street9 .street {*/
+/*    top: 23205px;*/
+/*}*/
 
-.street10 .street {
-    top: 8550px;
-}
+/*.street10 .street {*/
+/*    top: 26105px;*/
+/*}*/
 
-.street11 .street {
-    top: 9500px;
-}
+/*.street11 .street {*/
+/*    top: 29005px;*/
+/*}*/
 
 .emptyBuild {
     z-index: -1;
