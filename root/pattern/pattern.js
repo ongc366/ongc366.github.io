@@ -204,14 +204,3 @@ $('.buttonValentine').click(function() {
     clicked = false;
   }
 });
-
-
-$('.buttonBartow').hide();
-$('.buttonEdgar').hide();
-$('.buttonLefferts').hide();
-$('.buttonValentine').hide();
-
-
-var buildings = ['.buttonBartow', '.buttonEdgar', '.buttonLefferts', '.buttonValentine'];
-
-var random_Number = Math.floor(Math.random()*buildings.length);
