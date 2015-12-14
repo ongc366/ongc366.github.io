@@ -1,4 +1,3 @@
-var initialized = false;
 var entered;
 
 var x, y;
@@ -26,7 +25,7 @@ var calculateLocation = function() {
 
 $('.random_phrase').hide();
 
-for (var i = 0; i < 15; i++) {
+for (var i = 0; i < 30; i++) {
 
   calculateLocation();
 
@@ -37,8 +36,6 @@ for (var i = 0; i < 15; i++) {
 }
 
 $('.drawspace').mousemove(function(event) {
-
-  start_timer();
 
   $('.random_phrase').show();
 
@@ -56,36 +53,26 @@ $('.drawspace').mousemove(function(event) {
 
 });
 
-$('.drawspace').click(function() {
-
-  $(this).html('');
-  
-  calculateLocation();
-
-  var coincidence = "<div style = 'top: " + randomY + "px; left: " + randomX + "px;' class = 'coincidence'></div>";
-
-  $('.drawspace').append(coincidence);
-
-});
-
-var reset = $('.coincidence').mouseenter(function() {
+$('.coincidence').mouseenter(function() {
   
   $('.start').hide();
-  console.log('enter')
-  
-  var random_phrase = random_phrases[Math.floor(Math.random()*random_phrases.length)];
-  $('.random_phrase').html(random_phrase);
+
+  calculateLocation();
   
   var randomColor = colors[Math.floor(Math.random()*colors.length)];
   $('.drawspace').css('background-color', randomColor);
   // $('.coincidence').addClass()
-    
+  
+  var random_phrase = random_phrases[Math.floor(Math.random()*random_phrases.length)];
+  $('.random_phrase').html(random_phrase);
+
+  $('.drawspace').children(':not(.random_phrase, .coincidence)').hide();
+  
+});
+
+$('.drawspace').click(function() {
+  $('.start').show();
+  $(this).children(':not(.start, .coincidence)').hide();
+  $('.random_phrase').html('');
 })
 
-function start_timer() {
-
-  if (!initialized) {
-  }
-  initialized = true;
-
-}
