@@ -1,5 +1,5 @@
 var initialized = false;
-var entered = false;
+var entered;
 
 var x, y;
 
@@ -56,7 +56,19 @@ $('.drawspace').mousemove(function(event) {
 
 });
 
-$('.coincidence').mouseenter(function() {
+$('.drawspace').click(function() {
+
+  $(this).html('');
+  
+  calculateLocation();
+
+  var coincidence = "<div style = 'top: " + randomY + "px; left: " + randomX + "px;' class = 'coincidence'></div>";
+
+  $('.drawspace').append(coincidence);
+
+});
+
+var reset = $('.coincidence').mouseenter(function() {
   
   $('.start').hide();
   console.log('enter')
@@ -69,18 +81,6 @@ $('.coincidence').mouseenter(function() {
   // $('.coincidence').addClass()
     
 })
-
-$('.drawspace').click(function() {
-
-  $(this).html('');
-
-  calculateLocation();
-
-  var coincidence = "<div style = 'top: " + randomY + "px; left: " + randomX + "px;' class = 'coincidence'></div>";
-
-  $('.drawspace').append(coincidence);
-
-});
 
 function start_timer() {
 
