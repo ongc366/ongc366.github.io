@@ -91,28 +91,3 @@ $('.button').click(function() {
     pressed = false;
   }
 })
-
-var color;
-var number;
-var box;
-var colorGenerator = ['blue', 'red', 'green'];
-
-var randomNumber= function() {
-  number = Math.floor(Math.random()*20);
-  return number;
-}
-
-var randomColor = function() {
-  color = colorGenerator[Math.floor(Math.random()*3)];
-  return color;
-}
-
-var randomBox = function() {
-  box = Math.floor(Math.random()*20);
-  box = '.box' + box;
-  return box;
-}
-
-$(randomBox).mouseenter(function() {
-  $(randomBox).css('background-color' , randomColor);
-})

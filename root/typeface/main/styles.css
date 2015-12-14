@@ -302,7 +302,6 @@ scpan {
 .build {
     margin: 15 0px;
     padding: 0;
-    display: block;
     position: relative;
     width: 94px;
     height: 94px;
@@ -322,6 +321,7 @@ scpan {
     left: 12px;
     width: 64px;
     height: 64px;
+    
 }
 
 .expandOnce {

@@ -1,5 +1,5 @@
 var bartowBuilding = function() {
-  
+
   var bartow = ['                             ||||||_________________||||||',
   '             /////|||||||||||||||||||||||||||||||||||||||||||||||||',
   '/////||||||||     [| |]     [| |]     [[ ]]     [| |]     [| |]  ||||||||',
@@ -7,7 +7,7 @@ var bartowBuilding = function() {
   '|    [| |]  |     [| |]     [| |]     [| |]     [| |]     [| |]  |[| |] |',
    '====================++++++++++++++++++++++++++++++++++++====================',
    '                      \\// \\// \\//_________\\// \\// \\//']
-   
+
   for (var i = 0; i < 13; i++) {
     if (i < 1) {
       console.log(bartow[0]);
@@ -32,7 +32,7 @@ var bartowBuilding = function() {
 }
 
 var edgarBuilding = function() {
-  
+
   var edgar = ['       __________________||||||_',
   '//////||||||||||||||||||||||||||||||||||||||||||\\\\\\\\',
   '|      [       ]                 [       ]      |',
@@ -77,7 +77,7 @@ var leffertsBuilding = function() {
   '|     [           ]      ||  [     ]  ||      ||  [     ]  ||    ||          ||    ||  [     ]  | |',
   '|                        ||           ||      ||           ||    ||          ||    ||           | |',
   '==============|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||']
-  
+
   for (var i = 0; i < 11; i++) {
     if (i < 1) {
       console.log(lefferts[0]);
@@ -113,7 +113,7 @@ var valentineBuilding = function() {
   '  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =',
   '________________________________________________________________________',
   '||_||_||_||_||_||_||_||_||_||_||_||______||_||_||_||_||_||_||_||_||_||_||']
-  
+
   for (var i = 0; i < 13; i++) {
     if (i < 1) {
       console.log(valentine[0]);
@@ -148,7 +148,7 @@ $('.buttonBartow').click(function() {
     $('.buttonBartow').click(bartowBuilding());
     $('.buttonBartow').css('background-color', 'yellow');
     $('.infoBartow').show();
-    
+
     clicked = true;
   } else {
     $('.buttonBartow').css('background-color', '#FDFF93');
@@ -164,7 +164,7 @@ $('.buttonEdgar').click(function() {
     $('.buttonEdgar').click(edgarBuilding());
     $('.buttonEdgar').css('background-color', 'yellow');
     $('.infoEdgar').show();
-    
+
     clicked = true;
   } else {
     $('.buttonEdgar').css('background-color', '#FDFF93');
@@ -180,7 +180,7 @@ $('.buttonLefferts').click(function() {
     $('.buttonLefferts').click(leffertsBuilding());
     $('.buttonLefferts').css('background-color', 'yellow');
     $('.infoLefferts').show();
-    
+
     clicked = true;
   } else {
     $('.buttonLefferts').css('background-color', '#FDFF93');
@@ -196,7 +196,7 @@ $('.buttonValentine').click(function() {
     $('.buttonValentine').click(valentineBuilding());
     $('.buttonValentine').css('background-color', 'yellow');
     $('.infoValentine').show();
-    
+
     clicked = true;
   } else {
     $('.buttonValentine').css('background-color', '#FDFF93');
@@ -204,3 +204,14 @@ $('.buttonValentine').click(function() {
     clicked = false;
   }
 });
+
+
+$('.buttonBartow').hide();
+$('.buttonEdgar').hide();
+$('.buttonLefferts').hide();
+$('.buttonValentine').hide();
+
+
+var buildings = ['.buttonBartow', '.buttonEdgar', '.buttonLefferts', '.buttonValentine'];
+
+var random_Number = Math.floor(Math.random()*buildings.length);

@@ -62,17 +62,16 @@ var transportation = "<div class = 'transportation'><div class = 'inner carone s
 //         $('.street1 .A1').empty();
 //         $('.street1 .A4').empty();
 //         $('.street1 .D2').empty();
-//         $('.street1 .D1').removeClass('emptyBuild');
-//         $('.street .A3').removeClass('expandOnce');
-//         $('.street .A4').removeClass('expandTwice');
-//         $('.street .B4').empty().removeClass('forward');
-//         $('.street1 .C4').empty().removeClass('forward');
+//         $('.street1 .D1').addClass('emptyBuild');
+//         $('.street .A3').addClass('expandOnce');
+//         $('.street .A4').addClass('expandTwice');
+//         $('.street .B4').empty().addClass('forward');
+//         $('.street1 .C4').empty().addClass('forward');
 //         clicked = false;
 //     }
 // })
 
 $('.orchardStreet').hide();
-$('.eldridgeStreet').hide();
 
 $('.street1 .D21').hide();
 $('.street1 .D22').hide();
@@ -99,6 +98,10 @@ $('.mottStreet').hide();
 $('.template .streetName').hide().css('z-index', '-1');
 
 //Orchard Street
+
+$('.orchard').click(function() {
+    $('body').toggleClass('specialPowers');
+})
 
 $('.orchard').click(function() {
     if (clicked == false) {
@@ -285,45 +288,45 @@ $('.orchard').click(function() {
         $('.street2 .street').css('top', '1640px');
         $('.street3 .street').css('top', '3970px')
         
-        $('.street1 .C1').html(community);
-        $('.street1 .B1').html(service);
-        $('.street1 .A1').html(education);
+        $('.street1 .C1').html(community).addClass('forward');
+        $('.street1 .B1').html(service).addClass('forward');
+        $('.street1 .A1').html(education).addClass('expandTwice');
         
-        $('.street1 .C2').html(residentialcommercial);
-        $('.street1 .B2').html(retail)
-        $('.street1 .A2').html(clothing)
+        $('.street1 .C2').html(residentialcommercial).addClass('forward');
+        $('.street1 .B2').html(retail).addClass('forward');
+        $('.street1 .A2').html(clothing).addClass('expandTwice');
         
-        $('.street1 .C3').html(residentialcommercial);
-        $('.street1 .B3').html(retail)
-        $('.street1 .A3').html(gallery)
+        $('.street1 .C3').html(residentialcommercial).addClass('forward');
+        $('.street1 .B3').html(retail).addClass('forward');
+        $('.street1 .A3').html(gallery).addClass('expandTwice');
         
-        $('.street1 .C4').html(residentialcommercial);
-        $('.street1 .B4').html(retail)
-        $('.street1 .A4').html(novelty)
+        $('.street1 .C4').html(residentialcommercial).addClass('forward');
+        $('.street1 .B4').html(retail).addClass('forward');
+        $('.street1 .A4').html(novelty).addClass('expandTwice');
         
-        $('.street1 .C5').html(residentialcommercial);
-        $('.street1 .B5').html(service)
-        $('.street1 .A5').html(construction)
+        $('.street1 .C5').html(residentialcommercial).addClass('forward');
+        $('.street1 .B5').html(service).addClass('forward');
+        $('.street1 .A5').html(construction).addClass('expandTwice');
         
-        $('.street1 .C6').html(residentialcommercial);
-        $('.street1 .B6').html(retail)
-        $('.street1 .A6').html(gallery)
+        $('.street1 .C6').html(residentialcommercial).addClass('forward');
+        $('.street1 .B6').html(retail).addClass('forward');
+        $('.street1 .A6').html(gallery).addClass('expandTwice');
         
-        $('.street1 .C7').html(government);
-        $('.street1 .B7').html(service)
-        $('.street1 .A7').html(eventSpace)
+        $('.street1 .C7').html(government).addClass('forward');
+        $('.street1 .B7').html(service).addClass('forward');
+        $('.street1 .A7').html(eventSpace).addClass('expandTwice');
         
-        $('.street1 .C8').html(residentialcommercial);
-        $('.street1 .B8').html(retail)
-        $('.street1 .A8').html(gallery)
+        $('.street1 .C8').html(residentialcommercial).addClass('forward');
+        $('.street1 .B8').html(retail).addClass('forward');
+        $('.street1 .A8').html(gallery).addClass('expandTwice');
         
-        $('.street1 .C9').html(residentialcommercial);
-        $('.street1 .B9').html(retail)
-        $('.street1 .A9').html(gallery)
+        $('.street1 .C9').html(residentialcommercial).addClass('forward');
+        $('.street1 .B9').html(retail).addClass('forward');
+        $('.street1 .A9').html(gallery).addClass('expandTwice');
         
-        $('.street1 .C10').html(residentialcommercial);
-        $('.street1 .B10').html(service)
-        $('.street1 .A10').html(education)
+        $('.street1 .C10').html(residentialcommercial).addClass('forward');
+        $('.street1 .B10').html(service).addClass('forward');
+        $('.street1 .A10').html(education).addClass('expandTwice');
         
         $('.street1 .F1').html(residentialcommercial);
         $('.street1 .E1').html(retail);
@@ -793,8 +796,8 @@ $('.orchard').click(function() {
         $('.street1 .D2').empty();
         
         $('.street1 .F3').empty();
-        $('.street1 .E3').removeClass('emptyBuild')
-        $('.street1 .D3').removeClass('emptyBuild')
+        $('.street1 .E3').addClass('emptyBuild')
+        $('.street1 .D3').addClass('emptyBuild')
         
         $('.street1 .F4').empty();
         $('.street1 .E4').empty();
@@ -805,12 +808,12 @@ $('.orchard').click(function() {
         $('.street1 .D5').empty();
         
         $('.street1 .F6').empty();
-        $('.street1 .E6').removeClass('emptyBuild')
-        $('.street1 .D6').removeClass('emptyBuild')
+        $('.street1 .E6').addClass('emptyBuild')
+        $('.street1 .D6').addClass('emptyBuild')
         
         $('.street1 .F7').empty();
-        $('.street1 .E7').removeClass('emptyBuild')
-        $('.street1 .D7').removeClass('emptyBuild')
+        $('.street1 .E7').addClass('emptyBuild')
+        $('.street1 .D7').addClass('emptyBuild')
         
         $('.street1 .F8').empty();
         $('.street1 .E8').empty();
@@ -821,12 +824,12 @@ $('.orchard').click(function() {
         $('.street1 .D9').empty();
         
         $('.street1 .F10').empty();
-        $('.street1 .E10').removeClass('emptyBuild')
-        $('.street1 .D10').removeClass('emptyBuild')
+        $('.street1 .E10').addClass('emptyBuild')
+        $('.street1 .D10').addClass('emptyBuild')
         
         $('.street1 .F11').empty();
-        $('.street1 .E11').removeClass('emptyBuild')
-        $('.street1 .D11').removeClass('emptyBuild')
+        $('.street1 .E11').addClass('emptyBuild')
+        $('.street1 .D11').addClass('emptyBuild')
         
         $('.street1 .F12').empty();
         $('.street1 .E12').empty();
@@ -873,12 +876,12 @@ $('.orchard').click(function() {
         $('.street2 .A8').empty();
         
         $('.street2 .C9').empty();
-        $('.street2 .B9').removeClass('emptyBuild')
-        $('.street2 .A9').removeClass('emptyBuild')
+        $('.street2 .B9').addClass('emptyBuild')
+        $('.street2 .A9').addClass('emptyBuild')
         
         $('.street2 .C10').empty();
-        $('.street2 .B10').removeClass('emptyBuild')
-        $('.street2 .A10').removeClass('emptyBuild')
+        $('.street2 .B10').addClass('emptyBuild')
+        $('.street2 .A10').addClass('emptyBuild')
         
         $('.street2 .C11').empty();
         $('.street2 .B11').empty();
@@ -897,8 +900,8 @@ $('.orchard').click(function() {
         $('.street2 .A14').empty();
         
         $('.street2 .C15').empty();
-        $('.street2 .B15').removeClass('emptyBuild')
-        $('.street2 .A15').removeClass('emptyBuild')
+        $('.street2 .B15').addClass('emptyBuild')
+        $('.street2 .A15').addClass('emptyBuild')
         
         $('.street2 .C16').empty();
         $('.street2 .B16').empty();
@@ -941,8 +944,8 @@ $('.orchard').click(function() {
         $('.street2 .D7').empty();
         
         $('.street2 .F8').empty();
-        $('.street2 .E8').removeClass('emptyBuild')
-        $('.street2 .D8').removeClass('emptyBuild')
+        $('.street2 .E8').addClass('emptyBuild')
+        $('.street2 .D8').addClass('emptyBuild')
         
         $('.street2 .F9').empty();
         $('.street2 .E9').empty();
@@ -985,8 +988,8 @@ $('.orchard').click(function() {
         $('.street2 .D18').empty();
         
         $('.street2 .F19').empty();
-        $('.street2 .E19').removeClass('emptyBuild')
-        $('.street2 .D19').removeClass('emptyBuild')
+        $('.street2 .E19').addClass('emptyBuild')
+        $('.street2 .D19').addClass('emptyBuild')
         
         $('.street2 .F20').empty();
         $('.street2 .E20').empty();
@@ -997,24 +1000,24 @@ $('.orchard').click(function() {
         $('.street3 .A1').empty();
         
         $('.street3 .C2').empty();
-        $('.street3 .B2').removeClass('emptyBuild')
-        $('.street3 .A2').removeClass('emptyBuild')
+        $('.street3 .B2').addClass('emptyBuild')
+        $('.street3 .A2').addClass('emptyBuild')
         
         $('.street3 .C3').empty();
-        $('.street3 .B3').removeClass('emptyBuild')
-        $('.street3 .A3').removeClass('emptyBuild')
+        $('.street3 .B3').addClass('emptyBuild')
+        $('.street3 .A3').addClass('emptyBuild')
         
         $('.street3 .C4').empty();
-        $('.street3 .B4').removeClass('emptyBuild')
-        $('.street3 .A4').removeClass('emptyBuild')
+        $('.street3 .B4').addClass('emptyBuild')
+        $('.street3 .A4').addClass('emptyBuild')
         
         $('.street3 .C5').empty();
         $('.street3 .B5').empty();
         $('.street3 .A5').empty();
         
-        $('.street3 .F1').removeClass('dashedBlack');
-        $('.street3 .E1').removeClass('emptyBuild')
-        $('.street3 .D1').removeClass('emptyBuild')
+        $('.street3 .F1').addClass('dashedBlack');
+        $('.street3 .E1').addClass('emptyBuild')
+        $('.street3 .D1').addClass('emptyBuild')
         
         $('.street3 .F2').empty();
         $('.street3 .E2').empty();
