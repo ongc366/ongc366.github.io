@@ -25,7 +25,7 @@ var calculateLocation = function() {
 
 $('.random_phrase').hide();
 
-for (var i = 0; i < 30; i++) {
+for (var i = 0; i < 40; i++) {
 
   calculateLocation();
 
@@ -56,6 +56,7 @@ $('.drawspace').mousemove(function(event) {
 $('.coincidence').mouseenter(function() {
   
   $('.start').hide();
+  $('.p').hide();
 
   calculateLocation();
   
