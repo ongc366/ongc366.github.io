@@ -148,7 +148,9 @@ p {
 }
 
 .random_phrase {
-  font-size: 90px;
+    margin-left: 25px;
+    margin-top: 24px;
+  font-size: 65px;
   position: absolute;
 }
 
@@ -180,8 +182,8 @@ p {
 }
 
 .coincidence {
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   background-color: red;
   position: absolute;
   z-index:1;
