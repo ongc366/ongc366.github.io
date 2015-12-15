@@ -38,7 +38,7 @@ var random_phrases4 = ['stop short of home.',
                       'think fair feeling in the particular.',
                       'suppose true time is far away.',
                       'were lifted with the sharp sense of the young.',
-                      'are suddenly joined other people.'
+                      'are suddenly joined with other people.'
               ];
 
 var calculateLocation = function() {
