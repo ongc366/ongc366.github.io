@@ -6,34 +6,39 @@ var randomX, randomY;
 
 var phrase;
 
+var pronoun;
+var pronounLower;
+
 var colors = ['#EBCFC4', '#E9CCB1', '#E8E6D9'];
 
-var random_phrases1 = ['Within a ready blue edge of flow',
-                      'At a short kept process',
-                      'Between order at effect',
-                      'Safe from open experience',
-                      'Where they understand the surface'
+var random_pronoun = ['They', 'We', 'You']
+
+var random_phrases1 = ['are similar people',
+                      'think of the other',
+                      'were there past the surface',
+                      'pushed past people',
+                      'sometimes sound special'
               ];
               
-var random_phrases2 = ['with that true time far away',
-                      'with fresh from full gone',
-                      'with open conditions at present broken',
-                      'with the present well done',
-                      'with strong light cut short'
+var random_phrases2 = ['with a ready blue edge of flow',
+                      'with much natural feeling',
+                      'with the current cut above us',
+                      'with the heavy raised from the ground',
+                      'with a lost voice rich with use'
               ];
               
-var random_phrases3 = ['outside something sound of sight',
-                      'where everything is like something',
-                      'over time there is reason',
-                      'conditions flow without work',
-                      'a silent sense over the particular'
+var random_phrases3 = ['under certain conditions of control',
+                      'under the present pretty process',
+                      'under a movement held there still',
+                      'under a speed held by force',
+                      'under a material distance '
               ];
               
-var random_phrases4 = ['a strange voice stretched.',
-                      'a warm sight is arrived at.',
-                      'a difference themselves.',
-                      'a gone good human finally free.',
-                      'a voice lost maybe more.'
+var random_phrases4 = ['stop short of home.',
+                      'think fair feeling in the particular.',
+                      'suppose true time is far away.',
+                      'were lifted with the sharp sense of the young.',
+                      'are suddenly joined other people.'
               ];
 
 var calculateLocation = function() {
@@ -108,7 +113,19 @@ $('.coincidence').mouseenter(function() {
     return phrase;
   }
   
-  $('.random_phrase').html(random_phrase1() + ', ' + random_phrase2() + ', ' + random_phrase3() + ', ' + random_phrase4());
+  var random_pronouns = function() {
+    pronoun = random_pronoun[Math.floor(Math.random()*random_pronoun.length)];
+  }
+  
+  random_pronouns();
+  
+  var random_pronouns_lower = function() {
+    pronounLower = pronoun.toLowerCase();
+  }
+  
+  random_pronouns_lower();
+  
+  $('.random_phrase').html(pronoun + ' ' + random_phrase1() + ', ' + random_phrase2() + ', ' + random_phrase3() + ', ' + pronounLower + ' ' + random_phrase4());
 
   $('.drawspace').children(':not(.random_phrase, .coincidence)').hide();
   
