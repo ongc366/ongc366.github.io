@@ -9,9 +9,11 @@ var phrase;
 var pronoun;
 var pronounLower;
 
-var colors = ['#EBCFC4', '#E9CCB1', '#E8E6D9'];
+var colors = ['#F3ECE7', '#EBCFC4', '#E9CCB1', '#E8E6D9'];
 
-var random_pronoun = ['They', 'We', 'You']
+var classes = ['anim1', 'anim2', 'anim3'];
+
+var random_pronoun = ['They', 'We']
 
 var random_phrases1 = ['are similar people',
                       'think of the other',
@@ -20,15 +22,15 @@ var random_phrases1 = ['are similar people',
                       'sometimes sound special'
               ];
               
-var random_phrases2 = ['with a ready blue edge of flow',
+var random_phrases2 = ['with a ready edge of flow',
                       'with much natural feeling',
                       'with the current cut above us',
                       'with the heavy raised from the ground',
                       'with a lost voice rich with use'
               ];
               
-var random_phrases3 = ['under certain conditions of control',
-                      'under the present pretty process',
+var random_phrases3 = ['under a condition of control',
+                      'under a present pretty process',
                       'under a movement held there still',
                       'under a speed held by force',
                       'under a material distance '
@@ -53,11 +55,11 @@ var calculateLocation = function() {
 
 $('.random_phrase').hide();
 
-for (var i = 0; i < 50; i++) {
+for (var i = 0; i < 60; i++) {
 
   calculateLocation();
 
-  var coincidence = "<div style = 'top: " + (randomY + 15) + "px; left: " + (randomX - 20) + "px;' class = 'coincidence'></div>";
+  var coincidence = "<div style = 'top: " + (randomY + 0) + "px; left: " + (randomX - 0) + "px;' class = 'coincidence'></div>";
 
   $('.drawspace').append(coincidence);
 
@@ -73,26 +75,34 @@ $('.drawspace').mousemove(function(event) {
   var point = "<div style='top: " + y + "px; left: " + x + "px;' class='point'></div>";
 
   calculateLocation();
-
-  $('.coincidence').css('top', (randomY - 15)).css('left', (randomX - 20));
-
-  // $('.point').addClass('shift');
+  
   $('.drawspace').append(point);
 
+  $('.coincidence').css('top', randomY).css('left', randomX);
+
 });
+
+var randomColor = function() {
+  var color = colors[Math.floor(Math.random()*colors.length)];
+  return color;
+}
+
+$('.drawspace').css('background-color', randomColor());
 
 $('.coincidence').mouseenter(function() {
   
   $('.start').hide();
-  $('.p').hide();
-
+  
   calculateLocation();
   
-  var randomColor = colors[Math.floor(Math.random()*colors.length)];
-  $('.drawspace').css('background-color', randomColor);
-  // $('.coincidence').addClass()
+  $('.drawspace').css('background-color', randomColor());
   
-  // var random_phrase = random_phrases[Math.floor(Math.random()*random_phrases.length)];
+  // var randomClass = function() {
+    
+  // }
+  
+  // $('.drawspace').addClass(randomClass());
+  
   var random_phrase1 = function() {
     var phrase = random_phrases1[Math.floor(Math.random()*random_phrases1.length)];
     return phrase;
