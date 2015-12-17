@@ -64,12 +64,12 @@ function initializePoem() {
       $('.content').css('background-color', randomize_colors());
       }, 7500);
     setTimeout(function() {
-      $('.coincidence').show();
-      }, 9000);
-    setTimeout(function() {
       $('.message').hide();
       $('.message').html('');
-    }, 10500);
+      }, 9000);
+    setTimeout(function() {
+      $('.coincidence').show();
+    }, 9200);
   }
   initialized = true;
 }
