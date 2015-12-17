@@ -101,7 +101,7 @@ $('.content').mousemove(function(event) {
 
 $('.stop').mouseenter(function() {
   $('.stop').addClass('coincidence');
-  $('.message').html('');
+  $('.content').children(':not(.coincidence)').hide();
   
   $('.coincidence').mouseenter(function() {
   calculateLocation();
@@ -114,4 +114,8 @@ $('.stop').mouseenter(function() {
   $('.content').children(':not(.message, .coincidence)').hide();
   
 });
+})
+
+$('.content').click(function() {
+  $('.content').children(':not(.message, .coincidence)').hide();
 })
