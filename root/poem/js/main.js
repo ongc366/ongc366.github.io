@@ -1,149 +1,97 @@
-var entered;
+var initialized = false;
 
 var x, y;
 
 var randomX, randomY;
 
-var phrase;
-
-var pronoun;
-var pronounLower;
-
 var colors = ['#F3ECE7', '#EBCFC4', '#E9CCB1', '#E8E6D9'];
 
-var classes = ['anim1', 'anim2', 'anim3'];
-
-var random_pronoun = ['They', 'We']
-
-var random_phrases1 = ['are similar people',
+var random_phrases = ['are similar people',
                       'think of the other',
                       'were there past the surface',
                       'pushed past people',
-                      'sometimes sound special'
-              ];
-              
-var random_phrases2 = ['with a ready edge of flow',
+                      'sometimes sound special',
+                      'with a ready edge of flow',
                       'with much natural feeling',
                       'with the current cut above us',
-                      'with the heavy raised from the ground',
-                      'with a lost voice rich with use'
-              ];
-              
-var random_phrases3 = ['under a condition of control',
-                      'under a present pretty process',
-                      'under a movement held there still',
-                      'under a speed held by force',
-                      'under a material distance '
-              ];
-              
-var random_phrases4 = ['stop short of home.',
-                      'think fair feeling in the particular.',
-                      'suppose true time is far away.',
-                      'were lifted with the sharp sense of the young.',
-                      'are suddenly joined with other people.'
-              ];
+                      'with the heavy raised from the ground'
+                      ];
 
-var calculateLocation = function() {
-
+function calculateLocation() {
   var width = $(window).width();
   var height = $(window).height();
-
   randomX = Math.floor(Math.random()*width);
   randomY = Math.floor(Math.random()*height);
-
 }
 
-$('.random_phrase').hide();
-
-for (var i = 0; i < 60; i++) {
-
-  calculateLocation();
-
-  var coincidence = "<div style = 'top: " + (randomY + 0) + "px; left: " + (randomX - 0) + "px;' class = 'coincidence'></div>";
-
-  $('.drawspace').append(coincidence);
-
+function randomize_coincidences() {
+  $('.coincidence').each(function() {
+    calculateLocation();
+    $(this).css({ top: randomY, left: randomX });
+  });
 }
 
-$('.drawspace').mousemove(function(event) {
-
-  $('.random_phrase').show();
-
-  x = event.pageX;
-  y = event.pageY;
-
-  var point = "<div style='top: " + y + "px; left: " + x + "px;' class='point'></div>";
-
-  calculateLocation();
-  
-  $('.drawspace').append(point);
-
-  $('.coincidence').css('top', randomY).css('left', randomX);
-
-});
-
-var randomColor = function() {
+function randomize_colors() {
   var color = colors[Math.floor(Math.random()*colors.length)];
   return color;
 }
 
-$('.drawspace').css('background-color', randomColor());
+function randomize_phrases() {
+  var phrase = random_phrases[Math.floor(Math.random()*random_phrases.length)];
+  return phrase;
+}
 
-$('.coincidence').mouseenter(function() {
-  
-  $('.start').hide();
-  
-  calculateLocation();
-  
-  $('.drawspace').css('background-color', randomColor());
-  
-  // var randomClass = function() {
-    
-  // }
-  
-  // $('.drawspace').addClass(randomClass());
-  
-  var random_phrase1 = function() {
-    var phrase = random_phrases1[Math.floor(Math.random()*random_phrases1.length)];
-    return phrase;
+function initializePoem() {
+  if (initialized == false) {
+    setTimeout(function(){
+      $('.message').html('A COINCIDENCE');
+      $('.content').css('background-color', randomize_colors());
+      }, 1500);
+    setTimeout(function(){
+      $('.message').html('IS THE');
+      $('.content').css('background-color', randomize_colors());
+      }, 3000);
+    setTimeout(function(){
+      $('.message').html('UNSEEN FUTURE');
+      $('.content').css('background-color', randomize_colors());
+      }, 4500);
+    setTimeout(function(){
+      $('.message').html('HIDDEN IN');
+      $('.content').css('background-color', randomize_colors());
+      }, 6000);
+    setTimeout(function(){
+      $('.message').html('THE ORDINARY');
+      $('.content').css('background-color', randomize_colors());
+      }, 7500);
+    setTimeout(function() {
+      $('.coincidence').show();
+      }, 9000);
+    setTimeout(function() {
+      $('.message').hide();
+      $('.message').html('');
+    }, 10500);
   }
-  
-  var random_phrase2 = function() {
-    var phrase = random_phrases2[Math.floor(Math.random()*random_phrases1.length)];
-    return phrase;
-  }
-  
-  var random_phrase3 = function() {
-    var phrase = random_phrases3[Math.floor(Math.random()*random_phrases1.length)];
-    return phrase;
-  }
-  
-  var random_phrase4 = function() {
-    var phrase = random_phrases4[Math.floor(Math.random()*random_phrases1.length)];
-    return phrase;
-  }
-  
-  var random_pronouns = function() {
-    pronoun = random_pronoun[Math.floor(Math.random()*random_pronoun.length)];
-  }
-  
-  random_pronouns();
-  
-  var random_pronouns_lower = function() {
-    pronounLower = pronoun.toLowerCase();
-  }
-  
-  random_pronouns_lower();
-  
-  $('.random_phrase').html(pronoun + ' ' + random_phrase1() + ', ' + random_phrase2() + ', ' + random_phrase3() + ', ' + pronounLower + ' ' + random_phrase4());
+  initialized = true;
+}
 
-  $('.drawspace').children(':not(.random_phrase, .coincidence)').hide();
-  
+$('.content').mousemove(function(event) {
+  initializePoem();
+  x = event.pageX;
+  y = event.pageY;
+  var point = "<div style='top: " + y + "px; left: " + x + "px;' class='point'></div>";
+  $('.content').append(point);
+  randomize_coincidences();
 });
 
-$('.drawspace').click(function() {
-  $('.start').show();
-  $(this).children(':not(.start, .coincidence)').hide();
-  $('.random_phrase').html('');
-})
+$('.coincidence').mouseenter(function() {
+  calculateLocation();
+  
+  $('.message').show().addClass('shift');
+  
+  $('.content').css('background-color', randomize_colors());
 
+  $('.message').append(randomize_phrases() + '<br />');
+
+  $('.content').children(':not(.message, .coincidence)').hide();
+  
+});
