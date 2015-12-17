@@ -123,12 +123,11 @@ body {
   font-size: 80px;
   font-weight: lighter;
   text-align: center;
-  transform: translateY(200%);
+  transform: translateY(190%);
 }
 
 .shift {
-    transform: translateY(0);
-    font-size: 15px;
+  font-size: 28px;
 }
 
 .point {
@@ -139,14 +138,16 @@ body {
   position: absolute;
 }
 
-.coincidence {
-  height: 90px;
-  width: 90px;
-  border: solid 1px #000;
+.stop {
+  height: 100px;
+  width: 100px;
   position: absolute;
-  z-index: 0;
+  border: solid 1px #000;
   opacity: 0.2;
+  left: 45%;
+  top: 40%;
   display: none;
+  z-index: 0;
 }
 
 /* ==========================================================================

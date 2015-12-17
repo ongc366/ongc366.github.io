@@ -6,12 +6,14 @@ var randomX, randomY;
 
 var colors = ['#F3ECE7', '#EBCFC4', '#E9CCB1', '#E8E6D9'];
 
-var random_phrases = ['are similar people',
+var start_sentence = ['TWELVE', "THIRTEEN", 'FOURTEEN']
+
+var end_sentence = ['saw are similar people',
                       'think of the other',
                       'were there past the surface',
                       'pushed past people',
                       'sometimes sound special',
-                      'with a ready edge of flow',
+                      'with a ready edge of flow,',
                       'with much natural feeling',
                       'with the current cut above us',
                       'with the heavy raised from the ground'
@@ -36,15 +38,33 @@ function randomize_colors() {
   return color;
 }
 
-function randomize_phrases() {
-  var phrase = random_phrases[Math.floor(Math.random()*random_phrases.length)];
+function randomize_phrases_start() {
+  var phrase = start_sentence[Math.floor(Math.random()*start_sentence.length)];
   return phrase;
+}
+
+function randomize_phrases_end() {
+  var phrase = end_sentence[Math.floor(Math.random()*end_sentence.length)];
+  return phrase;
+}
+
+function random_phrase_combo() {
+    var random = Math.floor(Math.random()*2);
+    if (random == 1) {
+      $('.message').html(randomize_phrases_start() + ' and <br />' + 
+                        randomize_phrases_end() + ',<br />' + 
+                        randomize_phrases_start() + '.');
+    } else {
+      $('.message').html(randomize_phrases_end() + ',<br />' + 
+                          randomize_phrases_start() + ' and <br />' + 
+                          randomize_phrases_end() + '.');
+    }
 }
 
 function initializePoem() {
   if (initialized == false) {
     setTimeout(function(){
-      $('.message').html('A COINCIDENCE');
+      $('.message').html('COINCIDENCE');
       $('.content').css('background-color', randomize_colors());
       }, 1500);
     setTimeout(function(){
@@ -64,12 +84,8 @@ function initializePoem() {
       $('.content').css('background-color', randomize_colors());
       }, 7500);
     setTimeout(function() {
-      $('.message').hide();
-      $('.message').html('');
+      $('.stop').show();
       }, 9000);
-    setTimeout(function() {
-      $('.coincidence').show();
-    }, 9200);
   }
   initialized = true;
 }
@@ -83,15 +99,19 @@ $('.content').mousemove(function(event) {
   randomize_coincidences();
 });
 
-$('.coincidence').mouseenter(function() {
+$('.stop').mouseenter(function() {
+  $('.stop').addClass('coincidence');
+  $('.message').html('');
+  
+  $('.coincidence').mouseenter(function() {
   calculateLocation();
   
   $('.message').show().addClass('shift');
+  $('.message').html(random_phrase_combo());
   
   $('.content').css('background-color', randomize_colors());
-
-  $('.message').append(randomize_phrases() + '<br />');
 
   $('.content').children(':not(.message, .coincidence)').hide();
   
 });
+})
