@@ -127,7 +127,7 @@ body {
 }
 
 .shift {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .point {
@@ -136,6 +136,7 @@ body {
   border: dotted 1px black;
   border-radius: 50%;
   position: absolute;
+  z-index: 1;
 }
 
 .stop {
@@ -145,7 +146,7 @@ body {
   border: solid 1px #000;
   opacity: 0.2;
   left: 45%;
-  top: 38%;
+  top: 40%;
   display: none;
   z-index: 0;
 }

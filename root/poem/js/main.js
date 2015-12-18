@@ -6,23 +6,23 @@ var randomX, randomY;
 
 var colors = ['#F3ECE7', '#EBCFC4', '#E9CCB1', '#E8E6D9'];
 
-var start_sentence = ['a blue edge', 
-                      'past the surface', 
-                      'short kept process',
-                      'true time',
-                      'material distance',
-                      'similar people',
-                      'warm sight',
-                      'something strange']
+var start_sentence = ['A hundred people', 
+                      'You think this one through', 
+                      'Someone strange',
+                      'A large supply of everything',
+                      'The last human',
+                      'The material distance between them',
+                      'History',
+                      'You and the last']
 
-var end_sentence = ['cut through where we stood on the sand', 
-                    // 'THIRTEEN', 
-                    // 'FOURTEEN',
-                    // 'FOURTEEN',
-                    // 'FOURTEEN',
-                    // 'called',
-                    'over time kept them lost',
-                    'happened to be missing']
+var end_sentence = ['Cut through where we stood on the beach', 
+                    'Was afraid of the past ahead', 
+                    'Finally found the long lost reason for everything',
+                    'Was better when it was not in control',
+                    'Had an interest in being above the ground.',
+                    'Suddenly suggested that we should be happy',
+                    'Has suggested that you value everything over something',
+                    'Entered the big blue in nothing but fear and jumped']
 
 function calculateLocation() {
   var width = $(window).width();
@@ -57,10 +57,10 @@ function random_phrase_combo() {
     var random = Math.floor(Math.random()*2);
     if (random == 1) {
       $('.message').html(randomize_phrases_start() + ',<br />' + 
-                        randomize_phrases_end() + '.');
+                        randomize_phrases_end());
     } else {
       $('.message').html(randomize_phrases_end() + ',<br />' + 
-                          randomize_phrases_start() + '.');
+                          randomize_phrases_start());
     }
 }
 
