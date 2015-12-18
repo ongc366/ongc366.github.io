@@ -6,18 +6,23 @@ var randomX, randomY;
 
 var colors = ['#F3ECE7', '#EBCFC4', '#E9CCB1', '#E8E6D9'];
 
-var start_sentence = ['TWELVE', "THIRTEEN", 'FOURTEEN']
+var start_sentence = ['a blue edge', 
+                      'past the surface', 
+                      'short kept process',
+                      'true time',
+                      'material distance',
+                      'similar people',
+                      'warm sight',
+                      'something strange']
 
-var end_sentence = ['saw are similar people',
-                      'think of the other',
-                      'were there past the surface',
-                      'pushed past people',
-                      'sometimes sound special',
-                      'with a ready edge of flow,',
-                      'with much natural feeling',
-                      'with the current cut above us',
-                      'with the heavy raised from the ground'
-                      ];
+var end_sentence = ['cut through where we stood on the sand', 
+                    // 'THIRTEEN', 
+                    // 'FOURTEEN',
+                    // 'FOURTEEN',
+                    // 'FOURTEEN',
+                    // 'called',
+                    'over time kept them lost',
+                    'happened to be missing']
 
 function calculateLocation() {
   var width = $(window).width();
@@ -51,13 +56,11 @@ function randomize_phrases_end() {
 function random_phrase_combo() {
     var random = Math.floor(Math.random()*2);
     if (random == 1) {
-      $('.message').html(randomize_phrases_start() + ' and <br />' + 
-                        randomize_phrases_end() + ',<br />' + 
-                        randomize_phrases_start() + '.');
+      $('.message').html(randomize_phrases_start() + ',<br />' + 
+                        randomize_phrases_end() + '.');
     } else {
       $('.message').html(randomize_phrases_end() + ',<br />' + 
-                          randomize_phrases_start() + ' and <br />' + 
-                          randomize_phrases_end() + '.');
+                          randomize_phrases_start() + '.');
     }
 }
 
@@ -85,7 +88,7 @@ function initializePoem() {
       }, 7500);
     setTimeout(function() {
       $('.stop').show();
-      }, 9000);
+      }, 9500);
   }
   initialized = true;
 }
@@ -104,16 +107,16 @@ $('.stop').mouseenter(function() {
   $('.content').children(':not(.coincidence)').hide();
   
   $('.coincidence').mouseenter(function() {
-  calculateLocation();
+    calculateLocation();
+    
+    $('.message').show().addClass('shift');
+    $('.message').html(random_phrase_combo());
+    
+    $('.content').css('background-color', randomize_colors());
   
-  $('.message').show().addClass('shift');
-  $('.message').html(random_phrase_combo());
-  
-  $('.content').css('background-color', randomize_colors());
-
-  $('.content').children(':not(.message, .coincidence)').hide();
-  
-});
+    $('.content').children(':not(.message, .coincidence)').hide();
+    
+  });
 })
 
 $('.content').click(function() {

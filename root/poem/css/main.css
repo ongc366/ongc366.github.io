@@ -127,7 +127,7 @@ body {
 }
 
 .shift {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .point {
@@ -145,7 +145,7 @@ body {
   border: solid 1px #000;
   opacity: 0.2;
   left: 45%;
-  top: 40%;
+  top: 38%;
   display: none;
   z-index: 0;
 }
