@@ -60,12 +60,5 @@ $('.lab').click(function() {
   $('.main').css('height', '25%');
   $('.classes').css('height', '25%');
   $('.classes').css('top', '25%');
-  $('.lab').click(function() {
-    $('.studioprojects').hide();
-    $('.labprojects').show();
-  })
-  $('.studio').click(function() {
-    $('.studioprojects').show();
-    $('.labprojects').hide();
-  })
+  $('.labprojects').show();
 })
