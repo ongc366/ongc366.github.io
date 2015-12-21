@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: #B21E83;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 20;
+  transition: 0.25s ease;
+  position: absolute;
+  left: 40%;
+  top: 45%;
+}
+
+.main {
+  text-decoration: none;
+}
+
+.classes {
+  top: 25%;
+}
+
+.studio {
+  left: 50%;
+    background: #00FFFF; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(#FFFF00, #00FFFF); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#FFFF00, #00FFFF); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#FFFF00, #00FFFF); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#FFFF00, #00FFFF); /* Standard syntax (must be last) */
+}
+
+.lab {
+  background: #00FFFF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#00FFFF, #FFFF00); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00FFFF, #FFFF00); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00FFFF, #FFFF00); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00FFFF, #FFFF00); /* Standard syntax (must be last) */
+}
+
+.labLink {
+  left: 40%;
+  top: 35%;
+}
+
+.studioLink {
+  left: 37%;
+  top: 35%;
+}
+
+.box {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-weight: lighter;
+  transition: 0.75s ease-in-out;
+}
+
+.studioprojects {
+  width: 25%;
+  position: absolute;
+  top: 30%;
+  background: #00FFFF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#00FFFF 50%, #FF00FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00FFFF 50%, #FF00FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00FFFF 50%, #FF00FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00FFFF 50%, #FF00FF); /* Standard syntax (must be last) */
+}
+
+.space {
+  background: #00FFFF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#00FFFF 50%, #FF00FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00FFFF 50%, #FF00FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00FFFF 50%, #FF00FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00FFFF 50%, #FF00FF); /* Standard syntax (must be last) */
+}
+
+.typeface {
+  left: 25%;
+}
+
+.spaceLink {
+  left: 20%;
+}
+
+.typefaceLink {
+  left: 5%;
+}
+
+.poem {
+  left: 50%;
+}
+
+.poemLink {
+  left: 30%;
+}
+
+.favicon {
+  left: 75%;
+  /*background: #00FFFF; /* For browsers that do not support gradients */*/
+    /*background: -webkit-linear-gradient(#FF00FF, #00FFFF 40%); /* For Safari 5.1 to 6.0 */*/
+    /*background: -o-linear-gradient(#FF00FF, #00FFFF 40%); /* For Opera 11.1 to 12.0 */*/
+    /*background: -moz-linear-gradient(#FF00FF, #00FFFF 40%); /* For Firefox 3.6 to 15 */*/
+    /*background: linear-gradient(#FF00FF, #00FFFF 40%); /* Standard syntax (must be last) */*/
+}
+
+.faviconLink {
+  left: 10%;
+}
+
+.what {
+  left: 50%;
+  background: #FF00FF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#FF00FF, #FFFF00); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FF00FF, #FFFF00); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FF00FF, #FFFF00); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FF00FF, #FFFF00); /* Standard syntax (must be last) */
+}
+
+.who {
+  background: #FF00FF; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#FFFF00, #FF00FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFFF00, #FF00FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFF00, #FF00FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFFF00, #FF00FF); /* Standard syntax (must be last) */
+}
