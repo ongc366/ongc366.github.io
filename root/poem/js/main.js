@@ -2,6 +2,9 @@ var initialized = false;
 
 var x, y;
 
+var start = '';
+var end = '';
+
 var randomX, randomY;
 
 var colors = ['#F3ECE7', '#EBCFC4', '#E9CCB1', '#E8E6D9'];
@@ -15,14 +18,14 @@ var start_sentence = ['A hundred people',
                       'History',
                       'You and the last']
 
-var end_sentence = ['Cut through where we stood on the beach', 
-                    'Was afraid of the past ahead', 
-                    'Finally found the long lost reason for everything',
-                    'Was better when it was not in control',
-                    'Had an interest in being above the ground.',
-                    'Suddenly suggested that we should be happy',
-                    'Has suggested that you value everything over something',
-                    'Entered the big blue in nothing but fear and jumped']
+var end_sentence = ['Cut through where we stood', 
+                    'Afraid of ahead', 
+                    'Finally found the reason for everything',
+                    'Said it was not in control',
+                    'Had an interest in being above',
+                    'Suddenly suggested to be happy',
+                    'Suggested value of everything over something',
+                    'Entered the nothing and jumped']
 
 function calculateLocation() {
   var width = $(window).width();
@@ -55,13 +58,10 @@ function randomize_phrases_end() {
 
 function random_phrase_combo() {
     var random = Math.floor(Math.random()*2);
-    if (random == 1) {
-      $('.message').html(randomize_phrases_start() + ',<br />' + 
-                        randomize_phrases_end());
-    } else {
-      $('.message').html(randomize_phrases_end() + ',<br />' + 
-                          randomize_phrases_start());
-    }
+    start = randomize_phrases_start();
+    end = randomize_phrases_end();
+      $('.message').html(start + ',<br />' + 
+                        end);
 }
 
 function initializePoem() {
@@ -104,7 +104,7 @@ $('.content').mousemove(function(event) {
 
 $('.stop').mouseenter(function() {
   $('.stop').addClass('coincidence');
-  $('.content').children(':not(.coincidence)').hide();
+  $('.content').children(':not(.log, .coincidence)').hide();
   
   $('.coincidence').mouseenter(function() {
     calculateLocation();
@@ -114,11 +114,11 @@ $('.stop').mouseenter(function() {
     
     $('.content').css('background-color', randomize_colors());
   
-    $('.content').children(':not(.message, .coincidence)').hide();
+    $('.content').children(':not(.message, .coincidence, .log)').hide();
     
   });
 })
 
 $('.content').click(function() {
-  $('.content').children(':not(.message, .coincidence)').hide();
+  $('.content').children(':not(.message, .coincidence, .log, .stop)').hide();
 })
